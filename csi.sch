@@ -40,7 +40,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 0 -40 0 0 {name=M2
 L=\{csi_len\}
-W=\{csi_wid\}
+W=\{csi_wid\}*2
 body=VP
 nf=1
 mult=1
