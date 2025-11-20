@@ -5,6 +5,7 @@ V {}
 S {}
 F {}
 E {}
+T {should change this to a falling edge flop} 210 220 0 0 0.2 0.2 {}
 N -210 -50 -190 -50 {lab=VP}
 N -210 -30 -190 -30 {lab=VN}
 N -210 -10 -190 -10 {lab=data}
@@ -13,7 +14,6 @@ N -210 10 -190 10 {lab=clk}
 N 90 -90 200 -90 {lab=data}
 N -210 50 -190 50 {lab=dec}
 N 200 -90 200 -40 {lab=data}
-N 350 140 370 140 {lab=B}
 N 200 110 210 110 {lab=A}
 N 10 -20 20 -20 {lab=data}
 N -70 10 -60 10 {lab=data}
@@ -24,32 +24,34 @@ N 10 10 20 10 {lab=#net1}
 N 40 120 40 180 {lab=clk}
 N 40 180 50 180 {lab=clk}
 N 30 180 40 180 {lab=clk}
-N 360 -20 370 -20 {lab=#net2}
+N 360 -20 370 -20 {lab=A}
 N 360 -40 370 -40 {lab=data}
-N 230 170 230 180 {lab=#net3}
-N 190 180 230 180 {lab=#net3}
+N 230 170 230 180 {lab=nclk}
+N 190 180 230 180 {lab=nclk}
 N 40 40 40 120 {lab=clk}
-N 100 10 120 10 {lab=#net4}
-N 110 180 190 180 {lab=#net3}
+N 100 10 120 10 {lab=nA}
+N 110 180 190 180 {lab=nclk}
 N 10 -90 90 -90 {lab=data}
 N 10 -50 10 -20 {lab=data}
-N 110 120 120 120 {lab=#net5}
-N 110 -20 110 120 {lab=#net5}
-N 100 -20 110 -20 {lab=#net5}
+N 100 -20 110 -20 {lab=A}
 N 10 -90 10 -50 {lab=data}
 N 180 10 200 10 {lab=A}
-N 360 -20 360 10 {lab=#net2}
+N 360 -20 360 10 {lab=A}
 N 200 -40 360 -40 {lab=data}
-N 360 120 370 120 {lab=#net2}
-N 360 10 360 120 {lab=#net2}
-N 350 20 360 20 {lab=#net2}
+N 360 120 370 120 {lab=A}
+N 360 10 360 120 {lab=A}
+N 350 20 360 20 {lab=A}
 N 190 140 210 140 {lab=nA}
 N 190 120 190 140 {lab=nA}
 N 180 120 190 120 {lab=nA}
-N 190 40 190 120 {lab=nA}
 N 200 10 200 110 {lab=A}
-N 190 40 290 40 {lab=nA}
-N 290 20 290 40 {lab=nA}
+N 350 140 360 140 {lab=B}
+N 190 40 190 120 {lab=nA}
+N 360 140 370 140 {lab=B}
+N 290 110 350 140 {lab=B}
+N 120 10 180 120 {lab=nA}
+N 110 -20 180 10 {lab=A}
+N 200 20 350 20 {lab=A}
 C {dff.sym} 60 0 0 0 {name=X1}
 C {xor.sym} 380 -30 0 0 {name=X3}
 C {dff.sym} 250 130 0 0 {name=X4}
@@ -84,18 +86,7 @@ C {inverter.sym} 20 180 0 0 {name=X7}
 C {lab_pin.sym} 80 160 1 0 {name=p28 sig_type=std_logic lab=VP}
 C {lab_pin.sym} 80 200 3 0 {name=p29 sig_type=std_logic lab=VN}
 C {lab_pin.sym} 30 180 0 0 {name=p30 sig_type=std_logic lab=clk}
-C {lab_pin.sym} 180 10 3 0 {name=p24 sig_type=std_logic lab=A}
+C {lab_pin.sym} 190 10 1 0 {name=p24 sig_type=std_logic lab=A}
 C {lab_pin.sym} 360 140 3 0 {name=p25 sig_type=std_logic lab=B}
-C {inverter.sym} 260 140 0 0 {name=X2}
-C {lab_pin.sym} 320 120 1 0 {name=p31 sig_type=std_logic lab=VP}
-C {lab_pin.sym} 320 160 3 0 {name=p32 sig_type=std_logic lab=VN}
-C {inverter.sym} 90 10 0 0 {name=X8}
-C {lab_pin.sym} 150 -10 1 0 {name=p33 sig_type=std_logic lab=VP}
-C {lab_pin.sym} 150 30 3 0 {name=p34 sig_type=std_logic lab=VN}
 C {lab_pin.sym} 180 120 1 0 {name=p35 sig_type=std_logic lab=nA}
-C {inverter.sym} 90 120 0 0 {name=X9}
-C {lab_pin.sym} 150 100 1 0 {name=p37 sig_type=std_logic lab=VP}
-C {lab_pin.sym} 150 140 3 0 {name=p38 sig_type=std_logic lab=VN}
-C {inverter.sym} 260 20 0 0 {name=X10}
-C {lab_pin.sym} 320 0 1 0 {name=p36 sig_type=std_logic lab=VP}
-C {lab_pin.sym} 320 40 3 0 {name=p39 sig_type=std_logic lab=VN}
+C {lab_pin.sym} 180 180 3 0 {name=p40 sig_type=std_logic lab=nclk}
