@@ -19,10 +19,6 @@ N -210 -60 -190 -60 {lab=VN}
 N -210 -40 -190 -40 {lab=A}
 N -210 -20 -190 -20 {lab=Y}
 N -210 20 -190 20 {lab=Vbnin}
-N -30 100 130 100 {lab=Vbnin}
-N -30 -100 120 -100 {lab=Vbpin}
-N -210 40 -190 40 {lab=Vbpout}
-N -210 60 -190 60 {lab=Vbnout}
 C {madvlsi/nmos3.sym} 0 40 0 0 {name=M1
 L=\{csi_len\}
 W=\{csi_wid\}
@@ -40,7 +36,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 0 -40 0 0 {name=M2
 L=\{csi_len\}
-W=\{csi_wid\}*2
+W=\{csi_wid\}
 body=VP
 nf=1
 mult=1
@@ -99,13 +95,5 @@ C {lab_pin.sym} -190 -80 2 0 {name=p14 sig_type=std_logic lab=VP}
 C {lab_pin.sym} -190 -60 2 0 {name=p15 sig_type=std_logic lab=VN}
 C {lab_pin.sym} -190 -40 2 0 {name=p16 sig_type=std_logic lab=A}
 C {lab_pin.sym} -210 -20 0 0 {name=p17 sig_type=std_logic lab=Y}
-C {madvlsi/ammeter1.sym} 120 -100 3 0 {name=Vm1}
-C {madvlsi/ammeter1.sym} 130 100 3 0 {name=Vm2}
 C {lab_pin.sym} -190 0 2 0 {name=p7 sig_type=std_logic lab=Vbpin}
 C {lab_pin.sym} -190 20 2 0 {name=p18 sig_type=std_logic lab=Vbnin}
-C {lab_pin.sym} 130 -100 2 0 {name=p19 sig_type=std_logic lab=Vbpout}
-C {lab_pin.sym} 140 100 2 0 {name=p20 sig_type=std_logic lab=Vbnout}
-C {opin.sym} -190 40 0 0 {name=p21 lab=Vbpout}
-C {lab_pin.sym} -210 40 0 0 {name=p22 sig_type=std_logic lab=Vbpout}
-C {opin.sym} -190 60 0 0 {name=p23 lab=Vbnout}
-C {lab_pin.sym} -210 60 0 0 {name=p24 sig_type=std_logic lab=Vbnout}
