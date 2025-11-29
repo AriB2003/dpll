@@ -125,14 +125,14 @@ C {code_shown.sym} 220 -330 0 0 {name=SPICE1 only_toplevel=false value="
 .param xor_wid=0.5 xor_len=0.15
 .param dff_wid=0.5 dff_len=0.15
 .param pump_wid=0.5 pump_len=5
-.param mult_pump=1/10
+.param mult_pump=1/100
 "}
 C {madvlsi/vsource.sym} 600 -230 0 0 {name=Vdd
 value="pwl (0 0 0.5u 1.8)"}
 C {madvlsi/gnd.sym} 600 -200 0 0 {name=l8 lab=GND}
 C {madvlsi/vdd.sym} 600 -260 0 0 {name=l9 lab=VDD}
 C {madvlsi/vsource.sym} 730 -230 0 0 {name=Vnrz
-value="pwl (0 0 1000n 0 1001n 1.8 1072n 1.8 1073n 0 1288n 0 1289n 1.8 1432n 1.8 1433n 0) R=0"}
+value="pwl (0 0 1n 1.8 72n 1.8 73n 0 288n 0 289n 1.8 432n 1.8 433n 0 504n 0) R=0 td=1u"}
 C {lab_pin.sym} 730 -260 1 0 {name=p20 sig_type=std_logic lab=nrz}
 C {madvlsi/gnd.sym} 730 -200 0 0 {name=l10 lab=GND}
 C {madvlsi/vdd.sym} 250 -70 0 0 {name=l11 lab=VDD}
