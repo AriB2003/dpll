@@ -5,14 +5,14 @@ V {}
 S {}
 F {}
 E {}
-N -80 0 -50 0 {lab=#net1}
-N -80 0 -80 30 {lab=#net1}
-N -290 -30 -80 -30 {lab=#net2}
-N -290 0 -260 0 {lab=#net2}
-N -290 -30 -290 0 {lab=#net2}
+N -80 0 -50 0 {lab=Vbn}
+N -80 0 -80 30 {lab=Vbn}
+N -290 -30 -80 -30 {lab=Vbp}
+N -290 0 -260 0 {lab=Vbp}
+N -290 -30 -290 0 {lab=Vbp}
 N 900 0 920 0 {lab=Va}
-N -80 -30 840 -30 {lab=#net2}
-N -80 30 840 30 {lab=#net1}
+N -80 -30 840 -30 {lab=Vbp}
+N -80 30 840 30 {lab=Vbn}
 N 100 0 120 0 {lab=Va}
 N 100 0 100 100 {lab=Va}
 N 100 100 910 100 {lab=Va}
@@ -21,8 +21,10 @@ N -430 -30 -410 -30 {lab=VP}
 N -430 -10 -410 -10 {lab=VN}
 N -430 10 -410 10 {lab=Vvco}
 N -430 30 -410 30 {lab=Osc}
-N -430 50 -410 50 {lab=Osc}
-N -260 60 -260 70 {lab=Vs}
+N -430 50 -410 50 {lab=Res}
+N -260 60 -260 70 {lab=Res}
+N -430 70 -410 70 {lab=Vbp}
+N -430 90 -410 90 {lab=Res}
 C {madvlsi/nmos3.sym} -50 30 0 0 {name=M3
 L=\{bias_len\}
 W=\{bias_wid\}
@@ -147,3 +149,9 @@ C {lab_pin.sym} 180 0 1 0 {name=p47 sig_type=std_logic lab=Vb}
 C {lab_pin.sym} 240 0 1 0 {name=p48 sig_type=std_logic lab=Vc}
 C {opin.sym} -410 50 0 0 {name=p49 lab=Res}
 C {lab_pin.sym} -430 50 0 0 {name=p50 sig_type=std_logic lab=Res}
+C {lab_pin.sym} 70 -30 1 0 {name=p30 sig_type=std_logic lab=Vbp}
+C {lab_pin.sym} 70 30 3 0 {name=p51 sig_type=std_logic lab=Vbn}
+C {opin.sym} -410 70 0 0 {name=p52 lab=Vbp}
+C {lab_pin.sym} -430 70 0 0 {name=p53 sig_type=std_logic lab=Vbp}
+C {opin.sym} -410 90 0 0 {name=p54 lab=Vbn}
+C {lab_pin.sym} -430 90 0 0 {name=p55 sig_type=std_logic lab=Vbn}
