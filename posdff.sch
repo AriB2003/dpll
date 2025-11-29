@@ -37,8 +37,8 @@ N 50 10 110 10 {lab=nQI}
 N 0 -20 60 -20 {lab=QI}
 N 200 -20 260 -20 {lab=Q}
 N 250 10 310 10 {lab=nQ}
-C {n_csrl_latch.sym} -60 0 0 0 {name=X1}
-C {csrl_latch.sym} 160 0 0 0 {name=X2}
+C {n_csrl_latch.sym} 160 0 0 0 {name=X1}
+C {csrl_latch.sym} -60 0 0 0 {name=X2}
 C {iopin.sym} -130 -100 2 0 {name=p1 lab=VP}
 C {ipin.sym} -130 -20 0 0 {name=p2 lab=D}
 C {opin.sym} 320 -20 0 0 {name=p3 lab=Q}

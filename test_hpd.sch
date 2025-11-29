@@ -87,8 +87,8 @@ C {lab_pin.sym} -230 -160 1 0 {name=p20 sig_type=std_logic lab=nrz}
 C {sky130_fd_pr/corner.sym} -90 -270 0 0 {name=CORNER only_toplevel=false corner=tt}
 C {code_shown.sym} 210 -260 0 0 {name=SPICE3 only_toplevel=false value="
 .param xor_wid=0.5 xor_len=0.15
-.param inv_wid=1.5 inv_len=0.15
-.param lch_wid=0.45 lch_len=0.15
+.param inv_wid=0.5 inv_len=0.15
+.param dff_wid=0.5 dff_len=0.15
 "}
 C {madvlsi/gnd.sym} -230 -100 0 0 {name=l1 lab=GND}
 C {madvlsi/vsource.sym} -290 -220 0 0 {name=Vclk
