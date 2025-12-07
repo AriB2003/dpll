@@ -16,23 +16,45 @@ N 100 0 120 0 {lab=Va}
 N 100 0 100 100 {lab=Va}
 N 100 100 910 100 {lab=Va}
 N 910 0 910 100 {lab=Va}
-N -430 -30 -410 -30 {lab=VP}
-N -430 -10 -410 -10 {lab=VN}
-N -430 10 -410 10 {lab=Vvco}
-N -430 30 -410 30 {lab=Osc}
-N -430 50 -410 50 {lab=Res}
-N -260 60 -250 60 {lab=Res}
-N -430 70 -410 70 {lab=Vbp}
-N -430 90 -410 90 {lab=Vbn}
+N 20 -240 40 -240 {lab=VP}
+N 20 -220 40 -220 {lab=VN}
+N 20 -200 40 -200 {lab=Vvco}
+N 20 -180 40 -180 {lab=Osc}
+N 20 -160 40 -160 {lab=Res}
+N 20 -140 40 -140 {lab=Vbp}
+N 20 -120 40 -120 {lab=Vbn}
 N -220 -30 -120 -30 {lab=Vbp}
 N -190 -60 -150 -60 {lab=VP}
-N -260 80 -220 80 {lab=Vvco}
-N -220 30 -220 80 {lab=Vvco}
 N -170 60 -150 60 {lab=VN}
 N -190 -30 -190 60 {lab=Vbp}
 N -90 -60 -90 30 {lab=Vbn}
 N -120 -30 -80 -30 {lab=Vbp}
 N -90 30 -80 30 {lab=Vbn}
+N -760 -30 -250 -30 {lab=Vbp}
+N -370 -60 -370 -30 {lab=Vbp}
+N -490 -60 -490 -30 {lab=Vbp}
+N -610 -60 -610 -30 {lab=Vbp}
+N -730 -60 -730 -30 {lab=Vbp}
+N -170 -80 -170 -60 {lab=VP}
+N -790 -80 -170 -80 {lab=VP}
+N -790 -80 -790 -60 {lab=VP}
+N -670 -80 -670 -60 {lab=VP}
+N -550 -80 -550 -60 {lab=VP}
+N -430 -80 -430 -60 {lab=VP}
+N -310 -80 -310 -60 {lab=VP}
+N -310 -30 -310 60 {lab=Vbp}
+N -430 -30 -430 60 {lab=Vbp}
+N -550 -30 -550 60 {lab=Vbp}
+N -670 -30 -670 60 {lab=Vbp}
+N -790 -30 -790 60 {lab=Vbp}
+N -790 -30 -760 -30 {lab=Vbp}
+N -810 30 -220 30 {lab=Vvco}
+N -810 80 -250 80 {lab=Res}
+N -250 60 -250 80 {lab=Res}
+N -370 60 -370 80 {lab=Res}
+N -490 60 -490 80 {lab=Res}
+N -610 60 -610 80 {lab=Res}
+N -730 60 -730 80 {lab=Res}
 C {madvlsi/nmos3.sym} -120 60 1 0 {name=M3
 L=\{bias_len\}
 W=\{bias_wid\}
@@ -63,14 +85,14 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {lab_pin.sym} -260 80 0 0 {name=p5 sig_type=std_logic lab=Vvco}
+C {lab_pin.sym} -810 30 0 0 {name=p5 sig_type=std_logic lab=Vvco}
 C {lab_pin.sym} -170 60 3 0 {name=p7 sig_type=std_logic lab=VN}
 C {madvlsi/nmos3.sym} -220 60 1 0 {name=M1
 L=\{bias_len\}
 W=\{bias_wid\}
 body=VN
 nf=1
-mult=\{mult_blin\}
+mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -85,7 +107,7 @@ L=\{bias_len\}
 W=\{bias_wid\}
 body=VP
 nf=1
-mult=\{mult_blin\}
+mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -95,8 +117,8 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {lab_pin.sym} -170 -60 1 0 {name=p31 sig_type=std_logic lab=VP}
-C {lab_pin.sym} -260 60 0 0 {name=p32 sig_type=std_logic lab=Res}
+C {lab_pin.sym} -170 -80 1 0 {name=p31 sig_type=std_logic lab=VP}
+C {lab_pin.sym} -810 80 0 0 {name=p32 sig_type=std_logic lab=Res}
 C {inverter.sym} 890 0 0 0 {name=X2}
 C {inverter.sym} 950 0 0 0 {name=X3}
 C {lab_pin.sym} 1040 0 2 0 {name=p1 sig_type=std_logic lab=Osc}
@@ -143,22 +165,292 @@ C {lab_pin.sym} 810 -50 1 0 {name=p34 sig_type=std_logic lab=VP}
 C {lab_pin.sym} 810 50 3 0 {name=p35 sig_type=std_logic lab=VN}
 C {lab_pin.sym} 870 -50 1 0 {name=p36 sig_type=std_logic lab=VP}
 C {lab_pin.sym} 870 50 3 0 {name=p37 sig_type=std_logic lab=VN}
-C {iopin.sym} -430 -10 2 0 {name=p38 lab=VN}
-C {iopin.sym} -430 -30 2 0 {name=p39 lab=VP}
-C {opin.sym} -410 30 0 0 {name=p40 lab=Osc}
-C {ipin.sym} -430 10 0 0 {name=p41 lab=Vvco}
-C {lab_pin.sym} -410 -30 2 0 {name=p42 sig_type=std_logic lab=VP}
-C {lab_pin.sym} -410 -10 2 0 {name=p43 sig_type=std_logic lab=VN}
-C {lab_pin.sym} -410 10 2 0 {name=p44 sig_type=std_logic lab=Vvco}
-C {lab_pin.sym} -430 30 0 0 {name=p45 sig_type=std_logic lab=Osc}
+C {iopin.sym} 20 -220 2 0 {name=p38 lab=VN}
+C {iopin.sym} 20 -240 2 0 {name=p39 lab=VP}
+C {opin.sym} 40 -180 0 0 {name=p40 lab=Osc}
+C {ipin.sym} 20 -200 0 0 {name=p41 lab=Vvco}
+C {lab_pin.sym} 40 -240 2 0 {name=p42 sig_type=std_logic lab=VP}
+C {lab_pin.sym} 40 -220 2 0 {name=p43 sig_type=std_logic lab=VN}
+C {lab_pin.sym} 40 -200 2 0 {name=p44 sig_type=std_logic lab=Vvco}
+C {lab_pin.sym} 20 -180 0 0 {name=p45 sig_type=std_logic lab=Osc}
 C {lab_pin.sym} 120 0 1 0 {name=p46 sig_type=std_logic lab=Va}
 C {lab_pin.sym} 180 0 1 0 {name=p47 sig_type=std_logic lab=Vb}
 C {lab_pin.sym} 240 0 1 0 {name=p48 sig_type=std_logic lab=Vc}
-C {opin.sym} -410 50 0 0 {name=p49 lab=Res}
-C {lab_pin.sym} -430 50 0 0 {name=p50 sig_type=std_logic lab=Res}
+C {opin.sym} 40 -160 0 0 {name=p49 lab=Res}
+C {lab_pin.sym} 20 -160 0 0 {name=p50 sig_type=std_logic lab=Res}
 C {lab_pin.sym} 70 -30 1 0 {name=p30 sig_type=std_logic lab=Vbp}
 C {lab_pin.sym} 70 30 3 0 {name=p51 sig_type=std_logic lab=Vbn}
-C {opin.sym} -410 70 0 0 {name=p52 lab=Vbp}
-C {lab_pin.sym} -430 70 0 0 {name=p53 sig_type=std_logic lab=Vbp}
-C {opin.sym} -410 90 0 0 {name=p54 lab=Vbn}
-C {lab_pin.sym} -430 90 0 0 {name=p55 sig_type=std_logic lab=Vbn}
+C {opin.sym} 40 -140 0 0 {name=p52 lab=Vbp}
+C {lab_pin.sym} 20 -140 0 0 {name=p53 sig_type=std_logic lab=Vbp}
+C {opin.sym} 40 -120 0 0 {name=p54 lab=Vbn}
+C {lab_pin.sym} 20 -120 0 0 {name=p55 sig_type=std_logic lab=Vbn}
+C {madvlsi/pmos3.sym} -280 -60 3 0 {name=M5
+L=\{bias_len\}
+W=\{bias_wid\}
+body=VP
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_01v8
+spiceprefix=X
+}
+C {madvlsi/pmos3.sym} -340 -60 3 0 {name=M6
+L=\{bias_len\}
+W=\{bias_wid\}
+body=VP
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_01v8
+spiceprefix=X
+}
+C {madvlsi/pmos3.sym} -400 -60 3 0 {name=M7
+L=\{bias_len\}
+W=\{bias_wid\}
+body=VP
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_01v8
+spiceprefix=X
+}
+C {madvlsi/pmos3.sym} -460 -60 3 0 {name=M8
+L=\{bias_len\}
+W=\{bias_wid\}
+body=VP
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_01v8
+spiceprefix=X
+}
+C {madvlsi/pmos3.sym} -520 -60 3 0 {name=M9
+L=\{bias_len\}
+W=\{bias_wid\}
+body=VP
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_01v8
+spiceprefix=X
+}
+C {madvlsi/pmos3.sym} -580 -60 3 0 {name=M10
+L=\{bias_len\}
+W=\{bias_wid\}
+body=VP
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_01v8
+spiceprefix=X
+}
+C {madvlsi/pmos3.sym} -640 -60 3 0 {name=M11
+L=\{bias_len\}
+W=\{bias_wid\}
+body=VP
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_01v8
+spiceprefix=X
+}
+C {madvlsi/pmos3.sym} -700 -60 3 0 {name=M12
+L=\{bias_len\}
+W=\{bias_wid\}
+body=VP
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_01v8
+spiceprefix=X
+}
+C {madvlsi/pmos3.sym} -760 -60 3 0 {name=M13
+L=\{bias_len\}
+W=\{bias_wid\}
+body=VP
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_01v8
+spiceprefix=X
+}
+C {madvlsi/nmos3.sym} -280 60 1 0 {name=M14
+L=\{bias_len\}
+W=\{bias_wid\}
+body=VN
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_01v8
+spiceprefix=X
+}
+C {madvlsi/nmos3.sym} -340 60 1 0 {name=M15
+L=\{bias_len\}
+W=\{bias_wid\}
+body=VN
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_01v8
+spiceprefix=X
+}
+C {madvlsi/nmos3.sym} -400 60 1 0 {name=M16
+L=\{bias_len\}
+W=\{bias_wid\}
+body=VN
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_01v8
+spiceprefix=X
+}
+C {madvlsi/nmos3.sym} -460 60 1 0 {name=M17
+L=\{bias_len\}
+W=\{bias_wid\}
+body=VN
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_01v8
+spiceprefix=X
+}
+C {madvlsi/nmos3.sym} -520 60 1 0 {name=M18
+L=\{bias_len\}
+W=\{bias_wid\}
+body=VN
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_01v8
+spiceprefix=X
+}
+C {madvlsi/nmos3.sym} -580 60 1 0 {name=M19
+L=\{bias_len\}
+W=\{bias_wid\}
+body=VN
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_01v8
+spiceprefix=X
+}
+C {madvlsi/nmos3.sym} -640 60 1 0 {name=M20
+L=\{bias_len\}
+W=\{bias_wid\}
+body=VN
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_01v8
+spiceprefix=X
+}
+C {madvlsi/nmos3.sym} -700 60 1 0 {name=M21
+L=\{bias_len\}
+W=\{bias_wid\}
+body=VN
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_01v8
+spiceprefix=X
+}
+C {madvlsi/nmos3.sym} -760 60 1 0 {name=M22
+L=\{bias_len\}
+W=\{bias_wid\}
+body=VN
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_01v8
+spiceprefix=X
+}
