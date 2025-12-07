@@ -5,10 +5,10 @@ V {}
 S {}
 F {}
 E {}
-N -90 30 -90 60 {lab=Vbn}
+N -150 30 -150 60 {lab=Vbn}
 N -120 30 -90 30 {lab=Vbn}
 N -250 -30 -220 -30 {lab=Vbp}
-N -250 -60 -250 -30 {lab=Vbp}
+N -190 -60 -190 -30 {lab=Vbp}
 N 900 0 920 0 {lab=Va}
 N -80 -30 840 -30 {lab=Vbp}
 N -80 30 840 30 {lab=Vbn}
@@ -24,24 +24,20 @@ N 20 -160 40 -160 {lab=Res}
 N 20 -140 40 -140 {lab=Vbp}
 N 20 -120 40 -120 {lab=Vbn}
 N -220 -30 -120 -30 {lab=Vbp}
-N -190 -60 -150 -60 {lab=VP}
-N -170 60 -150 60 {lab=VN}
 N -190 -30 -190 60 {lab=Vbp}
-N -90 -60 -90 30 {lab=Vbn}
+N -150 -60 -150 30 {lab=Vbn}
 N -120 -30 -80 -30 {lab=Vbp}
 N -90 30 -80 30 {lab=Vbn}
 N -760 -30 -250 -30 {lab=Vbp}
-N -370 -60 -370 -30 {lab=Vbp}
-N -490 -60 -490 -30 {lab=Vbp}
-N -610 -60 -610 -30 {lab=Vbp}
-N -730 -60 -730 -30 {lab=Vbp}
-N -170 -80 -170 -60 {lab=VP}
-N -790 -80 -170 -80 {lab=VP}
-N -790 -80 -790 -60 {lab=VP}
-N -670 -80 -670 -60 {lab=VP}
-N -550 -80 -550 -60 {lab=VP}
-N -430 -80 -430 -60 {lab=VP}
-N -310 -80 -310 -60 {lab=VP}
+N -310 -60 -310 -30 {lab=Vbp}
+N -430 -60 -430 -30 {lab=Vbp}
+N -550 -60 -550 -30 {lab=Vbp}
+N -670 -60 -670 -30 {lab=Vbp}
+N -730 -80 -730 -60 {lab=VP}
+N -610 -80 -610 -60 {lab=VP}
+N -490 -80 -490 -60 {lab=VP}
+N -370 -80 -370 -60 {lab=VP}
+N -250 -80 -250 -60 {lab=VP}
 N -310 -30 -310 60 {lab=Vbp}
 N -430 -30 -430 60 {lab=Vbp}
 N -550 -30 -550 60 {lab=Vbp}
@@ -55,6 +51,11 @@ N -370 60 -370 80 {lab=Res}
 N -490 60 -490 80 {lab=Res}
 N -610 60 -610 80 {lab=Res}
 N -730 60 -730 80 {lab=Res}
+N -150 30 -120 30 {lab=Vbn}
+N -90 -80 -90 -60 {lab=VP}
+N -170 -80 -90 -80 {lab=VP}
+N -790 -60 -790 -30 {lab=Vbp}
+N -730 -80 -170 -80 {lab=VP}
 C {madvlsi/nmos3.sym} -120 60 1 0 {name=M3
 L=\{bias_len\}
 W=\{bias_wid\}
@@ -86,7 +87,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {lab_pin.sym} -810 30 0 0 {name=p5 sig_type=std_logic lab=Vvco}
-C {lab_pin.sym} -170 60 3 0 {name=p7 sig_type=std_logic lab=VN}
+C {lab_pin.sym} -90 60 3 0 {name=p7 sig_type=std_logic lab=VN}
 C {madvlsi/nmos3.sym} -220 60 1 0 {name=M1
 L=\{bias_len\}
 W=\{bias_wid\}
@@ -117,7 +118,7 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {lab_pin.sym} -170 -80 1 0 {name=p31 sig_type=std_logic lab=VP}
+C {lab_pin.sym} -90 -60 2 0 {name=p31 sig_type=std_logic lab=VP}
 C {lab_pin.sym} -810 80 0 0 {name=p32 sig_type=std_logic lab=Res}
 C {inverter.sym} 890 0 0 0 {name=X2}
 C {inverter.sym} 950 0 0 0 {name=X3}
@@ -454,3 +455,8 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
+C {code_shown.sym} -700 -300 0 0 {name=SPICE1 only_toplevel=false value="
+.param bias_wid=0.5 bias_len=0.5
+.param csi_wid=1 csi_len=0.15
+.param inv_wid=0.5 inv_len=0.15
+"}

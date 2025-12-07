@@ -327,3 +327,7 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
+C {code_shown.sym} -480 -180 0 0 {name=SPICE1 only_toplevel=false value="
+.param inv_wid=0.5 inv_len=0.15
+.param pump_wid=0.5 pump_len=0.5
+"}

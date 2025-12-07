@@ -12,8 +12,10 @@ N 270 -180 300 -180 {lab=A}
 N 270 -140 300 -140 {lab=VN}
 N 270 -100 300 -100 {lab=Y}
 N 110 -190 110 -90 {lab=Y}
+N 30 -140 80 -140 {lab=A}
+N 80 -160 80 -120 {lab=A}
+N 80 -120 80 -60 {lab=A}
 N 30 -60 80 -60 {lab=A}
-N 80 -160 80 -60 {lab=A}
 C {madvlsi/pmos3.sym} 80 -190 3 0 {name=M2
 L=\{inv_len\}
 W=\{inv_wid\}
@@ -54,5 +56,8 @@ C {opin.sym} 300 -100 0 0 {name=p11 lab=Y}
 C {iopin.sym} 300 -140 0 0 {name=p12 lab=VN}
 C {lab_pin.sym} 30 -190 0 0 {name=p2 sig_type=std_logic lab=VP}
 C {lab_pin.sym} 30 -90 0 0 {name=p13 sig_type=std_logic lab=VN}
-C {lab_pin.sym} 30 -60 0 0 {name=p14 sig_type=std_logic lab=A}
+C {lab_pin.sym} 30 -140 0 0 {name=p14 sig_type=std_logic lab=A}
 C {lab_pin.sym} 110 -140 2 0 {name=p1 sig_type=std_logic lab=Y}
+C {code_shown.sym} 140 -60 0 0 {name=SPICE1 only_toplevel=false value="
+.param inv_wid=0.5 inv_len=0.15
+"}
