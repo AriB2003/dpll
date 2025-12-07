@@ -80,7 +80,7 @@ C {lab_pin.sym} 20 -130 1 0 {name=p1 sig_type=std_logic lab=VP}
 C {lab_pin.sym} 20 130 3 0 {name=p2 sig_type=std_logic lab=VN}
 C {lab_pin.sym} -10 100 0 0 {name=p3 sig_type=std_logic lab=Vbnin}
 C {lab_pin.sym} -10 -100 0 0 {name=p4 sig_type=std_logic lab=Vbpin}
-C {lab_pin.sym} -70 -40 0 0 {name=p5 sig_type=std_logic lab=inc}
+C {lab_pin.sym} -10 -40 0 0 {name=p5 sig_type=std_logic lab=inc}
 C {lab_pin.sym} 40 0 2 0 {name=p6 sig_type=std_logic lab=Y}
 C {iopin.sym} -260 -30 2 0 {name=p8 lab=VN}
 C {iopin.sym} -260 -50 2 0 {name=p9 lab=VP}
@@ -97,6 +97,3 @@ C {lab_pin.sym} -240 70 2 0 {name=p18 sig_type=std_logic lab=Vbnin}
 C {ipin.sym} -260 10 0 0 {name=p19 lab=dec}
 C {lab_pin.sym} -240 10 2 0 {name=p20 sig_type=std_logic lab=dec}
 C {lab_pin.sym} -10 40 0 0 {name=p21 sig_type=std_logic lab=dec}
-C {inverter.sym} -100 -40 0 0 {name=X1}
-C {lab_pin.sym} -40 -20 2 0 {name=p22 sig_type=std_logic lab=VN}
-C {lab_pin.sym} -40 -60 2 0 {name=p23 sig_type=std_logic lab=VP}
