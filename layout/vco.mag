@@ -1,6 +1,8 @@
 magic
 tech sky130A
-timestamp 1765143928
+timestamp 1765262567
+<< error_s >>
+rect 2785 505 2875 600
 << nwell >>
 rect 120 400 2895 455
 rect -25 300 2895 400
@@ -715,11 +717,11 @@ timestamp 1765140998
 transform 1 0 2575 0 1 0
 box -125 -85 85 455
 use inv  inv_0
-timestamp 1765141373
+timestamp 1765238977
 transform 1 0 2690 0 1 0
-box -40 -80 85 400
+box -40 -220 85 600
 use inv  inv_1
-timestamp 1765141373
+timestamp 1765238977
 transform 1 0 2810 0 1 0
-box -40 -80 85 400
+box -40 -220 85 600
 << end >>
