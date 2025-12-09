@@ -1,19 +1,49 @@
 magic
 tech sky130A
-timestamp 1765148092
+timestamp 1765308392
 << nwell >>
+rect 3735 545 3880 640
+rect -480 220 -430 240
 rect -25 220 10 240
+rect -480 200 -460 220
 << locali >>
+rect -480 220 -430 240
 rect -25 220 10 240
+rect -480 200 -460 220
+rect -430 140 -390 145
+rect -430 120 -420 140
+rect -400 120 -390 140
+rect -430 115 -390 120
+rect -845 -50 -805 -45
+rect -845 -70 -835 -50
+rect -815 -70 -805 -50
+rect -845 -75 -805 -70
+<< viali >>
+rect -420 120 -400 140
+rect -835 -70 -815 -50
 << metal1 >>
 rect -30 170 965 190
+rect -430 140 -390 145
+rect -430 120 -420 140
+rect -400 120 -390 140
 rect -75 120 50 140
+rect -430 115 -390 120
+rect -845 -50 -805 -45
+rect -845 -70 -835 -50
+rect -815 -70 -805 -50
+rect -430 -65 -410 115
+rect -845 -75 -805 -70
+rect -460 -85 -410 -65
+use hpd  hpd_0
+timestamp 1765308268
+transform 1 0 -3005 0 1 -1165
+box 175 945 2565 1810
 use ipump  ipump_0
 timestamp 1765147879
 transform 1 0 -90 0 1 40
 box -360 -80 85 400
 use vco  vco_0
-timestamp 1765143928
+timestamp 1765262567
 transform 1 0 985 0 1 40
-box -1000 -85 2895 455
+box -1000 -220 2895 600
 << end >>

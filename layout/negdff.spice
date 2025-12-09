@@ -1,0 +1,43 @@
+* SPICE3 file created from negdff.ext - technology: sky130A
+
+.subckt csrl a_10_n330# w_n590_410# a_n400_n180# a_n470_580# a_n400_760# a_n300_n150#
++ a_n220_n180# a_n400_110#
+X0 a_n120_580# a_n120_870# a_n470_140# a_10_n330# sky130_fd_pr__nfet_01v8 ad=0.175 pd=1.7 as=0.1 ps=0.9 w=0.5 l=0.5
+X1 a_n470_n150# a_n220_n180# a_n300_n150# a_10_n330# sky130_fd_pr__nfet_01v8 ad=0.1 pd=0.9 as=0.1475 ps=1.275 w=0.5 l=0.5
+X2 a_n300_580# a_n400_110# a_n470_580# w_n590_410# sky130_fd_pr__pfet_01v8 ad=0.1 pd=0.9 as=0.24625 ps=2.5 w=0.5 l=0.5
+X3 a_n470_140# a_n220_n180# a_n300_n150# a_10_n330# sky130_fd_pr__nfet_01v8 ad=0.1 pd=0.9 as=0.1475 ps=1.275 w=0.5 l=0.5
+X4 a_n470_580# a_n120_870# a_n120_580# w_n590_410# sky130_fd_pr__pfet_01v8 ad=0.24625 pd=2.5 as=0.1 ps=0.9 w=0.5 l=0.5
+X5 a_n300_n150# a_n400_n180# a_n470_n150# a_10_n330# sky130_fd_pr__nfet_01v8 ad=0.19665 pd=1.7 as=0.175 ps=1.7 w=0.5 l=0.5
+X6 a_n120_580# a_n220_n180# a_n300_580# w_n590_410# sky130_fd_pr__pfet_01v8 ad=0.1 pd=0.9 as=0.1 ps=0.9 w=0.5 l=0.5
+X7 a_n300_870# a_n400_760# a_n470_580# w_n590_410# sky130_fd_pr__pfet_01v8 ad=0.1 pd=0.9 as=0.24625 ps=2.5 w=0.5 l=0.5
+X8 a_n120_870# a_n120_580# a_n470_n150# a_10_n330# sky130_fd_pr__nfet_01v8 ad=0.175 pd=1.7 as=0.1 ps=0.9 w=0.5 l=0.5
+X9 a_n470_580# a_n120_580# a_n120_870# w_n590_410# sky130_fd_pr__pfet_01v8 ad=0.24625 pd=2.5 as=0.1 ps=0.9 w=0.5 l=0.5
+X10 a_n300_n150# a_n400_110# a_n470_140# a_10_n330# sky130_fd_pr__nfet_01v8 ad=0.19665 pd=1.7 as=0.175 ps=1.7 w=0.5 l=0.5
+X11 a_n120_870# a_n220_n180# a_n300_870# w_n590_410# sky130_fd_pr__pfet_01v8 ad=0.1 pd=0.9 as=0.1 ps=0.9 w=0.5 l=0.5
+.ends
+
+.subckt ncsrl a_n120_n280# a_n220_n310# a_n40_n520# a_n300_450# a_n120_10# w_n590_280#
++ a_n470_n280#
+X0 a_n120_n280# a_n120_10# a_n470_740# w_n590_280# sky130_fd_pr__pfet_01v8 ad=0.175 pd=1.7 as=0.1 ps=0.9 w=0.5 l=0.5
+X1 a_n470_740# a_n220_n310# a_n300_450# w_n590_280# sky130_fd_pr__pfet_01v8 ad=0.1 pd=0.9 as=0.1475 ps=1.275 w=0.5 l=0.5
+X2 a_n120_10# a_n220_n310# a_n300_10# a_n40_n520# sky130_fd_pr__nfet_01v8 ad=0.1 pd=0.9 as=0.1 ps=0.9 w=0.5 l=0.5
+X3 a_n300_n280# a_n400_n310# a_n470_n280# a_n40_n520# sky130_fd_pr__nfet_01v8 ad=0.1 pd=0.9 as=0.24625 ps=2.5 w=0.5 l=0.5
+X4 a_n470_n280# a_n120_n280# a_n120_10# a_n40_n520# sky130_fd_pr__nfet_01v8 ad=0.24625 pd=2.5 as=0.1 ps=0.9 w=0.5 l=0.5
+X5 a_n300_10# a_n400_n20# a_n470_n280# a_n40_n520# sky130_fd_pr__nfet_01v8 ad=0.1 pd=0.9 as=0.24625 ps=2.5 w=0.5 l=0.5
+X6 a_n300_450# a_n400_n20# a_n470_450# w_n590_280# sky130_fd_pr__pfet_01v8 ad=0.19665 pd=1.7 as=0.175 ps=1.7 w=0.5 l=0.5
+X7 a_n470_n280# a_n120_10# a_n120_n280# a_n40_n520# sky130_fd_pr__nfet_01v8 ad=0.24625 pd=2.5 as=0.1 ps=0.9 w=0.5 l=0.5
+X8 a_n120_10# a_n120_n280# a_n470_450# w_n590_280# sky130_fd_pr__pfet_01v8 ad=0.175 pd=1.7 as=0.1 ps=0.9 w=0.5 l=0.5
+X9 a_n470_450# a_n220_n310# a_n300_450# w_n590_280# sky130_fd_pr__pfet_01v8 ad=0.1 pd=0.9 as=0.1475 ps=1.275 w=0.5 l=0.5
+X10 a_n300_450# a_n400_630# a_n470_740# w_n590_280# sky130_fd_pr__pfet_01v8 ad=0.19665 pd=1.7 as=0.175 ps=1.7 w=0.5 l=0.5
+X11 a_n120_n280# a_n220_n310# a_n300_n280# a_n40_n520# sky130_fd_pr__nfet_01v8 ad=0.1 pd=0.9 as=0.1 ps=0.9 w=0.5 l=0.5
+.ends
+
+
+* Top level circuit negdff
+
+Xcsrl_0 VSUBS w_170_840# m1_170_60# m1_n230_960# m1_170_60# m1_130_n60# m1_170_450#
++ li_170_450# csrl
+Xncsrl_0 m1_170_60# m1_170_450# VSUBS m1_n230_960# li_170_450# w_170_840# m1_130_n60#
++ ncsrl
+.end
+
