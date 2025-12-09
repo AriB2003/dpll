@@ -258,3 +258,6 @@ C {devices/opin.sym} 670 -620 0 0 {name=p5 lab=nQ}
 C {devices/ipin.sym} 90 -40 0 0 {name=p6 lab=PHI}
 C {devices/iopin.sym} 90 -660 2 0 {name=p7 lab=VP}
 C {devices/iopin.sym} 90 -80 2 0 {name=p8 lab=VN}
+C {code_shown.sym} 730 -530 0 0 {name=SPICE1 only_toplevel=false value="
+.param dff_wid=0.5 dff_len=0.5
+"}

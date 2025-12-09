@@ -1,10 +1,9 @@
 magic
 tech sky130A
-timestamp 1765141373
+timestamp 1765238977
 << nwell >>
-rect -25 300 65 400
-rect -40 295 65 300
-rect -40 140 85 295
+rect -25 505 65 600
+rect -40 140 85 505
 << nmos >>
 rect 15 5 30 55
 << pmos >>
@@ -34,19 +33,19 @@ rect 40 20 60 40
 rect -15 240 5 260
 rect 40 240 60 260
 << psubdiff >>
-rect 0 -40 50 -25
-rect 0 -65 15 -40
-rect 35 -65 50 -40
-rect 0 -80 50 -65
+rect -5 -180 45 -165
+rect -5 -205 10 -180
+rect 30 -205 45 -180
+rect -5 -220 45 -205
 << nsubdiff >>
-rect -5 365 45 380
-rect -5 340 10 365
-rect 30 340 45 365
-rect -5 325 45 340
+rect -5 565 45 580
+rect -5 540 10 565
+rect 30 540 45 565
+rect -5 525 45 540
 << psubdiffcont >>
-rect 15 -65 35 -40
+rect 10 -205 30 -180
 << nsubdiffcont >>
-rect 10 340 30 365
+rect 10 540 30 565
 << poly >>
 rect 15 275 30 290
 rect 15 160 30 225
@@ -59,15 +58,15 @@ rect 15 -10 30 5
 << polycont >>
 rect -10 130 10 150
 << locali >>
-rect 5 365 35 375
-rect 5 340 10 365
-rect 30 340 35 365
-rect 5 330 35 340
+rect 5 565 35 575
+rect 5 540 10 565
+rect 30 540 35 565
+rect 5 530 35 540
 rect -20 260 10 275
 rect -20 240 -15 260
 rect 5 240 10 260
 rect -20 225 10 240
-rect 35 260 65 275
+rect 35 260 65 270
 rect 35 240 40 260
 rect 60 240 65 260
 rect 35 225 65 240
@@ -86,17 +85,17 @@ rect -20 5 10 20
 rect 35 40 65 55
 rect 35 20 40 40
 rect 60 20 65 40
-rect 35 5 65 20
-rect 10 -40 40 -30
-rect 10 -65 15 -40
-rect 35 -65 40 -40
-rect 10 -75 40 -65
+rect 35 10 65 20
+rect 5 -180 35 -170
+rect 5 -205 10 -180
+rect 30 -205 35 -180
+rect 5 -215 35 -205
 << viali >>
 rect 40 240 60 260
 rect 40 130 60 150
 rect 40 20 60 40
 << metal1 >>
-rect 35 260 65 275
+rect 35 260 65 270
 rect 35 240 40 260
 rect 60 240 65 260
 rect 35 150 65 240
@@ -105,5 +104,5 @@ rect 60 130 65 150
 rect 35 40 65 130
 rect 35 20 40 40
 rect 60 20 65 40
-rect 35 5 65 20
+rect 35 10 65 20
 << end >>

@@ -13,31 +13,20 @@ N -160 -20 -140 -20 {lab=B}
 N 180 70 180 240 {lab=VN}
 N 180 -240 180 -70 {lab=VP}
 N 300 -240 300 240 {lab=Y}
-N 210 -40 210 40 {lab=nB}
-N 180 -20 210 -20 {lab=nB}
-N 270 210 290 210 {lab=A}
-N 290 -40 290 210 {lab=A}
-N 270 -40 290 -40 {lab=A}
-N 270 30 270 40 {lab=nA}
-N 270 20 270 30 {lab=nA}
-N 180 20 270 20 {lab=nA}
-N 160 180 290 180 {lab=A}
-N 210 -210 240 20 {lab=nA}
-N 210 210 230 40 {lab=B}
-N 230 -10 230 40 {lab=B}
-N 230 -10 270 -140 {lab=B}
-N 270 -210 270 -140 {lab=B}
-N 160 -190 270 -190 {lab=B}
-N 160 20 160 130 {lab=nA}
-N 160 20 180 20 {lab=nA}
-N 100 180 160 180 {lab=A}
-N 100 130 100 180 {lab=A}
+N 180 -20 210 -20 {lab=B}
+N 270 210 290 210 {lab=nA}
+N 290 -40 290 210 {lab=nA}
+N 270 -40 290 -40 {lab=nA}
+N 160 180 290 180 {lab=nA}
+N 210 210 230 40 {lab=nB}
+N 230 -10 230 40 {lab=nB}
+N 230 -10 270 -140 {lab=nB}
+N 270 -210 270 -140 {lab=nB}
+N 160 -190 270 -190 {lab=nB}
+N 160 20 180 20 {lab=A}
 N 130 240 180 240 {lab=VN}
 N 130 150 130 240 {lab=VN}
-N 160 -20 180 -20 {lab=nB}
-N 160 -130 160 -20 {lab=nB}
-N 100 -190 100 -130 {lab=B}
-N 100 -190 160 -190 {lab=B}
+N 160 -20 180 -20 {lab=B}
 N 130 -240 130 -150 {lab=VP}
 N 130 -240 180 -240 {lab=VP}
 N 110 -110 130 110 {lab=VP}
@@ -46,6 +35,17 @@ N 110 -170 130 -170 {lab=VP}
 N 110 110 130 -110 {lab=VN}
 N 110 110 110 160 {lab=VN}
 N 110 160 130 160 {lab=VN}
+N 210 -40 270 40 {lab=B}
+N 210 -40 210 -20 {lab=B}
+N 210 40 230 -90 {lab=A}
+N 210 -210 230 -90 {lab=A}
+N 180 20 210 40 {lab=A}
+N 160 130 160 180 {lab=nA}
+N 160 -190 160 -130 {lab=nB}
+N 100 -130 100 -20 {lab=B}
+N 100 -20 160 -20 {lab=B}
+N 100 20 100 130 {lab=A}
+N 100 20 160 20 {lab=A}
 C {inverter.sym} 70 130 0 0 {name=X2}
 C {lab_pin.sym} 130 240 0 0 {name=p4 sig_type=std_logic lab=VN}
 C {iopin.sym} -160 -60 2 0 {name=p8 lab=VN}
@@ -56,11 +56,11 @@ C {lab_pin.sym} -140 -80 2 0 {name=p14 sig_type=std_logic lab=VP}
 C {lab_pin.sym} -140 -60 2 0 {name=p15 sig_type=std_logic lab=VN}
 C {lab_pin.sym} -140 -40 2 0 {name=p16 sig_type=std_logic lab=A}
 C {lab_pin.sym} -160 0 0 0 {name=p17 sig_type=std_logic lab=Y}
-C {lab_pin.sym} 100 130 0 0 {name=p1 sig_type=std_logic lab=A}
+C {lab_pin.sym} 160 20 1 0 {name=p1 sig_type=std_logic lab=A}
 C {ipin.sym} -160 -20 0 0 {name=p2 lab=B}
 C {lab_pin.sym} -140 -20 2 0 {name=p5 sig_type=std_logic lab=B}
 C {inverter.sym} 70 -130 0 0 {name=X1}
-C {lab_pin.sym} 100 -130 0 0 {name=p11 sig_type=std_logic lab=B}
+C {lab_pin.sym} 160 -20 1 0 {name=p11 sig_type=std_logic lab=B}
 C {madvlsi/nmos3.sym} 270 70 1 0 {name=M1
 L=\{xor_len\}
 W=\{xor_wid\}
@@ -183,5 +183,8 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {lab_pin.sym} 160 -20 0 0 {name=p28 sig_type=std_logic lab=nB}
-C {lab_pin.sym} 160 20 0 0 {name=p29 sig_type=std_logic lab=nA}
+C {lab_pin.sym} 160 -190 1 0 {name=p28 sig_type=std_logic lab=nB}
+C {lab_pin.sym} 160 180 3 0 {name=p29 sig_type=std_logic lab=nA}
+C {code_shown.sym} 350 -190 0 0 {name=SPICE1 only_toplevel=false value="
+.param xor_wid=0.5 xor_len=0.15
+"}
