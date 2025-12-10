@@ -1,13 +1,23 @@
 magic
 tech sky130A
-timestamp 1765328216
+timestamp 1765331190
+<< error_s >>
+rect -110 295 85 440
+rect -340 140 85 295
+rect -320 5 -285 55
+rect -270 5 -235 55
+rect -205 5 -170 55
+rect -155 5 -120 55
+rect -90 5 -45 55
+rect -30 5 15 55
+rect 30 5 65 55
+rect -90 -90 -75 5
+rect 50 -90 65 5
+rect -90 -140 -45 -90
+rect -30 -140 -5 -90
+rect 10 -140 65 -90
 << nwell >>
-rect -340 530 35 605
-rect -340 465 75 530
-rect -340 285 85 465
-rect -310 275 -290 285
-rect -205 275 -175 285
-rect -165 140 85 285
+rect -110 140 85 440
 << nmos >>
 rect -45 5 -30 55
 rect 15 5 30 55
@@ -54,20 +64,6 @@ rect 35 -120 55 -100
 << pdiffc >>
 rect -85 385 -65 405
 rect 40 240 60 260
-<< psubdiff >>
-rect -20 -220 30 -205
-rect -20 -245 -5 -220
-rect 15 -245 30 -220
-rect -20 -260 30 -245
-<< nsubdiff >>
-rect 5 495 55 510
-rect 5 470 20 495
-rect 40 470 55 495
-rect 5 455 55 470
-<< psubdiffcont >>
-rect -5 -245 15 -220
-<< nsubdiffcont >>
-rect 20 470 40 495
 << poly >>
 rect -45 420 -30 435
 rect 15 420 30 435
@@ -121,10 +117,6 @@ rect -85 75 -65 95
 rect -55 -65 -35 -45
 rect 0 -65 20 -45
 << locali >>
-rect 15 495 45 505
-rect 15 470 20 495
-rect 40 470 45 495
-rect 15 460 45 470
 rect -90 405 -60 420
 rect -90 395 -85 405
 rect -125 385 -85 395
@@ -192,10 +184,6 @@ rect 25 -120 35 -100
 rect 55 -120 65 -100
 rect 25 -125 65 -120
 rect -100 -140 -60 -125
-rect -10 -220 20 -210
-rect -10 -245 -5 -220
-rect 15 -245 20 -220
-rect -10 -255 20 -245
 << viali >>
 rect 0 -65 20 -45
 << metal1 >>
@@ -206,11 +194,11 @@ rect -5 -65 0 -45
 rect 20 -65 25 -45
 rect -5 -75 25 -65
 use inv  inv_0
-timestamp 1765328216
+timestamp 1765330272
 transform 1 0 -185 0 1 0
-box -40 -280 85 600
+box -40 -10 85 295
 use inv  inv_1
-timestamp 1765328216
+timestamp 1765330272
 transform 1 0 -300 0 1 0
-box -40 -280 85 600
+box -40 -10 85 295
 << end >>

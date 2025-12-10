@@ -1,8 +1,7 @@
 magic
 tech sky130A
-timestamp 1765307294
+timestamp 1765332222
 << nwell >>
-rect -250 555 -105 670
 rect -265 480 -145 500
 rect -245 420 -235 440
 << locali >>
@@ -14,11 +13,11 @@ rect -275 225 -195 245
 rect -245 30 -235 50
 rect -445 -30 -235 -10
 use csrl  csrl_0
-timestamp 1765307270
+timestamp 1765332165
 transform 1 0 -330 0 1 30
-box -295 -165 85 640
+box -255 -105 85 505
 use ncsrl  ncsrl_0
-timestamp 1765307252
+timestamp 1765332144
 transform 1 0 0 0 1 95
-box -295 -260 85 605
+box -255 -155 85 450
 << end >>
