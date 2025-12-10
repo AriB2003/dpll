@@ -1,15 +1,15 @@
-timestamp 1765340971
+timestamp 1765346567
 version 8.3
 tech sky130A
 style ngspice()
 scale 1000 1 500000
 resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use xor xor_1 1 0 4730 0 1 2410
+use xor xor_0 1 0 3900 0 1 2410
 use posdff posdff_0 1 0 1750 0 1 2220
 use negdff negdff_0 1 0 2410 0 1 2220
-use xor xor_0 1 0 3900 0 1 2410
-use xor xor_1 1 0 4730 0 1 2410
-use inv inv_0 1 0 430 0 1 2410
 use inv inv_1 1 0 4960 0 1 2410
+use inv inv_0 1 0 430 0 1 2410
 node "m1_1880_2160#" 0 26.8416 1880 2160 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2400 200 0 0 0 0 0 0 0 0 0 0
 node "m1_1920_2280#" 0 10.856 1920 2280 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 800 120 0 0 0 0 0 0 0 0 0 0
 node "m1_1860_2670#" 1 57.3656 1860 2670 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6400 400 0 0 0 0 0 0 0 0 0 0
@@ -39,450 +39,448 @@ node "w_580_3080#" 8231 38.1 580 3080 nw 0 0 0 0 12700 740 0 0 0 0 0 0 0 0 0 0 0
 node "w_1520_3170#" 14250 72 1520 3170 nw 0 0 0 0 24000 1280 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "w_580_3270#" 43825 1904.65 580 3270 nw 0 0 0 0 626900 10960 0 0 6000 320 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6800 380 0 0 0 0 0 0 0 0 0 0 0 0
 substrate "a_4200_2240#" 0 0 4200 2240 ppd 0 0 0 0 0 0 0 0 0 0 6000 320 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6800 380 0 0 0 0 0 0 0 0 0 0 0 0
+cap "w_580_3270#" "li_1860_2670#" 0.281651
 cap "li_3500_2650#" "w_580_3270#" 55.1249
-cap "li_560_2670#" "li_1860_2670#" 0.858586
-cap "a_460_2990#" "li_460_3180#" 98.198
-cap "a_4100_2650#" "m1_1880_2160#" 11.7333
-cap "li_3740_2080#" "li_4610_3160#" 7.88731
-cap "li_3780_3160#" "li_4030_2160#" 1.80668
-cap "li_460_3180#" "w_1520_3170#" 0.541849
-cap "a_460_2990#" "li_4860_2670#" 2.2815
-cap "a_4100_2650#" "m1_1860_2670#" 1.35385
-cap "li_380_2140#" "m1_1880_2160#" 1.20004
-cap "li_3730_3180#" "li_3780_3160#" 25.1384
-cap "li_400_2890#" "li_460_3180#" 12.1067
-cap "a_4100_2650#" "li_3780_3160#" 5.03207
-cap "w_580_3270#" "li_3280_2150#" 0.223579
-cap "li_1860_2670#" "m1_1920_3060#" 0.0536582
-cap "li_4030_2160#" "li_4610_3160#" 0.468775
-cap "a_460_2990#" "li_400_2890#" 26.9927
-cap "li_560_2670#" "w_620_2750#" 0.551726
-cap "li_460_3180#" "w_580_3270#" 0.488927
-cap "li_3500_2650#" "li_3780_3160#" 0.393587
-cap "li_460_3180#" "m1_1520_3170#" 0.156754
-cap "m1_1880_2160#" "li_3280_2150#" 0.0123227
-cap "li_4860_2670#" "w_580_3270#" 1.62727
-cap "a_460_2990#" "w_580_3270#" 217.553
-cap "a_460_2990#" "m1_1520_3170#" 241.778
-cap "a_4100_2650#" "a_460_2300#" 0.00717003
-cap "m1_1520_3170#" "w_1520_3170#" 15.468
-cap "m1_1880_2160#" "m1_1920_2280#" 6.76923
-cap "li_460_3180#" "m1_1860_2670#" 1.45455
-cap "li_3740_2080#" "li_4030_2160#" 244.688
-cap "a_460_2300#" "li_380_2140#" 39.9392
-cap "li_3500_2650#" "m1_1920_3060#" 1.3037
-cap "li_400_2890#" "m1_1520_3170#" 0.0478158
-cap "li_560_2670#" "li_460_3180#" 35.6901
-cap "li_3740_2080#" "li_3730_3180#" 0.733879
-cap "m1_1860_2670#" "m1_1920_2280#" 2.2
-cap "li_3740_2080#" "a_4100_2650#" 70.4594
-cap "a_460_2990#" "li_3780_3160#" 31.849
-cap "w_580_3270#" "m1_1520_3170#" 0.123402
 cap "li_560_2670#" "a_460_2990#" 0.285446
-cap "li_1860_2670#" "a_4100_2650#" 0.798122
-cap "w_1920_3060#" "m1_1920_3060#" 0.5156
-cap "a_4100_2650#" "w_3270_2690#" 2.28079
-cap "a_4100_2650#" "li_4030_2160#" 45.8609
-cap "li_4860_2670#" "li_4610_3160#" 3.20084
-cap "li_460_3180#" "m1_1920_3060#" 0.012565
-cap "a_460_2990#" "li_4610_3160#" 2.16092
-cap "li_460_3180#" "a_460_2300#" 1.74794
-cap "li_3730_3180#" "a_4100_2650#" 8.78744
-cap "li_3780_3160#" "w_580_3270#" 123.168
-cap "a_460_2300#" "m1_1920_2280#" 1.30797
-cap "li_560_2670#" "w_580_3270#" 0.0704128
-cap "a_460_2990#" "a_460_2300#" 12.4048
-cap "a_460_2990#" "m1_1920_3060#" 1.30603
-cap "m1_1860_2670#" "m1_1520_3170#" 12.0784
-cap "a_4100_2650#" "w_4100_2690#" 6.3678
-cap "a_4100_2650#" "li_380_2140#" 1.0762
-cap "li_3500_2650#" "li_3730_3180#" 103.4
-cap "m1_1880_2160#" "m1_1860_2670#" 3.38462
-cap "li_3500_2650#" "a_4100_2650#" 56.1254
-cap "li_1860_2670#" "w_1920_3060#" 0.133564
-cap "li_400_2890#" "m1_1920_3060#" 0.00573101
-cap "li_4610_3160#" "w_580_3270#" 97.9867
-cap "li_3740_2080#" "li_4860_2670#" 2.64706
-cap "li_3740_2080#" "a_460_2990#" 0.317922
-cap "li_4030_2160#" "li_3280_2150#" 2.35388
-cap "li_3730_3180#" "li_3280_2150#" 1.72957
-cap "li_1860_2670#" "m1_1920_2280#" 0.0536582
+cap "li_560_2670#" "w_620_2750#" 0.551726
+cap "li_460_3180#" "w_1520_3170#" 0.541849
+cap "w_580_3080#" "li_460_3180#" 11.7443
 cap "a_460_2990#" "li_1860_2670#" 0.180105
-cap "a_4100_2650#" "li_3280_2150#" 307.06
-cap "m1_1920_3060#" "m1_1520_3170#" 7.33333
-cap "li_1860_2670#" "w_1520_3170#" 0.739226
-cap "li_4860_2670#" "li_4030_2160#" 0.254719
-cap "li_460_3180#" "w_580_3080#" 11.7443
-cap "a_460_2990#" "li_4030_2160#" 3.62556
-cap "li_3740_2080#" "w_580_3270#" 4.71353
-cap "li_3500_2650#" "li_3280_2150#" 1.47197
-cap "a_460_2990#" "li_3730_3180#" 267.667
-cap "a_4100_2650#" "m1_1920_2280#" 11.7333
-cap "li_460_3180#" "w_620_2750#" 1.34609
-cap "li_3780_3160#" "li_4610_3160#" 2.71364
-cap "a_460_2990#" "a_4100_2650#" 76.288
-cap "a_460_2990#" "w_580_3080#" 3.09117
-cap "m1_1920_3060#" "m1_1860_2670#" 2.2
-cap "li_1860_2670#" "w_580_3270#" 0.281651
-cap "li_560_2670#" "a_460_2300#" 0.436998
-cap "li_380_2140#" "m1_1920_2280#" 0.00169109
+cap "w_1920_3060#" "li_460_3180#" 0.0161292
 cap "li_3500_2650#" "a_460_2990#" 19.4533
-cap "li_1860_2670#" "m1_1520_3170#" 0.260422
-cap "li_4030_2160#" "w_580_3270#" 11.1118
-cap "li_1860_2670#" "m1_1880_2160#" 0.0938294
-cap "li_3730_3180#" "w_580_3270#" 57.0509
-cap "li_460_3180#" "w_1920_3060#" 0.0161292
-cap "a_4100_2650#" "w_580_3270#" 13.1243
-cap "li_400_2890#" "li_380_2140#" 7.53144
+cap "li_1860_2670#" "a_4100_2650#" 0.798122
+cap "li_3500_2650#" "a_4100_2650#" 56.1254
+cap "li_4860_2670#" "li_4030_2160#" 0.254719
+cap "li_4860_2670#" "w_580_3270#" 1.62727
+cap "m1_1920_3060#" "m1_1520_3170#" 7.33333
+cap "li_560_2670#" "li_460_3180#" 35.6901
+cap "w_3270_2690#" "a_4100_2650#" 2.28079
+cap "m1_1860_2670#" "m1_1520_3170#" 12.0784
+cap "li_4860_2670#" "a_460_2990#" 2.2815
+cap "li_3740_2080#" "li_3730_3180#" 0.733879
+cap "li_380_2140#" "a_460_2300#" 39.9392
+cap "li_3280_2150#" "li_4030_2160#" 2.35388
+cap "li_3280_2150#" "w_580_3270#" 0.223579
 cap "li_3740_2080#" "li_3780_3160#" 5.9691
-cap "li_3730_3180#" "m1_1520_3170#" 1.16814
+cap "li_400_2890#" "li_380_2140#" 7.53144
+cap "li_3740_2080#" "li_4610_3160#" 7.88731
+cap "li_380_2140#" "a_4100_2650#" 1.0762
+cap "li_3280_2150#" "a_460_2990#" 14.2737
+cap "li_3280_2150#" "a_4100_2650#" 307.06
+cap "li_3500_2650#" "li_3730_3180#" 103.4
+cap "a_460_2990#" "a_460_2300#" 12.4048
+cap "li_3500_2650#" "li_3780_3160#" 0.393587
+cap "w_580_3270#" "li_4030_2160#" 11.1118
+cap "a_4100_2650#" "a_460_2300#" 0.00717003
+cap "m1_1920_2280#" "m1_1880_2160#" 6.76923
+cap "m1_1860_2670#" "m1_1880_2160#" 3.38462
+cap "m1_1520_3170#" "w_1520_3170#" 15.468
+cap "a_460_2990#" "li_4030_2160#" 3.62556
+cap "w_580_3270#" "a_460_2990#" 217.553
+cap "li_4030_2160#" "a_4100_2650#" 45.8609
+cap "w_580_3270#" "a_4100_2650#" 13.1243
+cap "li_400_2890#" "a_460_2990#" 26.9927
+cap "li_4860_2670#" "li_4610_3160#" 3.20084
+cap "li_460_3180#" "a_460_2300#" 1.74794
+cap "a_460_2990#" "a_4100_2650#" 76.288
+cap "li_1860_2670#" "m1_1520_3170#" 0.260422
+cap "li_3280_2150#" "li_3730_3180#" 1.72957
+cap "w_580_3270#" "li_460_3180#" 0.488927
+cap "m1_1860_2670#" "m1_1920_3060#" 2.2
+cap "m1_1920_2280#" "m1_1860_2670#" 2.2
+cap "li_460_3180#" "li_400_2890#" 12.1067
+cap "w_620_2750#" "li_460_3180#" 1.34609
+cap "li_460_3180#" "a_460_2990#" 98.198
+cap "w_580_3270#" "li_3730_3180#" 57.0509
+cap "a_460_2990#" "li_3730_3180#" 267.667
+cap "a_4100_2650#" "li_3730_3180#" 8.78744
+cap "li_1860_2670#" "m1_1880_2160#" 0.0938294
+cap "li_3780_3160#" "li_4030_2160#" 1.80668
+cap "w_580_3270#" "li_3780_3160#" 123.168
+cap "li_4610_3160#" "li_4030_2160#" 0.468775
+cap "li_4610_3160#" "w_580_3270#" 97.9867
+cap "a_460_2990#" "li_3780_3160#" 31.849
+cap "li_4610_3160#" "a_460_2990#" 2.16092
+cap "w_1920_3060#" "m1_1920_3060#" 0.5156
+cap "li_3780_3160#" "a_4100_2650#" 5.03207
+cap "w_580_3270#" "m1_1520_3170#" 0.123402
+cap "m1_1920_3060#" "li_1860_2670#" 0.0536582
+cap "li_400_2890#" "m1_1520_3170#" 0.0478158
+cap "li_3500_2650#" "m1_1920_3060#" 1.3037
+cap "m1_1860_2670#" "li_1860_2670#" 18.272
+cap "w_4100_2690#" "a_4100_2650#" 6.3678
+cap "m1_1920_2280#" "li_1860_2670#" 0.0536582
+cap "a_460_2990#" "m1_1520_3170#" 241.778
 cap "a_4100_2650#" "m1_1520_3170#" 3.54114
-cap "li_1860_2670#" "m1_1860_2670#" 18.272
-cap "a_460_2990#" "li_3280_2150#" 14.2737
-cap "m1_1920_2280#" "li_3280_2150#" 0.00422788
-cap "a_460_2990#" "w_1920_3060#" 0.00332044
-cap "negdff_0/ncsrl_0/a_n220_n310#" "posdff_0/ncsrl_0/a_n470_740#" -0.874673
-cap "posdff_0/csrl_0/a_n120_870#" "negdff_0/ncsrl_0/a_n400_630#" 0.676923
-cap "posdff_0/ncsrl_0/a_n470_450#" "inv_0/w_n80_280#" 3.29125
-cap "negdff_0/ncsrl_0/a_n220_n310#" "inv_0/a_60_10#" 162.927
-cap "posdff_0/csrl_0/a_n120_580#" "inv_0/w_n80_280#" -0.628134
-cap "inv_0/w_n80_280#" "inv_0/a_n40_450#" 26.8141
-cap "inv_0/a_n30_240#" "negdff_0/ncsrl_0/a_n400_630#" -0.957622
-cap "negdff_0/ncsrl_0/a_n470_450#" "inv_0/a_n40_450#" 0.142858
-cap "xor_0/a_n180_n280#" "inv_0/a_60_10#" 1.23696
-cap "negdff_0/ncsrl_0/a_n220_n310#" "posdff_0/csrl_0/a_n120_870#" 12.6653
-cap "inv_0/a_n40_10#" "inv_0/a_n40_450#" -0.311338
-cap "posdff_0/csrl_0/a_n120_580#" "inv_0/a_n40_10#" 0.107522
-cap "inv_0/w_n80_280#" "negdff_0/ncsrl_0/a_n120_10#" 0.0525099
-cap "inv_0/w_n80_280#" "negdff_0/ncsrl_0/a_n400_n20#" 3.36478
-cap "inv_0/w_n80_280#" "negdff_0/ncsrl_0/a_n470_740#" 0.314875
-cap "inv_0/a_n30_240#" "negdff_0/ncsrl_0/a_n220_n310#" 81.2903
-cap "posdff_0/ncsrl_0/a_n470_450#" "inv_0/a_n40_450#" 0.920127
-cap "inv_0/a_n30_240#" "xor_0/a_n180_n280#" 0.671202
-cap "posdff_0/csrl_0/a_n120_580#" "inv_0/a_n40_450#" 2.34134
-cap "inv_0/w_n80_280#" "posdff_0/csrl_0/a_n470_140#" -8.2647
-cap "inv_0/a_n40_450#" "posdff_0/csrl_0/a_n300_870#" 0.185848
-cap "posdff_0/csrl_0/a_n120_870#" "inv_0/a_60_10#" 24.5838
-cap "inv_0/a_n40_10#" "posdff_0/csrl_0/a_n470_140#" 0.299424
-cap "negdff_0/ncsrl_0/a_n400_n20#" "inv_0/a_n40_450#" 0.402881
-cap "inv_0/a_n30_240#" "posdff_0/ncsrl_0/a_n470_740#" 67.9524
-cap "inv_0/a_n40_450#" "negdff_0/ncsrl_0/a_n470_740#" 0.0283949
-cap "inv_0/a_n30_240#" "inv_0/a_60_10#" 94.9627
-cap "negdff_0/ncsrl_0/a_n220_n310#" "posdff_0/csrl_0/a_n300_580#" 0.449252
-cap "inv_0/a_n30_240#" "posdff_0/csrl_0/a_n120_870#" 20.0898
-cap "inv_0/w_n80_280#" "negdff_0/ncsrl_0/a_n400_630#" 10.6323
-cap "inv_0/a_n40_10#" "negdff_0/ncsrl_0/a_n400_630#" -0.541309
-cap "inv_0/a_n40_10#" "posdff_0/csrl_0/a_n470_n150#" 12.4809
-cap "negdff_0/ncsrl_0/a_n220_n310#" "inv_0/w_n80_280#" 172.062
-cap "posdff_0/csrl_0/a_n300_580#" "inv_0/a_60_10#" 0.883589
-cap "inv_0/a_n40_10#" "negdff_0/ncsrl_0/a_n220_n310#" 0.632744
-cap "negdff_0/ncsrl_0/a_n400_630#" "inv_0/a_n40_450#" 0.49938
-cap "inv_0/w_n80_280#" "negdff_0/ncsrl_0/a_n120_n280#" 0.0186709
-cap "inv_0/a_n40_10#" "xor_0/a_n180_n280#" 9.0367
-cap "negdff_0/ncsrl_0/a_n400_630#" "negdff_0/ncsrl_0/a_n400_n20#" -0.741146
+cap "li_380_2140#" "m1_1880_2160#" 1.20004
+cap "li_3280_2150#" "m1_1880_2160#" 0.0123227
+cap "li_3780_3160#" "li_3730_3180#" 25.1384
+cap "li_460_3180#" "m1_1520_3170#" 0.156754
+cap "li_4610_3160#" "li_3780_3160#" 2.71364
+cap "m1_1920_2280#" "li_380_2140#" 0.00169109
+cap "li_3280_2150#" "m1_1920_2280#" 0.00422788
+cap "li_1860_2670#" "w_1520_3170#" 0.739226
+cap "m1_1520_3170#" "li_3730_3180#" 1.16814
+cap "w_1920_3060#" "li_1860_2670#" 0.133564
+cap "a_4100_2650#" "m1_1880_2160#" 11.7333
+cap "m1_1920_2280#" "a_460_2300#" 1.30797
+cap "li_3740_2080#" "li_4860_2670#" 2.64706
+cap "li_560_2670#" "li_1860_2670#" 0.858586
+cap "li_400_2890#" "m1_1920_3060#" 0.00573101
+cap "a_460_2990#" "m1_1920_3060#" 1.30603
+cap "m1_1920_2280#" "a_4100_2650#" 11.7333
+cap "m1_1860_2670#" "a_4100_2650#" 1.35385
+cap "li_460_3180#" "m1_1920_3060#" 0.012565
+cap "m1_1860_2670#" "li_460_3180#" 1.45455
+cap "li_3740_2080#" "li_4030_2160#" 244.688
+cap "li_3280_2150#" "li_3500_2650#" 1.47197
+cap "li_3740_2080#" "w_580_3270#" 4.71353
+cap "li_3740_2080#" "a_460_2990#" 0.317922
+cap "li_560_2670#" "a_460_2300#" 0.436998
+cap "li_3740_2080#" "a_4100_2650#" 70.4594
+cap "w_580_3080#" "a_460_2990#" 3.09117
+cap "w_1920_3060#" "a_460_2990#" 0.00332044
+cap "li_560_2670#" "w_580_3270#" 0.0704128
+cap "inv_0/a_n40_450#" "negdff_0/ncsrl_0/a_n400_n20#" 0.402881
+cap "negdff_0/ncsrl_0/a_n400_630#" "negdff_0/ncsrl_0/a_n220_n310#" 0.0645975
 cap "inv_0/w_n80_280#" "posdff_0/ncsrl_0/a_n470_740#" 12.248
-cap "inv_0/a_n30_240#" "posdff_0/csrl_0/a_n300_580#" 0.188121
-cap "posdff_0/csrl_0/a_n120_580#" "negdff_0/ncsrl_0/a_n220_n310#" 0.084205
-cap "negdff_0/ncsrl_0/a_n220_n310#" "inv_0/a_n40_450#" -2.85106
-cap "posdff_0/csrl_0/a_n470_n150#" "negdff_0/ncsrl_0/a_n120_10#" 0.0267079
-cap "inv_0/w_n80_280#" "inv_0/a_60_10#" 37.2544
-cap "negdff_0/ncsrl_0/a_n220_n310#" "posdff_0/csrl_0/a_n300_870#" 0.0305849
-cap "inv_0/a_n40_10#" "inv_0/a_60_10#" 1.37424
-cap "inv_0/w_n80_280#" "posdff_0/csrl_0/a_n120_870#" -1.01631
-cap "negdff_0/ncsrl_0/a_n220_n310#" "negdff_0/ncsrl_0/a_n400_n20#" 3.02437
-cap "negdff_0/ncsrl_0/a_n400_n20#" "xor_0/a_n180_n280#" -1.77636e-15
-cap "inv_0/a_n40_10#" "posdff_0/csrl_0/a_n120_870#" 3.15429
-cap "inv_0/a_n40_450#" "posdff_0/ncsrl_0/a_n470_740#" 0.160555
-cap "inv_0/a_n30_240#" "inv_0/w_n80_280#" 423.004
-cap "inv_0/a_n40_10#" "inv_0/a_n30_240#" 9.22763
-cap "posdff_0/csrl_0/a_n120_580#" "inv_0/a_60_10#" 0.834128
-cap "inv_0/a_60_10#" "inv_0/a_n40_450#" 41.3887
-cap "negdff_0/ncsrl_0/a_n220_n310#" "posdff_0/csrl_0/a_n470_140#" 2.44704
+cap "posdff_0/csrl_0/a_n120_870#" "inv_0/a_n40_10#" 3.15429
 cap "negdff_0/ncsrl_0/a_n470_740#" "posdff_0/ncsrl_0/a_n470_740#" 2.94601
-cap "posdff_0/csrl_0/a_n120_870#" "inv_0/a_n40_450#" 2.95554
-cap "negdff_0/ncsrl_0/a_n400_n20#" "inv_0/a_60_10#" -0.412163
-cap "posdff_0/csrl_0/a_n120_580#" "inv_0/a_n30_240#" 6.84857
-cap "inv_0/a_n30_240#" "inv_0/a_n40_450#" 9.38092
+cap "negdff_0/ncsrl_0/a_n400_630#" "inv_0/a_n30_240#" -0.957622
+cap "inv_0/w_n80_280#" "posdff_0/ncsrl_0/a_n470_450#" 3.29125
+cap "negdff_0/ncsrl_0/a_n470_n280#" "negdff_0/ncsrl_0/a_n400_n20#" -1.77636e-15
+cap "posdff_0/csrl_0/a_n120_870#" "inv_0/a_60_10#" 24.5838
 cap "negdff_0/ncsrl_0/a_n400_630#" "posdff_0/csrl_0/a_n470_n150#" 0.192131
-cap "inv_0/a_n30_240#" "posdff_0/csrl_0/a_n300_870#" 2.4272
-cap "negdff_0/ncsrl_0/a_n220_n310#" "negdff_0/ncsrl_0/a_n400_630#" 0.0645975
-cap "inv_0/a_n30_240#" "negdff_0/ncsrl_0/a_n400_n20#" 2.43453
-cap "inv_0/a_60_10#" "posdff_0/csrl_0/a_n470_140#" 42.9751
-cap "inv_0/a_n30_240#" "negdff_0/ncsrl_0/a_n470_740#" 0.0161974
-cap "negdff_0/ncsrl_0/a_n400_630#" "xor_0/a_n180_n280#" 5.25262
-cap "negdff_0/ncsrl_0/a_n220_n310#" "posdff_0/csrl_0/a_n470_n150#" 0.0351204
+cap "inv_0/a_n40_450#" "negdff_0/ncsrl_0/a_n400_630#" 0.49938
+cap "negdff_0/ncsrl_0/a_n400_630#" "negdff_0/ncsrl_0/a_n400_n20#" -0.741146
+cap "posdff_0/csrl_0/a_n120_870#" "negdff_0/ncsrl_0/a_n220_n310#" 12.6653
+cap "posdff_0/ncsrl_0/a_n470_740#" "negdff_0/ncsrl_0/a_n220_n310#" -0.874673
+cap "negdff_0/ncsrl_0/a_n470_n280#" "negdff_0/ncsrl_0/a_n400_630#" 5.25262
+cap "inv_0/a_n30_240#" "posdff_0/csrl_0/a_n120_870#" 20.0898
+cap "inv_0/a_n30_240#" "posdff_0/ncsrl_0/a_n470_740#" 67.9524
+cap "inv_0/a_n40_450#" "posdff_0/csrl_0/a_n120_870#" 2.95554
+cap "inv_0/w_n80_280#" "negdff_0/ncsrl_0/a_n120_10#" 0.0525099
+cap "inv_0/a_n40_450#" "posdff_0/ncsrl_0/a_n470_740#" 0.160555
+cap "inv_0/a_n40_450#" "posdff_0/ncsrl_0/a_n470_450#" 0.920127
+cap "inv_0/w_n80_280#" "negdff_0/ncsrl_0/a_n470_740#" 0.314875
+cap "inv_0/w_n80_280#" "inv_0/a_n40_10#" 1.48454
+cap "posdff_0/csrl_0/a_n300_870#" "negdff_0/ncsrl_0/a_n220_n310#" 0.0305849
 cap "negdff_0/ncsrl_0/a_n400_630#" "negdff_0/ncsrl_0/a_n120_n280#" 0.209615
-cap "negdff_0/ncsrl_0/a_n300_n280#" "negdff_0/ncsrl_0/a_n400_630#" 0.0986362
-cap "negdff_0/ncsrl_0/a_n220_n310#" "xor_0/a_n180_n280#" 0.12536
-cap "inv_0/a_n30_240#" "posdff_0/csrl_0/a_n470_140#" -0.468804
-cap "posdff_0/csrl_0/a_n300_580#" "inv_0/a_n40_450#" 0.578053
-cap "inv_0/a_n40_10#" "inv_0/w_n80_280#" 1.48454
+cap "inv_0/a_n30_240#" "posdff_0/csrl_0/a_n300_870#" 2.4272
+cap "negdff_0/ncsrl_0/a_n400_630#" "posdff_0/csrl_0/a_n120_870#" 0.676923
+cap "inv_0/w_n80_280#" "inv_0/a_60_10#" 37.2544
+cap "inv_0/a_60_10#" "inv_0/a_n40_10#" 1.37424
+cap "inv_0/a_n40_450#" "posdff_0/csrl_0/a_n300_870#" 0.185848
+cap "inv_0/w_n80_280#" "negdff_0/ncsrl_0/a_n220_n310#" 172.062
+cap "negdff_0/ncsrl_0/a_n220_n310#" "inv_0/a_n40_10#" 0.632744
+cap "inv_0/w_n80_280#" "inv_0/a_n30_240#" 423.004
+cap "negdff_0/ncsrl_0/a_n470_740#" "inv_0/a_n30_240#" 0.0161974
+cap "inv_0/w_n80_280#" "posdff_0/csrl_0/a_n120_580#" -0.628134
+cap "negdff_0/ncsrl_0/a_n120_10#" "posdff_0/csrl_0/a_n470_n150#" 0.0267079
+cap "inv_0/a_n30_240#" "inv_0/a_n40_10#" 9.22763
+cap "posdff_0/csrl_0/a_n120_580#" "inv_0/a_n40_10#" 0.107522
+cap "negdff_0/ncsrl_0/a_n400_630#" "negdff_0/ncsrl_0/a_n300_n280#" 0.0986362
+cap "inv_0/a_60_10#" "negdff_0/ncsrl_0/a_n220_n310#" 162.927
+cap "inv_0/w_n80_280#" "inv_0/a_n40_450#" 26.8141
+cap "inv_0/a_n40_450#" "negdff_0/ncsrl_0/a_n470_740#" 0.0283949
+cap "posdff_0/csrl_0/a_n470_n150#" "inv_0/a_n40_10#" 12.4809
+cap "inv_0/w_n80_280#" "negdff_0/ncsrl_0/a_n400_n20#" 3.36478
+cap "inv_0/a_n30_240#" "inv_0/a_60_10#" 94.9627
+cap "inv_0/a_n40_450#" "inv_0/a_n40_10#" -0.311338
+cap "posdff_0/csrl_0/a_n120_580#" "inv_0/a_60_10#" 0.834128
+cap "negdff_0/ncsrl_0/a_n470_450#" "inv_0/a_n40_450#" 0.142858
+cap "inv_0/a_60_10#" "posdff_0/csrl_0/a_n300_580#" 0.883589
+cap "inv_0/w_n80_280#" "posdff_0/csrl_0/a_n470_140#" -8.2647
+cap "inv_0/a_n30_240#" "negdff_0/ncsrl_0/a_n220_n310#" 81.2903
+cap "posdff_0/csrl_0/a_n470_140#" "inv_0/a_n40_10#" 0.299424
+cap "inv_0/a_n40_450#" "inv_0/a_60_10#" 41.3887
+cap "negdff_0/ncsrl_0/a_n470_n280#" "inv_0/a_n40_10#" 9.0367
+cap "posdff_0/csrl_0/a_n120_580#" "negdff_0/ncsrl_0/a_n220_n310#" 0.084205
+cap "negdff_0/ncsrl_0/a_n400_n20#" "inv_0/a_60_10#" -0.412163
+cap "negdff_0/ncsrl_0/a_n220_n310#" "posdff_0/csrl_0/a_n300_580#" 0.449252
+cap "inv_0/w_n80_280#" "negdff_0/ncsrl_0/a_n400_630#" 10.6323
+cap "posdff_0/csrl_0/a_n120_580#" "inv_0/a_n30_240#" 6.84857
+cap "negdff_0/ncsrl_0/a_n220_n310#" "posdff_0/csrl_0/a_n470_n150#" 0.0351204
+cap "posdff_0/csrl_0/a_n470_140#" "inv_0/a_60_10#" 42.9751
+cap "inv_0/a_n30_240#" "posdff_0/csrl_0/a_n300_580#" 0.188121
+cap "inv_0/a_n40_450#" "negdff_0/ncsrl_0/a_n220_n310#" -2.85106
+cap "negdff_0/ncsrl_0/a_n470_n280#" "inv_0/a_60_10#" 1.23696
+cap "negdff_0/ncsrl_0/a_n400_630#" "inv_0/a_n40_10#" -0.541309
+cap "negdff_0/ncsrl_0/a_n400_n20#" "negdff_0/ncsrl_0/a_n220_n310#" 3.02437
+cap "inv_0/a_n40_450#" "inv_0/a_n30_240#" 9.38092
+cap "inv_0/a_n40_450#" "posdff_0/csrl_0/a_n120_580#" 2.34134
+cap "negdff_0/ncsrl_0/a_n400_n20#" "inv_0/a_n30_240#" 2.43453
+cap "posdff_0/csrl_0/a_n470_140#" "negdff_0/ncsrl_0/a_n220_n310#" 2.44704
+cap "negdff_0/ncsrl_0/a_n470_n280#" "negdff_0/ncsrl_0/a_n220_n310#" 0.12536
+cap "inv_0/a_n40_450#" "posdff_0/csrl_0/a_n300_580#" 0.578053
 cap "negdff_0/ncsrl_0/a_n400_630#" "inv_0/a_60_10#" 0.00916701
-cap "xor_1/a_n180_n280#" "inv_0/a_n30_240#" -12.2883
-cap "inv_0/w_n80_280#" "negdff_0/ncsrl_0/a_n470_740#" 15.0699
-cap "inv_0/w_n80_280#" "inv_0/a_n30_240#" 388.817
-cap "inv_0/a_n30_240#" "negdff_0/ncsrl_0/a_n120_10#" 7.26738
-cap "negdff_0/ncsrl_0/a_n120_n280#" "negdff_0/ncsrl_0/a_n400_n20#" 12.1154
+cap "inv_0/w_n80_280#" "negdff_0/ncsrl_0/a_n120_n280#" 0.0186709
+cap "posdff_0/csrl_0/a_n470_140#" "inv_0/a_n30_240#" -0.468804
+cap "negdff_0/ncsrl_0/a_n470_n280#" "inv_0/a_n30_240#" 0.671202
+cap "inv_0/w_n80_280#" "posdff_0/csrl_0/a_n120_870#" -1.01631
+cap "negdff_0/ncsrl_0/a_n220_n310#" "negdff_0/ncsrl_0/a_n120_n280#" -0.0359741
 cap "xor_0/inv_0/a_60_10#" "inv_0/w_n80_280#" 0.0706274
-cap "negdff_0/ncsrl_0/a_n120_n280#" "negdff_0/ncsrl_0/a_n220_n310#" -0.0359741
-cap "xor_1/a_n180_n280#" "negdff_0/csrl_0/a_n470_140#" 3.29125
-cap "xor_1/inv_1/a_n30_240#" "posdff_0/csrl_0/a_n120_870#" 1.00215
-cap "inv_0/w_n80_280#" "xor_0/a_20_n280#" 0.0827789
-cap "inv_0/w_n80_280#" "posdff_0/ncsrl_0/a_n470_740#" 0.368416
-cap "inv_0/w_n80_280#" "negdff_0/ncsrl_0/a_n400_n20#" 42.5951
-cap "xor_1/a_n180_n280#" "negdff_0/ncsrl_0/a_n400_n20#" 40.7433
-cap "negdff_0/csrl_0/a_n120_580#" "xor_0/inv_0/a_n30_240#" 0.425493
-cap "xor_1/inv_1/a_n30_240#" "xor_0/inv_0/a_n30_240#" 44.5689
-cap "negdff_0/csrl_0/a_n300_870#" "inv_0/a_n30_240#" 2.10559
-cap "xor_1/inv_1/a_n30_240#" "negdff_0/ncsrl_0/a_n300_n280#" 4.16362
-cap "inv_0/w_n80_280#" "negdff_0/ncsrl_0/a_n220_n310#" 4.72175
-cap "xor_1/a_n180_n280#" "negdff_0/ncsrl_0/a_n220_n310#" 31.8574
-cap "xor_1/inv_1/a_n30_240#" "inv_0/a_n40_10#" -0.536585
-cap "xor_0/inv_1/a_60_10#" "xor_0/inv_0/a_n30_240#" 14.1445
-cap "posdff_0/csrl_0/a_n120_580#" "negdff_0/csrl_0/a_n470_n150#" 0.0226727
-cap "negdff_0/ncsrl_0/a_n400_n20#" "negdff_0/ncsrl_0/a_n470_450#" 33.9303
-cap "negdff_0/csrl_0/a_n470_n150#" "negdff_0/ncsrl_0/a_n400_n20#" 0.070257
-cap "xor_1/inv_1/a_n30_240#" "posdff_0/csrl_0/a_n470_n150#" 0.22478
-cap "negdff_0/ncsrl_0/a_n120_n280#" "inv_0/w_n80_280#" 1.68363
-cap "xor_1/a_n180_n280#" "negdff_0/ncsrl_0/a_n120_n280#" 0.186444
-cap "xor_1/inv_1/a_n30_240#" "negdff_0/csrl_0/a_n120_580#" 8.58997
-cap "inv_0/a_n30_240#" "xor_0/inv_0/a_n30_240#" 7.91146
-cap "negdff_0/ncsrl_0/a_n220_n310#" "negdff_0/ncsrl_0/a_n470_450#" 2.44704
-cap "negdff_0/csrl_0/a_n470_n150#" "negdff_0/ncsrl_0/a_n220_n310#" -0.826451
-cap "xor_1/inv_1/a_n30_240#" "negdff_0/ncsrl_0/a_n470_740#" 17.1075
-cap "xor_1/inv_1/a_n30_240#" "inv_0/a_n30_240#" -15.706
-cap "inv_0/a_n30_240#" "negdff_0/csrl_0/a_n120_580#" 6.79488
-cap "xor_0/a_n60_740#" "inv_0/w_n80_280#" 0.0431067
-cap "xor_0/inv_0/a_60_10#" "negdff_0/csrl_0/a_n120_580#" 0.705882
-cap "negdff_0/ncsrl_0/a_n400_n20#" "inv_0/a_60_10#" -0.429293
-cap "xor_1/inv_1/a_n30_240#" "negdff_0/ncsrl_0/a_n300_10#" 0.892469
-cap "inv_0/a_n30_240#" "negdff_0/ncsrl_0/a_n470_740#" 68.0739
-cap "xor_0/inv_0/a_60_10#" "negdff_0/ncsrl_0/a_n470_740#" 0.00205779
-cap "xor_1/a_n180_n280#" "inv_0/w_n80_280#" 1.36597
-cap "inv_0/w_n80_280#" "negdff_0/ncsrl_0/a_n120_10#" -0.628134
-cap "xor_1/a_n180_n280#" "negdff_0/ncsrl_0/a_n120_10#" -0.92386
-cap "negdff_0/csrl_0/a_n470_140#" "inv_0/a_n30_240#" 0.0251344
-cap "negdff_0/ncsrl_0/a_n220_n310#" "xor_0/inv_0/a_n30_240#" 0.0115813
-cap "negdff_0/csrl_0/a_n300_580#" "inv_0/a_n30_240#" 0.188121
-cap "inv_0/w_n80_280#" "negdff_0/ncsrl_0/a_n470_450#" 1.39883
-cap "xor_1/a_n180_n280#" "negdff_0/ncsrl_0/a_n470_450#" -4.0982
-cap "xor_1/a_n180_n280#" "negdff_0/csrl_0/a_n470_n150#" 12.8029
-cap "xor_1/inv_1/a_n30_240#" "posdff_0/csrl_0/a_n120_580#" 0.142573
-cap "negdff_0/ncsrl_0/a_n470_740#" "posdff_0/ncsrl_0/a_n470_740#" 2.97209
-cap "negdff_0/ncsrl_0/a_n120_n280#" "xor_0/inv_0/a_n30_240#" 7.10543e-15
-cap "xor_1/inv_1/a_n30_240#" "negdff_0/ncsrl_0/a_n400_n20#" 86.1438
-cap "xor_1/inv_1/a_n30_240#" "negdff_0/ncsrl_0/a_n220_n310#" 63.9613
-cap "negdff_0/ncsrl_0/a_n220_n310#" "negdff_0/csrl_0/a_n120_580#" -0.116763
-cap "inv_0/w_n80_280#" "posdff_0/csrl_0/a_n120_870#" 0.054404
-cap "xor_1/inv_1/a_n30_240#" "negdff_0/ncsrl_0/a_n120_n280#" 55.9454
-cap "negdff_0/ncsrl_0/a_n400_n20#" "inv_0/a_n30_240#" 4.06553
-cap "negdff_0/ncsrl_0/a_n400_n20#" "negdff_0/ncsrl_0/a_n470_740#" 1.68786
-cap "xor_0/inv_1/a_60_10#" "negdff_0/ncsrl_0/a_n220_n310#" 0.0881828
-cap "negdff_0/csrl_0/a_n470_n150#" "posdff_0/csrl_0/a_n120_870#" 0.0351204
 cap "negdff_0/ncsrl_0/a_n220_n310#" "negdff_0/ncsrl_0/a_n470_740#" -0.0965081
-cap "inv_0/a_n30_240#" "negdff_0/ncsrl_0/a_n220_n310#" 18.3008
-cap "negdff_0/ncsrl_0/a_n400_n20#" "negdff_0/ncsrl_0/a_n300_10#" 0.253127
-cap "xor_0/inv_0/a_60_10#" "negdff_0/ncsrl_0/a_n220_n310#" 0.0393096
-cap "negdff_0/ncsrl_0/a_n120_n280#" "inv_0/a_n30_240#" 30.8473
-cap "inv_0/w_n80_280#" "xor_0/inv_0/a_n30_240#" 20.9269
-cap "xor_1/a_n180_n280#" "xor_0/inv_0/a_n30_240#" 58.8974
+cap "xor_0/inv_1/a_60_10#" "negdff_0/csrl_0/a_n120_870#" 14.1445
+cap "inv_0/w_n80_280#" "negdff_0/csrl_0/a_n120_870#" 20.9269
+cap "negdff_0/ncsrl_0/a_n400_630#" "negdff_0/ncsrl_0/a_n120_10#" 8.21722
+cap "negdff_0/ncsrl_0/a_n470_n280#" "inv_0/w_n80_280#" 1.36597
+cap "posdff_0/ncsrl_0/a_n470_740#" "inv_0/w_n80_280#" 0.368416
 cap "negdff_0/ncsrl_0/a_n220_n310#" "xor_0/a_20_n280#" 0.0141759
-cap "negdff_0/ncsrl_0/a_n300_n280#" "xor_1/a_n180_n280#" -1.28433
-cap "xor_1/a_n180_n280#" "inv_0/a_n40_10#" -0.594595
-cap "xor_1/inv_1/a_n30_240#" "inv_0/w_n80_280#" 169.319
+cap "negdff_0/ncsrl_0/a_n470_n280#" "negdff_0/ncsrl_0/a_n470_450#" -4.0982
+cap "xor_0/inv_0/a_60_10#" "negdff_0/ncsrl_0/a_n220_n310#" 0.0393096
+cap "negdff_0/ncsrl_0/a_n400_630#" "inv_0/w_n80_280#" 169.319
 cap "inv_0/w_n80_280#" "negdff_0/csrl_0/a_n120_580#" 30.0613
-cap "xor_1/inv_1/a_n30_240#" "xor_1/a_n180_n280#" 388.87
-cap "xor_1/a_n180_n280#" "negdff_0/csrl_0/a_n120_580#" 8.29636
-cap "xor_1/inv_1/a_n30_240#" "negdff_0/ncsrl_0/a_n120_10#" 8.21722
-cap "xor_1/inv_1/a_n30_240#" "posdff_0/ncsrl_0/a_n300_n280#" 0.0837611
-cap "negdff_0/ncsrl_0/a_n400_n20#" "negdff_0/ncsrl_0/a_n220_n310#" 4.82984
-cap "xor_1/inv_1/a_n30_240#" "negdff_0/ncsrl_0/a_n470_450#" 4.13157
+cap "negdff_0/ncsrl_0/a_n220_n310#" "negdff_0/csrl_0/a_n120_870#" 0.0115813
+cap "negdff_0/ncsrl_0/a_n220_n310#" "negdff_0/ncsrl_0/a_n470_n280#" 31.8574
+cap "negdff_0/ncsrl_0/a_n400_630#" "negdff_0/ncsrl_0/a_n470_450#" 4.13157
+cap "negdff_0/ncsrl_0/a_n400_630#" "negdff_0/ncsrl_0/a_n220_n310#" 63.9613
+cap "negdff_0/ncsrl_0/a_n220_n310#" "negdff_0/csrl_0/a_n120_580#" -0.116763
+cap "negdff_0/csrl_0/a_n470_n150#" "negdff_0/ncsrl_0/a_n400_n20#" 0.070257
+cap "negdff_0/csrl_0/a_n470_140#" "inv_0/a_n30_240#" 0.0251344
+cap "negdff_0/csrl_0/a_n470_n150#" "posdff_0/csrl_0/a_n120_580#" 0.0226727
+cap "negdff_0/ncsrl_0/a_n120_10#" "inv_0/w_n80_280#" -0.628134
+cap "negdff_0/ncsrl_0/a_n400_n20#" "inv_0/a_n30_240#" 4.06553
+cap "negdff_0/ncsrl_0/a_n400_630#" "negdff_0/ncsrl_0/a_n300_10#" 0.892469
+cap "xor_0/a_n60_740#" "inv_0/w_n80_280#" 0.0431067
+cap "negdff_0/ncsrl_0/a_n400_630#" "posdff_0/csrl_0/a_n470_n150#" 0.22478
+cap "negdff_0/ncsrl_0/a_n470_450#" "inv_0/w_n80_280#" 1.39883
+cap "negdff_0/ncsrl_0/a_n470_740#" "negdff_0/ncsrl_0/a_n400_n20#" 1.68786
+cap "negdff_0/ncsrl_0/a_n400_n20#" "negdff_0/ncsrl_0/a_n120_n280#" 12.1154
+cap "negdff_0/ncsrl_0/a_n220_n310#" "xor_0/inv_1/a_60_10#" 0.0881828
+cap "negdff_0/ncsrl_0/a_n220_n310#" "inv_0/w_n80_280#" 4.72175
+cap "negdff_0/ncsrl_0/a_n400_630#" "posdff_0/ncsrl_0/a_n300_n280#" 0.0837611
+cap "negdff_0/csrl_0/a_n470_n150#" "posdff_0/csrl_0/a_n120_870#" 0.0351204
+cap "negdff_0/ncsrl_0/a_n220_n310#" "negdff_0/ncsrl_0/a_n470_450#" 2.44704
+cap "negdff_0/ncsrl_0/a_n470_n280#" "negdff_0/csrl_0/a_n470_140#" 3.29125
+cap "negdff_0/ncsrl_0/a_n400_n20#" "negdff_0/ncsrl_0/a_n470_n280#" 40.7433
+cap "negdff_0/ncsrl_0/a_n120_n280#" "inv_0/a_n30_240#" 30.8473
+cap "negdff_0/ncsrl_0/a_n300_n280#" "negdff_0/ncsrl_0/a_n470_n280#" -1.28433
+cap "negdff_0/ncsrl_0/a_n470_740#" "inv_0/a_n30_240#" 68.0739
+cap "negdff_0/csrl_0/a_n470_n150#" "negdff_0/ncsrl_0/a_n470_n280#" 12.8029
+cap "negdff_0/ncsrl_0/a_n400_630#" "negdff_0/ncsrl_0/a_n400_n20#" 86.1438
 cap "negdff_0/csrl_0/a_n470_n150#" "negdff_0/csrl_0/a_n120_580#" -1.77636e-15
-cap "xor_1/inv_1/a_n30_240#" "negdff_0/csrl_0/a_n470_n150#" 68.7911
-cap "xor_0/a_n60_740#" "xor_0/inv_1/a_60_10#" -0.206342
-cap "negdff_0/csrl_0/a_n120_580#" "xor_1/inv_1/a_n30_240#" 62.6263
-cap "xor_0/inv_0/a_60_10#" "xor_1/a_n180_n280#" 22.2978
-cap "negdff_0/ncsrl_0/a_n220_n310#" "xor_1/inv_1/a_n30_240#" 19.2849
-cap "xor_0/inv_0/a_n30_240#" "negdff_0/csrl_0/a_n120_580#" 13.0894
-cap "xor_1/inv_1/a_n30_240#" "inv_1/a_n30_240#" 0.281645
-cap "xor_1/inv_0/a_60_10#" "inv_1/a_n30_240#" 2.26618
-cap "xor_1/inv_0/a_n30_240#" "inv_1/a_60_10#" 0.0513269
-cap "xor_1/inv_1/a_n30_240#" "xor_0/inv_1/a_60_10#" 334.432
-cap "negdff_0/csrl_0/a_n120_580#" "inv_1/w_n80_280#" 38.3455
-cap "xor_1/inv_0/a_60_10#" "xor_0/inv_1/a_60_10#" 1.65128
-cap "xor_0/inv_0/a_n30_240#" "xor_0/inv_1/a_60_10#" 142.339
-cap "negdff_0/ncsrl_0/a_n220_n310#" "inv_1/w_n80_280#" 0.128939
-cap "xor_1/inv_1/a_60_10#" "xor_1/inv_0/a_n30_240#" 117.086
-cap "xor_0/a_n60_740#" "xor_1/inv_1/a_n30_240#" -0.571542
-cap "xor_0/inv_1/a_60_10#" "inv_1/w_n80_280#" 12.1264
-cap "negdff_0/ncsrl_0/a_n120_n280#" "xor_0/inv_1/a_60_10#" 0.0145829
-cap "negdff_0/ncsrl_0/a_n400_n20#" "xor_0/inv_1/a_60_10#" 0.0163634
-cap "inv_1/a_n40_450#" "xor_1/inv_0/a_60_10#" 0.52018
-cap "xor_0/a_n60_740#" "inv_1/w_n80_280#" 8.74992
-cap "xor_0/a_n60_10#" "xor_1/inv_1/a_n30_240#" 1.23135
-cap "xor_1/a_n60_n280#" "xor_1/inv_1/a_n30_240#" 0.154594
-cap "xor_1/a_n180_n280#" "xor_1/inv_0/a_n30_240#" 0.897572
-cap "xor_1/inv_0/a_60_10#" "xor_1/inv_1/a_n30_240#" 0.56874
-cap "xor_0/inv_0/a_n30_240#" "xor_1/inv_1/a_n30_240#" 59.9661
-cap "xor_0/inv_0/a_n30_240#" "xor_0/a_n60_450#" 0.105254
-cap "xor_0/a_20_n280#" "xor_1/inv_0/a_n30_240#" 20.3655
-cap "xor_1/inv_1/a_n30_240#" "inv_1/w_n80_280#" 98.327
+cap "negdff_0/ncsrl_0/a_n400_630#" "negdff_0/csrl_0/a_n470_n150#" 68.7911
+cap "negdff_0/ncsrl_0/a_n400_630#" "negdff_0/ncsrl_0/a_n300_n280#" 4.16362
+cap "negdff_0/ncsrl_0/a_n470_n280#" "inv_0/a_n30_240#" -12.2883
+cap "inv_0/a_n30_240#" "negdff_0/csrl_0/a_n120_870#" 7.91146
+cap "negdff_0/ncsrl_0/a_n400_630#" "posdff_0/csrl_0/a_n120_580#" 0.142573
+cap "negdff_0/ncsrl_0/a_n400_630#" "inv_0/a_n30_240#" -15.706
+cap "inv_0/a_n30_240#" "negdff_0/csrl_0/a_n120_580#" 6.79488
+cap "xor_0/inv_0/a_60_10#" "negdff_0/ncsrl_0/a_n470_740#" 0.00205779
+cap "negdff_0/ncsrl_0/a_n470_n280#" "negdff_0/ncsrl_0/a_n120_n280#" 0.186444
+cap "negdff_0/ncsrl_0/a_n120_n280#" "negdff_0/csrl_0/a_n120_870#" 7.10543e-15
+cap "negdff_0/ncsrl_0/a_n470_740#" "posdff_0/ncsrl_0/a_n470_740#" 2.97209
+cap "negdff_0/ncsrl_0/a_n470_n280#" "inv_0/a_n40_10#" -0.594595
+cap "negdff_0/ncsrl_0/a_n400_630#" "negdff_0/ncsrl_0/a_n470_740#" 17.1075
+cap "negdff_0/ncsrl_0/a_n400_630#" "negdff_0/ncsrl_0/a_n120_n280#" 55.9454
+cap "negdff_0/ncsrl_0/a_n470_n280#" "negdff_0/csrl_0/a_n120_870#" 58.8974
+cap "negdff_0/ncsrl_0/a_n400_630#" "posdff_0/csrl_0/a_n120_870#" 1.00215
+cap "negdff_0/ncsrl_0/a_n400_n20#" "inv_0/a_60_10#" -0.429293
+cap "negdff_0/ncsrl_0/a_n400_630#" "inv_0/a_n40_10#" -0.536585
+cap "negdff_0/ncsrl_0/a_n400_n20#" "inv_0/w_n80_280#" 42.5951
+cap "xor_0/inv_0/a_60_10#" "negdff_0/csrl_0/a_n120_580#" 0.705882
+cap "negdff_0/ncsrl_0/a_n400_n20#" "negdff_0/ncsrl_0/a_n470_450#" 33.9303
+cap "negdff_0/csrl_0/a_n120_870#" "negdff_0/csrl_0/a_n120_580#" 0.425493
+cap "negdff_0/ncsrl_0/a_n400_630#" "negdff_0/csrl_0/a_n120_870#" 44.5689
+cap "negdff_0/ncsrl_0/a_n400_630#" "negdff_0/ncsrl_0/a_n470_n280#" 388.87
+cap "negdff_0/ncsrl_0/a_n470_n280#" "negdff_0/csrl_0/a_n120_580#" 8.29636
+cap "negdff_0/ncsrl_0/a_n120_10#" "inv_0/a_n30_240#" 7.26738
+cap "negdff_0/ncsrl_0/a_n220_n310#" "negdff_0/ncsrl_0/a_n400_n20#" 4.82984
+cap "negdff_0/ncsrl_0/a_n220_n310#" "negdff_0/csrl_0/a_n470_n150#" -0.826451
+cap "negdff_0/ncsrl_0/a_n400_630#" "negdff_0/csrl_0/a_n120_580#" 8.58997
+cap "inv_0/a_n30_240#" "inv_0/w_n80_280#" 388.817
+cap "negdff_0/ncsrl_0/a_n220_n310#" "inv_0/a_n30_240#" 18.3008
+cap "negdff_0/ncsrl_0/a_n400_n20#" "negdff_0/ncsrl_0/a_n300_10#" 0.253127
+cap "negdff_0/ncsrl_0/a_n120_n280#" "inv_0/w_n80_280#" 1.68363
+cap "negdff_0/ncsrl_0/a_n470_740#" "inv_0/w_n80_280#" 15.0699
+cap "negdff_0/ncsrl_0/a_n120_10#" "negdff_0/ncsrl_0/a_n470_n280#" -0.92386
+cap "inv_0/w_n80_280#" "posdff_0/csrl_0/a_n120_870#" 0.054404
+cap "negdff_0/csrl_0/a_n300_580#" "inv_0/a_n30_240#" 0.188121
+cap "negdff_0/csrl_0/a_n300_870#" "inv_0/a_n30_240#" 2.10559
+cap "xor_0/a_20_n280#" "inv_0/w_n80_280#" 0.0827789
+cap "inv_1/a_n30_240#" "xor_1/inv_0/a_n30_240#" 0.213859
+cap "xor_0/a_n60_450#" "negdff_0/ncsrl_0/a_n470_n280#" 0.00867149
+cap "xor_0/a_n60_450#" "xor_1/inv_1/a_60_10#" 0.584604
+cap "negdff_0/csrl_0/a_n120_870#" "negdff_0/ncsrl_0/a_n400_630#" 59.9661
+cap "xor_0/a_20_n280#" "negdff_0/ncsrl_0/a_n400_630#" 96.136
+cap "negdff_0/ncsrl_0/a_n400_630#" "xor_0/inv_1/a_60_10#" 334.432
+cap "xor_0/a_n60_450#" "xor_1/inv_0/a_n30_240#" 0.705358
+cap "negdff_0/ncsrl_0/a_n470_n280#" "negdff_0/ncsrl_0/a_n400_630#" 100.342
+cap "negdff_0/ncsrl_0/a_n400_630#" "xor_1/inv_1/a_60_10#" 148.629
+cap "negdff_0/ncsrl_0/a_n400_630#" "xor_0/a_n60_n280#" 4.30263
 cap "xor_0/a_n60_450#" "inv_1/w_n80_280#" 0.613795
-cap "negdff_0/ncsrl_0/a_n120_n280#" "xor_1/inv_1/a_n30_240#" 1.18887
-cap "xor_1/inv_0/a_60_10#" "inv_1/w_n80_280#" -4.41526
-cap "xor_1/inv_1/a_n30_240#" "negdff_0/ncsrl_0/a_n400_n20#" -0.380703
-cap "xor_0/inv_0/a_n30_240#" "inv_1/w_n80_280#" 115.403
-cap "xor_1/a_n180_n280#" "negdff_0/csrl_0/a_n470_n150#" 1.68113
-cap "xor_1/inv_1/a_60_10#" "inv_1/a_n30_240#" 0.0658655
-cap "xor_0/inv_0/a_60_10#" "xor_1/inv_0/a_n30_240#" 10.1791
-cap "xor_1/inv_1/a_60_10#" "xor_0/inv_1/a_60_10#" 2.38193
-cap "xor_1/a_n180_n280#" "negdff_0/csrl_0/a_n120_580#" 67.6305
-cap "xor_1/inv_0/a_n30_240#" "negdff_0/csrl_0/a_n300_870#" 0.0136243
-cap "xor_1/inv_1/a_n30_240#" "xor_0/a_n60_n280#" 4.30263
-cap "xor_1/a_n180_n280#" "negdff_0/ncsrl_0/a_n220_n310#" 0.689361
-cap "xor_1/inv_0/a_60_10#" "inv_1/a_n40_10#" 0.52018
-cap "negdff_0/ncsrl_0/a_n120_10#" "xor_0/inv_1/a_60_10#" 0.0557401
-cap "xor_0/a_20_n280#" "inv_1/a_n30_240#" 0.565358
-cap "xor_1/inv_0/a_60_10#" "inv_1/a_60_10#" 19.5859
-cap "xor_1/a_n180_n280#" "xor_0/inv_1/a_60_10#" 9.82958
-cap "xor_0/a_20_n280#" "xor_0/inv_1/a_60_10#" 0.0188483
-cap "xor_1/inv_1/a_60_10#" "xor_1/inv_1/a_n30_240#" 148.629
-cap "xor_1/inv_1/a_60_10#" "xor_0/a_n60_450#" 0.584604
-cap "xor_1/inv_0/a_60_10#" "xor_1/inv_1/a_60_10#" -60.3173
-cap "xor_0/inv_0/a_n30_240#" "xor_1/inv_1/a_60_10#" 0.672961
-cap "xor_1/a_n60_450#" "xor_1/inv_0/a_n30_240#" 0.105254
-cap "xor_0/inv_0/a_60_10#" "negdff_0/csrl_0/a_n120_580#" 3.94223
-cap "xor_1/inv_1/a_60_10#" "inv_1/w_n80_280#" 4.76028
-cap "xor_1/inv_0/a_n30_240#" "xor_1/a_n60_740#" 1.06648
-cap "negdff_0/ncsrl_0/a_n120_10#" "xor_1/inv_1/a_n30_240#" 0.274395
-cap "xor_1/a_n180_n280#" "xor_1/inv_1/a_n30_240#" 100.342
-cap "xor_0/a_n60_10#" "xor_1/a_n180_n280#" 0.332195
-cap "xor_1/a_n180_n280#" "xor_0/a_n60_450#" 0.00867149
-cap "xor_0/inv_0/a_60_10#" "xor_0/inv_1/a_60_10#" -60.5502
-cap "xor_0/a_20_n280#" "xor_1/inv_1/a_n30_240#" 96.136
-cap "xor_0/a_20_n280#" "xor_1/a_n60_n280#" 0.426222
-cap "xor_0/inv_0/a_n30_240#" "xor_1/a_n180_n280#" 74.3779
+cap "negdff_0/ncsrl_0/a_n400_630#" "xor_1/inv_0/a_n30_240#" -19.4839
+cap "negdff_0/ncsrl_0/a_n400_630#" "xor_0/a_n60_10#" 1.23135
+cap "xor_1/a_n60_n280#" "negdff_0/ncsrl_0/a_n400_630#" 0.154594
+cap "negdff_0/ncsrl_0/a_n400_630#" "xor_0/a_n60_740#" -0.571542
+cap "negdff_0/ncsrl_0/a_n400_630#" "inv_1/w_n80_280#" 98.327
+cap "negdff_0/ncsrl_0/a_n400_630#" "negdff_0/ncsrl_0/a_n300_n280#" 0.0204148
+cap "negdff_0/csrl_0/a_n120_580#" "xor_0/inv_0/a_60_10#" 3.94223
+cap "negdff_0/ncsrl_0/a_n470_n280#" "negdff_0/csrl_0/a_n470_n150#" 1.68113
+cap "negdff_0/ncsrl_0/a_n400_630#" "negdff_0/ncsrl_0/a_n120_10#" 0.274395
 cap "xor_0/a_20_n280#" "xor_1/inv_0/a_60_10#" 1.14394
-cap "xor_0/a_20_n280#" "xor_0/inv_0/a_n30_240#" 0.606746
-cap "xor_0/inv_0/a_60_10#" "xor_0/a_n60_740#" -3.06063
-cap "xor_1/a_n180_n280#" "inv_1/w_n80_280#" -12.7422
-cap "xor_0/a_20_n280#" "inv_1/w_n80_280#" 57.2301
-cap "inv_1/a_n40_10#" "xor_1/inv_1/a_60_10#" 0.0272538
-cap "xor_0/inv_0/a_60_10#" "xor_1/inv_1/a_n30_240#" 41.94
-cap "xor_1/inv_1/a_60_10#" "inv_1/a_60_10#" 0.0397187
-cap "xor_1/inv_1/a_n30_240#" "negdff_0/ncsrl_0/a_n300_n280#" 0.0204148
-cap "negdff_0/csrl_0/a_n120_580#" "xor_1/inv_0/a_n30_240#" 0.182302
-cap "xor_0/inv_0/a_60_10#" "xor_0/inv_0/a_n30_240#" 116.72
-cap "negdff_0/ncsrl_0/a_n220_n310#" "xor_1/inv_0/a_n30_240#" 0.0475845
-cap "xor_1/inv_0/a_n30_240#" "inv_1/a_n30_240#" 0.213859
-cap "xor_0/inv_0/a_60_10#" "inv_1/w_n80_280#" 81.7245
-cap "xor_1/a_n180_n280#" "xor_0/a_n60_n280#" 3.54176
-cap "xor_1/inv_0/a_n30_240#" "xor_0/inv_1/a_60_10#" 10.7715
-cap "xor_0/a_n60_740#" "xor_1/inv_0/a_n30_240#" 3.15711
-cap "xor_1/a_n180_n280#" "xor_1/inv_1/a_60_10#" 3.28769
-cap "inv_1/a_n40_450#" "xor_1/inv_0/a_n30_240#" 0.0377403
-cap "xor_0/a_20_n280#" "xor_1/inv_1/a_60_10#" 45.9754
-cap "xor_0/a_n60_10#" "xor_1/inv_0/a_n30_240#" 0.224806
-cap "xor_1/inv_1/a_n30_240#" "xor_1/inv_0/a_n30_240#" -19.4839
-cap "xor_1/inv_0/a_n30_240#" "xor_0/a_n60_450#" 0.705358
-cap "xor_1/inv_0/a_60_10#" "xor_1/inv_0/a_n30_240#" 117.377
-cap "xor_0/inv_0/a_n30_240#" "xor_1/inv_0/a_n30_240#" -9.89489
-cap "negdff_0/csrl_0/a_n120_580#" "xor_0/inv_1/a_60_10#" 4.68487
-cap "xor_0/a_20_n280#" "xor_1/a_n180_n280#" 165.245
-cap "xor_1/inv_0/a_n30_240#" "inv_1/w_n80_280#" 82.7855
-cap "negdff_0/ncsrl_0/a_n120_n280#" "xor_1/inv_0/a_n30_240#" 0.015643
-cap "xor_0/inv_0/a_60_10#" "xor_1/inv_1/a_60_10#" 18.1418
-cap "negdff_0/csrl_0/a_n470_n150#" "xor_1/inv_1/a_n30_240#" 0.365123
-cap "negdff_0/ncsrl_0/a_n220_n310#" "xor_0/inv_1/a_60_10#" 0.118203
-cap "xor_0/a_20_n280#" "inv_1/a_60_10#" 10.26
-cap "xor_1/inv_0/a_n30_240#" "inv_1/a_n30_240#" 20.5466
-cap "inv_1/a_60_10#" "xor_1/inv_1/a_n30_240#" 2.05458
-cap "inv_1/a_60_10#" "inv_1/w_n80_280#" 17.8767
-cap "xor_1/inv_1/a_60_10#" "inv_1/a_60_10#" 4.86274
-cap "xor_0/inv_0/a_60_10#" "xor_1/inv_1/a_n30_240#" 1.67558
-cap "xor_1/a_n180_n280#" "inv_1/a_n30_240#" 80.9433
+cap "xor_1/a_n60_740#" "xor_1/inv_0/a_n30_240#" 1.06648
 cap "xor_1/inv_0/a_60_10#" "xor_0/inv_1/a_60_10#" 1.65128
+cap "inv_1/a_n30_240#" "negdff_0/ncsrl_0/a_n400_630#" 0.281645
+cap "xor_1/inv_0/a_60_10#" "xor_1/inv_1/a_60_10#" -60.3173
+cap "xor_0/inv_1/a_60_10#" "negdff_0/ncsrl_0/a_n120_n280#" 0.0145829
+cap "xor_1/inv_0/a_60_10#" "inv_1/a_n40_450#" 0.52018
+cap "xor_1/inv_0/a_60_10#" "inv_1/a_60_10#" 19.5859
+cap "xor_1/inv_0/a_60_10#" "inv_1/a_n40_10#" 0.52018
+cap "negdff_0/csrl_0/a_n120_870#" "negdff_0/csrl_0/a_n120_580#" 13.0894
+cap "xor_0/inv_1/a_60_10#" "negdff_0/ncsrl_0/a_n220_n310#" 0.118203
+cap "negdff_0/csrl_0/a_n120_870#" "xor_0/inv_0/a_60_10#" 116.72
+cap "negdff_0/csrl_0/a_n120_580#" "xor_0/inv_1/a_60_10#" 4.68487
+cap "xor_1/inv_0/a_60_10#" "xor_1/inv_0/a_n30_240#" 117.377
+cap "negdff_0/ncsrl_0/a_n470_n280#" "negdff_0/ncsrl_0/a_n220_n310#" 0.689361
+cap "xor_0/inv_1/a_60_10#" "xor_0/inv_0/a_60_10#" -60.5502
+cap "negdff_0/ncsrl_0/a_n470_n280#" "negdff_0/csrl_0/a_n120_580#" 67.6305
+cap "xor_0/inv_1/a_60_10#" "negdff_0/ncsrl_0/a_n400_n20#" 0.0163634
+cap "xor_0/inv_0/a_60_10#" "xor_1/inv_1/a_60_10#" 18.1418
+cap "negdff_0/ncsrl_0/a_n470_n280#" "xor_0/inv_0/a_60_10#" 22.2978
+cap "xor_1/inv_0/a_n30_240#" "negdff_0/ncsrl_0/a_n120_n280#" 0.015643
+cap "xor_1/inv_0/a_60_10#" "inv_1/w_n80_280#" -4.41526
+cap "negdff_0/ncsrl_0/a_n220_n310#" "xor_1/inv_0/a_n30_240#" 0.0475845
+cap "negdff_0/csrl_0/a_n120_580#" "xor_1/inv_0/a_n30_240#" 0.182302
+cap "xor_0/inv_0/a_60_10#" "xor_1/inv_0/a_n30_240#" 10.1791
+cap "negdff_0/csrl_0/a_n120_870#" "xor_0/a_20_n280#" 0.606746
+cap "negdff_0/csrl_0/a_n120_870#" "xor_0/inv_1/a_60_10#" 142.339
+cap "xor_0/a_20_n280#" "xor_0/inv_1/a_60_10#" 0.0188483
+cap "inv_1/a_n30_240#" "xor_1/inv_0/a_60_10#" 2.26618
+cap "negdff_0/csrl_0/a_n120_870#" "negdff_0/ncsrl_0/a_n470_n280#" 74.3779
+cap "negdff_0/csrl_0/a_n120_870#" "xor_1/inv_1/a_60_10#" 0.672961
+cap "xor_0/a_20_n280#" "xor_1/inv_1/a_60_10#" 45.9754
+cap "inv_1/w_n80_280#" "negdff_0/ncsrl_0/a_n220_n310#" 0.128939
+cap "negdff_0/csrl_0/a_n120_580#" "inv_1/w_n80_280#" 38.3455
+cap "xor_0/a_20_n280#" "negdff_0/ncsrl_0/a_n470_n280#" 165.245
+cap "xor_0/inv_1/a_60_10#" "xor_1/inv_1/a_60_10#" 2.38193
+cap "negdff_0/ncsrl_0/a_n470_n280#" "xor_0/inv_1/a_60_10#" 9.82958
+cap "xor_0/a_n60_740#" "xor_0/inv_0/a_60_10#" -3.06063
+cap "xor_0/inv_0/a_60_10#" "inv_1/w_n80_280#" 81.7245
+cap "negdff_0/ncsrl_0/a_n470_n280#" "xor_1/inv_1/a_60_10#" 3.28769
+cap "xor_1/a_n60_450#" "xor_1/inv_0/a_n30_240#" 0.105254
+cap "negdff_0/ncsrl_0/a_n470_n280#" "xor_0/a_n60_n280#" 3.54176
+cap "negdff_0/csrl_0/a_n120_870#" "xor_1/inv_0/a_n30_240#" -9.89489
+cap "inv_1/a_60_10#" "xor_1/inv_1/a_60_10#" 0.0397187
+cap "xor_0/a_20_n280#" "xor_1/inv_0/a_n30_240#" 20.3655
+cap "inv_1/a_n40_10#" "xor_1/inv_1/a_60_10#" 0.0272538
+cap "xor_0/inv_1/a_60_10#" "xor_1/inv_0/a_n30_240#" 10.7715
+cap "negdff_0/csrl_0/a_n300_870#" "xor_1/inv_0/a_n30_240#" 0.0136243
+cap "xor_1/inv_0/a_n30_240#" "xor_1/inv_1/a_60_10#" 117.086
+cap "negdff_0/ncsrl_0/a_n470_n280#" "xor_1/inv_0/a_n30_240#" 0.897572
+cap "negdff_0/ncsrl_0/a_n470_n280#" "xor_0/a_n60_10#" 0.332195
+cap "xor_0/a_20_n280#" "xor_1/a_n60_n280#" 0.426222
+cap "negdff_0/csrl_0/a_n120_870#" "inv_1/w_n80_280#" 115.403
+cap "negdff_0/ncsrl_0/a_n400_630#" "negdff_0/csrl_0/a_n470_n150#" 0.365123
+cap "xor_0/a_20_n280#" "inv_1/w_n80_280#" 57.2301
+cap "xor_0/inv_1/a_60_10#" "xor_0/a_n60_740#" -0.206342
+cap "xor_0/inv_1/a_60_10#" "inv_1/w_n80_280#" 12.1264
+cap "xor_1/inv_0/a_n30_240#" "inv_1/a_n40_450#" 0.0377403
+cap "xor_1/inv_0/a_n30_240#" "inv_1/a_60_10#" 0.0513269
+cap "inv_1/w_n80_280#" "xor_1/inv_1/a_60_10#" 4.76028
+cap "negdff_0/ncsrl_0/a_n470_n280#" "inv_1/w_n80_280#" -12.7422
+cap "negdff_0/ncsrl_0/a_n400_630#" "xor_1/inv_0/a_60_10#" 0.56874
+cap "xor_1/inv_0/a_n30_240#" "xor_0/a_n60_10#" 0.224806
+cap "xor_0/inv_1/a_60_10#" "negdff_0/ncsrl_0/a_n120_10#" 0.0557401
+cap "inv_1/a_n30_240#" "xor_0/a_20_n280#" 0.565358
+cap "negdff_0/ncsrl_0/a_n400_630#" "negdff_0/ncsrl_0/a_n120_n280#" 1.18887
+cap "xor_0/a_n60_740#" "xor_1/inv_0/a_n30_240#" 3.15711
+cap "inv_1/a_n30_240#" "xor_1/inv_1/a_60_10#" 0.0658655
+cap "inv_1/w_n80_280#" "xor_1/inv_0/a_n30_240#" 82.7855
+cap "negdff_0/ncsrl_0/a_n400_630#" "negdff_0/ncsrl_0/a_n220_n310#" 19.2849
+cap "negdff_0/csrl_0/a_n120_580#" "negdff_0/ncsrl_0/a_n400_630#" 62.6263
+cap "negdff_0/ncsrl_0/a_n400_630#" "xor_0/inv_0/a_60_10#" 41.94
+cap "negdff_0/csrl_0/a_n120_870#" "xor_0/a_n60_450#" 0.105254
+cap "xor_0/a_n60_740#" "inv_1/w_n80_280#" 8.74992
+cap "negdff_0/ncsrl_0/a_n400_630#" "negdff_0/ncsrl_0/a_n400_n20#" -0.380703
+cap "xor_0/a_20_n280#" "xor_0/a_n180_n280#" 13.2244
+cap "xor_1/inv_0/a_n30_240#" "inv_1/a_n30_240#" 20.5466
+cap "xor_1/inv_1/a_60_10#" "xor_1/inv_0/a_60_10#" -1.15592
+cap "xor_0/a_n180_n280#" "inv_1/w_n80_280#" -9.82452
+cap "xor_1/a_n60_740#" "inv_1/w_n80_280#" 7.27977
+cap "xor_0/a_20_n280#" "xor_0/inv_1/a_n30_240#" 1.22188
+cap "inv_1/w_n80_280#" "xor_0/inv_1/a_n30_240#" 43.4581
+cap "xor_1/a_n60_n280#" "xor_0/a_20_n280#" 3.05819
+cap "xor_1/inv_0/a_60_10#" "xor_1/a_n60_740#" -3.06063
+cap "xor_1/inv_0/a_60_10#" "xor_0/a_n180_n280#" 24.1569
+cap "xor_1/inv_0/a_60_10#" "xor_0/inv_1/a_60_10#" 1.65128
+cap "inv_1/a_n40_10#" "inv_1/a_n30_240#" 28.9773
+cap "xor_1/inv_0/a_60_10#" "xor_0/inv_1/a_n30_240#" 0.216188
+cap "xor_0/a_n180_n280#" "xor_1/a_n60_450#" 0.00867149
+cap "xor_1/inv_0/a_n30_240#" "xor_0/a_20_n280#" 0.736254
+cap "xor_1/inv_0/a_n30_240#" "inv_1/w_n80_280#" 0.379074
+cap "xor_1/inv_1/a_60_10#" "xor_1/a_n60_740#" -0.206342
+cap "inv_1/a_n40_10#" "xor_0/a_20_n280#" 1.64233
+cap "xor_1/inv_1/a_60_10#" "xor_0/a_n180_n280#" 19.7414
+cap "xor_1/inv_1/a_60_10#" "xor_0/inv_1/a_n30_240#" 3.08373
+cap "inv_1/a_60_10#" "inv_1/a_n30_240#" 14.2202
+cap "xor_1/inv_1/a_60_10#" "xor_1/a_n60_n280#" -1.16411
+cap "xor_1/a_n60_10#" "inv_1/a_60_10#" 0.796531
+cap "xor_1/a_n60_740#" "xor_0/inv_1/a_n30_240#" -0.571542
+cap "xor_0/a_n180_n280#" "xor_0/inv_1/a_n30_240#" 0.162752
+cap "xor_1/a_n60_n280#" "xor_0/a_n180_n280#" 3.87486
+cap "xor_0/a_20_n280#" "inv_1/a_60_10#" 10.26
+cap "inv_1/a_n40_450#" "inv_1/a_n30_240#" 28.9773
+cap "xor_1/inv_1/a_60_10#" "xor_1/inv_0/a_n30_240#" -1.42109e-14
+cap "inv_1/a_60_10#" "inv_1/w_n80_280#" 17.8767
+cap "xor_1/inv_0/a_60_10#" "inv_1/a_60_10#" 23.1797
+cap "xor_1/inv_0/a_n30_240#" "xor_0/a_n180_n280#" 0.0853364
+cap "xor_1/inv_0/a_n30_240#" "xor_0/inv_1/a_n30_240#" 1.23085
+cap "inv_1/a_n40_10#" "xor_0/a_n180_n280#" 11.963
 cap "xor_0/a_20_n280#" "inv_1/a_n30_240#" 37.6206
 cap "inv_1/w_n80_280#" "inv_1/a_n30_240#" 58.2436
-cap "inv_1/a_n40_10#" "inv_1/a_n30_240#" 28.9773
-cap "xor_1/inv_1/a_60_10#" "inv_1/a_n30_240#" 10.7708
-cap "xor_0/a_20_n280#" "inv_1/a_n40_450#" 0.26449
-cap "xor_1/a_n180_n280#" "xor_1/a_n60_n280#" 3.87486
-cap "inv_1/a_n40_450#" "inv_1/w_n80_280#" 15.3928
-cap "xor_0/a_20_n280#" "xor_1/a_n60_n280#" 3.05819
-cap "xor_1/a_n60_740#" "xor_1/inv_0/a_60_10#" -3.06063
-cap "inv_1/a_60_10#" "inv_1/a_n30_240#" 14.2202
-cap "xor_1/a_n180_n280#" "xor_1/a_n60_10#" 0.332195
-cap "xor_1/a_n180_n280#" "xor_1/inv_0/a_60_10#" 24.1569
-cap "xor_1/a_n180_n280#" "xor_1/inv_0/a_n30_240#" 0.0853364
-cap "xor_1/a_n180_n280#" "xor_1/a_n60_450#" 0.00867149
-cap "xor_1/inv_1/a_60_10#" "xor_1/a_n60_n280#" -1.16411
-cap "xor_0/a_20_n280#" "xor_1/inv_0/a_60_10#" 11.9947
-cap "xor_0/a_20_n280#" "xor_1/inv_0/a_n30_240#" 0.736254
-cap "xor_1/inv_1/a_n30_240#" "xor_1/inv_0/a_60_10#" 0.216188
-cap "inv_1/w_n80_280#" "xor_1/inv_0/a_60_10#" 67.1902
-cap "xor_1/inv_0/a_n30_240#" "xor_1/inv_1/a_n30_240#" 1.23085
-cap "xor_1/inv_0/a_n30_240#" "inv_1/w_n80_280#" 0.379074
-cap "xor_1/a_n60_450#" "inv_1/w_n80_280#" 0.613795
-cap "xor_1/inv_1/a_60_10#" "xor_1/inv_0/a_n30_240#" -1.42109e-14
-cap "xor_1/inv_1/a_60_10#" "xor_1/inv_0/a_60_10#" -1.15592
-cap "xor_1/a_n180_n280#" "xor_0/a_20_n280#" 13.2244
-cap "xor_1/a_n60_740#" "xor_1/inv_1/a_n30_240#" -0.571542
-cap "xor_1/a_n180_n280#" "inv_1/w_n80_280#" -9.82452
-cap "xor_1/a_n60_740#" "inv_1/w_n80_280#" 7.27977
-cap "xor_1/a_n180_n280#" "xor_1/inv_1/a_n30_240#" 0.162752
-cap "xor_0/a_20_n280#" "inv_1/w_n80_280#" -0.942693
-cap "xor_1/inv_1/a_60_10#" "xor_1/a_n60_740#" -0.206342
-cap "xor_1/a_n180_n280#" "inv_1/a_n40_10#" 11.963
-cap "xor_1/a_n180_n280#" "xor_1/inv_1/a_60_10#" 19.7414
-cap "xor_0/a_20_n280#" "xor_1/inv_1/a_n30_240#" 1.22188
-cap "inv_1/a_60_10#" "xor_1/inv_0/a_60_10#" 23.1797
-cap "inv_1/a_n40_450#" "inv_1/a_n30_240#" 28.9773
-cap "inv_1/w_n80_280#" "xor_1/inv_1/a_n30_240#" 43.4581
-cap "xor_1/a_n60_10#" "inv_1/a_60_10#" 0.796531
-cap "inv_1/a_60_10#" "xor_1/a_n60_450#" 0.584604
-cap "inv_1/a_60_10#" "xor_1/inv_0/a_n30_240#" 1.7149
-cap "xor_0/a_20_n280#" "inv_1/a_n40_10#" 1.64233
-cap "xor_0/a_20_n280#" "xor_1/inv_1/a_60_10#" 67.229
-cap "xor_1/inv_1/a_60_10#" "xor_1/inv_1/a_n30_240#" 3.08373
-cap "xor_1/inv_1/a_60_10#" "inv_1/w_n80_280#" 6.73661
-cap "xor_1/a_n180_n280#" "inv_1/a_60_10#" 0.664154
 cap "xor_1/inv_0/a_60_10#" "inv_1/a_n30_240#" 0.331138
-merge "inv_1/VSUBS" "xor_1/VSUBS" -768.498 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -400 -420 0 -240 0 0 0 0 0 0 0 0 0 0
-merge "xor_1/VSUBS" "xor_1/a_n180_n280#"
-merge "xor_1/a_n180_n280#" "inv_0/VSUBS"
-merge "inv_0/VSUBS" "xor_0/VSUBS"
-merge "xor_0/VSUBS" "negdff_0/VSUBS"
-merge "negdff_0/VSUBS" "posdff_0/VSUBS"
-merge "posdff_0/VSUBS" "a_4200_2240#"
-merge "a_4200_2240#" "xor_0/a_n180_n280#"
-merge "xor_0/a_n180_n280#" "li_3740_2080#"
-merge "li_3740_2080#" "negdff_0/ncsrl_0/a_n470_n280#"
-merge "negdff_0/ncsrl_0/a_n470_n280#" "li_3280_2150#"
+cap "xor_0/a_20_n280#" "inv_1/a_n40_450#" 0.26449
+cap "inv_1/a_60_10#" "xor_1/a_n60_450#" 0.584604
+cap "inv_1/a_n40_450#" "inv_1/w_n80_280#" 15.3928
+cap "xor_1/inv_1/a_60_10#" "inv_1/a_60_10#" 4.86274
+cap "xor_0/a_20_n280#" "inv_1/w_n80_280#" -0.942693
+cap "xor_0/a_n180_n280#" "inv_1/a_60_10#" 0.664154
+cap "inv_1/a_60_10#" "xor_0/inv_1/a_n30_240#" 2.05458
+cap "xor_1/inv_0/a_60_10#" "xor_0/a_20_n280#" 11.9947
+cap "xor_1/inv_1/a_60_10#" "inv_1/a_n30_240#" 10.7708
+cap "xor_0/inv_0/a_60_10#" "xor_0/inv_1/a_n30_240#" 1.67558
+cap "xor_1/inv_0/a_60_10#" "inv_1/w_n80_280#" 67.1902
+cap "xor_0/a_n180_n280#" "inv_1/a_n30_240#" 80.9433
+cap "xor_1/a_n60_10#" "xor_0/a_n180_n280#" 0.332195
+cap "inv_1/w_n80_280#" "xor_1/a_n60_450#" 0.613795
+cap "xor_1/inv_0/a_n30_240#" "inv_1/a_60_10#" 1.7149
+cap "xor_1/inv_1/a_60_10#" "xor_0/a_20_n280#" 67.229
+cap "xor_1/inv_1/a_60_10#" "inv_1/w_n80_280#" 6.73661
+merge "inv_1/VSUBS" "negdff_0/ncsrl_0/a_n470_n280#" -752.15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -400 -420 0 -240 0 0 0 0 0 0 0 0 0 0
+merge "negdff_0/ncsrl_0/a_n470_n280#" "xor_0/a_n180_n280#"
+merge "xor_0/a_n180_n280#" "li_3280_2150#"
 merge "li_3280_2150#" "posdff_0/ncsrl_0/a_n470_n280#"
 merge "posdff_0/ncsrl_0/a_n470_n280#" "m1_1880_2160#"
+merge "m1_1880_2160#" "xor_1/VSUBS"
+merge "xor_1/VSUBS" "xor_1/a_n180_n280#"
+merge "xor_1/a_n180_n280#" "li_3740_2080#"
+merge "li_3740_2080#" "inv_0/VSUBS"
+merge "inv_0/VSUBS" "negdff_0/VSUBS"
+merge "negdff_0/VSUBS" "posdff_0/VSUBS"
+merge "posdff_0/VSUBS" "xor_0/VSUBS"
+merge "xor_0/VSUBS" "a_4200_2240#"
 merge "xor_0/inv_0/a_n30_240#" "negdff_0/csrl_0/a_n120_870#" -432.092 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4800 -280 0 -80 0 0 0 0 0 0 0 0 0 0
 merge "negdff_0/csrl_0/a_n120_870#" "li_3500_2650#"
-merge "xor_1/inv_1/a_n30_240#" "xor_0/inv_1/a_n30_240#" -1258.88 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4800 -280 0 0 -9600 -560 -1800 -500 0 0 0 0 0 0 0 0 0 0
-merge "xor_0/inv_1/a_n30_240#" "negdff_0/ncsrl_0/a_n400_n310#"
-merge "negdff_0/ncsrl_0/a_n400_n310#" "a_4100_2650#"
+merge "xor_1/inv_1/a_n30_240#" "negdff_0/ncsrl_0/a_n400_n310#" -1258.88 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4800 -280 0 0 -9600 -560 -1800 -500 0 0 0 0 0 0 0 0 0 0
+merge "negdff_0/ncsrl_0/a_n400_n310#" "xor_0/inv_1/a_n30_240#"
+merge "xor_0/inv_1/a_n30_240#" "a_4100_2650#"
 merge "a_4100_2650#" "negdff_0/ncsrl_0/a_n400_630#"
 merge "negdff_0/ncsrl_0/a_n400_630#" "posdff_0/ncsrl_0/a_n120_n280#"
 merge "posdff_0/ncsrl_0/a_n120_n280#" "m1_1920_2280#"
 merge "m1_1920_2280#" "m1_1920_3060#"
 merge "negdff_0/csrl_0/w_n510_320#" "inv_1/w_n80_280#" -2268.09 0 0 0 0 -382700 -18420 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1600 -480 0 -240 0 0 0 0 0 0 0 0 0 0
 merge "inv_1/w_n80_280#" "posdff_0/ncsrl_0/w_n510_410#"
-merge "posdff_0/ncsrl_0/w_n510_410#" "xor_1/a_n180_450#"
-merge "xor_1/a_n180_450#" "li_4610_3160#"
+merge "posdff_0/ncsrl_0/w_n510_410#" "xor_0/a_n180_450#"
+merge "xor_0/a_n180_450#" "xor_0/w_n220_280#"
+merge "xor_0/w_n220_280#" "xor_1/a_n180_450#"
+merge "xor_1/a_n180_450#" "li_3780_3160#"
+merge "li_3780_3160#" "li_4610_3160#"
 merge "li_4610_3160#" "xor_1/w_n220_280#"
 merge "xor_1/w_n220_280#" "w_4100_2690#"
-merge "w_4100_2690#" "xor_0/a_n180_450#"
-merge "xor_0/a_n180_450#" "li_3780_3160#"
-merge "li_3780_3160#" "xor_0/w_n220_280#"
-merge "xor_0/w_n220_280#" "inv_0/w_n80_280#"
-merge "inv_0/w_n80_280#" "xor_0/inv_1/w_n80_280#"
-merge "xor_0/inv_1/w_n80_280#" "w_3270_2690#"
-merge "w_3270_2690#" "negdff_0/w_170_840#"
+merge "w_4100_2690#" "inv_0/w_n80_280#"
+merge "inv_0/w_n80_280#" "negdff_0/w_170_840#"
 merge "negdff_0/w_170_840#" "li_3730_3180#"
 merge "li_3730_3180#" "posdff_0/w_n490_840#"
 merge "posdff_0/w_n490_840#" "m1_1520_3170#"
@@ -490,7 +488,9 @@ merge "m1_1520_3170#" "w_620_2750#"
 merge "w_620_2750#" "w_1920_3060#"
 merge "w_1920_3060#" "w_580_3080#"
 merge "w_580_3080#" "w_1520_3170#"
-merge "w_1520_3170#" "w_580_3270#"
+merge "w_1520_3170#" "xor_0/inv_1/w_n80_280#"
+merge "xor_0/inv_1/w_n80_280#" "w_3270_2690#"
+merge "w_3270_2690#" "w_580_3270#"
 merge "negdff_0/ncsrl_0/a_n400_n20#" "posdff_0/ncsrl_0/a_n120_10#" -251.762 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -400 -180 0 0 0 0 0 0 0 0 0 0 0 0
 merge "posdff_0/ncsrl_0/a_n120_10#" "li_1860_2670#"
 merge "xor_1/inv_0/a_n30_240#" "inv_0/a_n30_240#" -971.463 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4800 -400 0 0 -4800 -280 0 -160 0 0 0 0 0 0 0 0 0 0

@@ -212,7 +212,7 @@ C4 li_130_240# inv_2/VSUBS 1.67447f
 C5 a_130_450# inv_2/VSUBS 9.32991f
 .ends
 
-.subckt lds_full_postlayout VP VN filt nrz res clk
+.subckt dpll VP VN nrz clk res filt
 Xdiv8_0 VP m1_n8820_610# clk VP VN div8
 Xhpd_0 VN VP m1_n920_n170# m1_n8820_610# nrz VP VN m1_n920_390# VP VN hpd
 Xipump_0 li_n50_440# filt VP VN m1_n60_340# m1_n920_390# m1_n920_n170# ipump

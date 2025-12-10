@@ -1,11 +1,12 @@
 magic
 tech sky130A
-timestamp 1765346567
+timestamp 1765406647
 << locali >>
 rect -4430 485 -4390 490
 rect -4430 465 -4420 485
 rect -4400 465 -4390 485
 rect -4430 460 -4390 465
+rect -5130 425 -5110 445
 rect -4410 310 -4390 460
 rect -2785 455 -2755 465
 rect -2785 435 -2780 455
@@ -15,9 +16,14 @@ rect -535 330 -410 350
 rect -535 315 -515 330
 rect -430 315 -410 330
 rect -25 220 10 240
+rect -2800 170 -2780 190
+rect 3835 170 3855 190
+rect -50 60 -30 80
+rect 100 60 120 80
 rect -535 30 -515 45
 rect -430 30 -410 45
 rect -535 10 -410 30
+rect -5040 -80 -5020 -60
 << viali >>
 rect -4420 465 -4400 485
 rect -2780 435 -2760 455
@@ -93,4 +99,17 @@ use vco  vco_0
 timestamp 1765346501
 transform 1 0 985 0 1 40
 box -1000 -55 2895 355
+<< labels >>
+rlabel via1 3845 180 3845 180 3 clk
+port 4 e
+rlabel locali -5120 435 -5120 435 7 VP
+port 1 w
+rlabel locali -5030 -70 -5030 -70 7 VN
+port 2 w
+rlabel locali -2790 180 -2790 180 7 nrz
+port 3 w
+rlabel locali 110 70 110 70 7 res
+port 5 w
+rlabel locali -40 70 -40 70 7 filt
+port 6 w
 << end >>
