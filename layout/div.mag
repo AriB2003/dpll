@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1765325204
+timestamp 1765328216
 << nwell >>
 rect 555 745 825 865
 rect 100 520 120 575
@@ -63,9 +63,9 @@ rect 255 330 260 335
 rect 605 330 645 335
 rect 220 325 260 330
 use inv  inv_0
-timestamp 1765238977
+timestamp 1765328216
 transform 1 0 740 0 1 260
-box -40 -220 85 600
+box -40 -280 85 600
 use posdff  posdff_0
 timestamp 1765307294
 transform 1 0 625 0 1 165
