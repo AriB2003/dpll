@@ -1,8 +1,14 @@
 magic
 tech sky130A
-timestamp 1765329033
+timestamp 1765346501
+<< error_p >>
+rect -125 140 85 295
+rect -10 55 15 105
+rect -105 5 -70 55
+rect -20 5 15 55
+rect 30 55 55 105
+rect 30 5 65 55
 << nwell >>
-rect -55 295 35 455
 rect -125 140 85 295
 << nmos >>
 rect -70 5 -20 55
@@ -40,20 +46,6 @@ rect 40 20 60 40
 << pdiffc >>
 rect -100 240 -80 260
 rect 40 240 60 260
-<< psubdiff >>
-rect -40 -45 10 -30
-rect -40 -70 -25 -45
-rect -5 -70 10 -45
-rect -40 -85 10 -70
-<< nsubdiff >>
-rect -35 400 15 415
-rect -35 375 -20 400
-rect 0 375 15 400
-rect -35 360 15 375
-<< psubdiffcont >>
-rect -25 -70 -5 -45
-<< nsubdiffcont >>
-rect -20 375 0 400
 << poly >>
 rect -70 275 -20 290
 rect 15 275 30 290
@@ -80,10 +72,6 @@ rect -60 180 -40 200
 rect -10 130 10 150
 rect -60 80 -40 100
 << locali >>
-rect -25 400 5 410
-rect -25 375 -20 400
-rect 0 375 5 400
-rect -25 365 5 375
 rect -105 260 -75 275
 rect -105 240 -100 260
 rect -80 240 -75 260
@@ -116,10 +104,6 @@ rect 35 40 65 55
 rect 35 20 40 40
 rect 60 20 65 40
 rect 35 10 65 20
-rect -30 -45 0 -35
-rect -30 -70 -25 -45
-rect -5 -70 0 -45
-rect -30 -80 0 -70
 << viali >>
 rect 40 240 60 260
 rect 40 130 60 150

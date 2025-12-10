@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1765333228
+timestamp 1765346567
 << nwell >>
 rect 1410 595 1515 740
 rect 2185 595 2290 740
@@ -12,15 +12,15 @@ rect 2280 430 2300 450
 rect 1390 175 1625 195
 rect 2165 175 2400 195
 use div  div_0
-timestamp 1765333169
+timestamp 1765346567
 transform 1 0 700 0 1 40
 box 40 90 825 710
 use div  div_1
-timestamp 1765333169
+timestamp 1765346567
 transform 1 0 1475 0 1 40
 box 40 90 825 710
 use div  div_2
-timestamp 1765333169
+timestamp 1765346567
 transform 1 0 2250 0 1 40
 box 40 90 825 710
 << end >>

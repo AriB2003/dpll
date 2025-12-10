@@ -33,303 +33,692 @@ Circuit 1: dpll.spice                      |Circuit 2: xschem_dpll.spice
 -------------------------------------------|-------------------------------------------
 sky130_fd_pr__nfet_01v8 (125->116)         |sky130_fd_pr__nfet_01v8 (125->116)         
 sky130_fd_pr__pfet_01v8 (125->116)         |sky130_fd_pr__pfet_01v8 (125->116)         
-Number of devices: 232                     |Number of devices: 232                     
-Number of nets: 143                        |Number of nets: 143                        
+c (10)                                     |(no matching element)                      
+**FLOATING (18)                            |(no matching element)                      
+Number of devices: 260 **Mismatch**        |Number of devices: 232 **Mismatch**        
+Number of nets: 144 **Mismatch**           |Number of nets: 143 **Mismatch**           
 ---------------------------------------------------------------------------------------
-Netlists match uniquely with property errors.
-sky130_fd_pr__pfet_01v8:113 vs. hpd:3/LDS_xor:5/sky130_fd_pr__pfet_01v8:M4:
- l circuit1: 0.15   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__pfet_01v8:111 vs. hpd:3/LDS_xor:5/sky130_fd_pr__pfet_01v8:M2:
- l circuit1: 0.15   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__pfet_01v8:124 vs. hpd:3/LDS_xor:3/sky130_fd_pr__pfet_01v8:M5:
- l circuit1: 0.15   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__pfet_01v8:112 vs. hpd:3/LDS_xor:5/sky130_fd_pr__pfet_01v8:M5:
- l circuit1: 0.15   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__pfet_01v8:132 vs. hpd:3/LDS_posdff:1/LDS_csrl_latch:2/sky130_fd_pr__pfet_01v8:M19:
- l circuit1: 0.5   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__pfet_01v8:137 vs. hpd:3/LDS_posdff:1/LDS_csrl_latch:2/sky130_fd_pr__pfet_01v8:M22:
- l circuit1: 0.5   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__pfet_01v8:122 vs. hpd:3/LDS_xor:3/sky130_fd_pr__pfet_01v8:M3:
- l circuit1: 0.15   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__pfet_01v8:89 vs. hpd:3/LDS_negdff:2/LDS_csrl_latch:2/sky130_fd_pr__pfet_01v8:M20:
- l circuit1: 0.5   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__pfet_01v8:87 vs. hpd:3/LDS_negdff:2/LDS_csrl_latch:2/sky130_fd_pr__pfet_01v8:M21:
- l circuit1: 0.5   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__pfet_01v8:84 vs. hpd:3/LDS_negdff:2/LDS_csrl_latch:2/sky130_fd_pr__pfet_01v8:M23:
- l circuit1: 0.5   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__pfet_01v8:82 vs. hpd:3/LDS_negdff:2/LDS_csrl_latch:2/sky130_fd_pr__pfet_01v8:M24:
- l circuit1: 0.5   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__pfet_01v8:243 vs. LDS_vco:1/sky130_fd_pr__pfet_01v8:M4:
- l circuit1: 0.5   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__pfet_01v8:229 vs. LDS_vco:1/sky130_fd_pr__pfet_01v8:M2:
- l circuit1: 0.5   (unresolved expression)  (property type mismatch)
- w circuit1: 5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__pfet_01v8:125 vs. hpd:3/LDS_xor:3/sky130_fd_pr__pfet_01v8:M4:
- l circuit1: 0.15   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__pfet_01v8:123 vs. hpd:3/LDS_xor:3/sky130_fd_pr__pfet_01v8:M2:
- l circuit1: 0.15   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__pfet_01v8:141 vs. hpd:3/LDS_posdff:1/LDS_csrl_latch:2/sky130_fd_pr__pfet_01v8:M23:
- l circuit1: 0.5   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__pfet_01v8:136 vs. hpd:3/LDS_posdff:1/LDS_csrl_latch:2/sky130_fd_pr__pfet_01v8:M20:
- l circuit1: 0.5   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__pfet_01v8:39 vs. LDS_clkdiv:2/LDS_posdff:2/LDS_csrl_latch:2/sky130_fd_pr__pfet_01v8:M20:
- l circuit1: 0.5   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__pfet_01v8:34 vs. LDS_clkdiv:2/LDS_posdff:2/LDS_csrl_latch:2/sky130_fd_pr__pfet_01v8:M23:
- l circuit1: 0.5   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__pfet_01v8:110 vs. hpd:3/LDS_xor:5/sky130_fd_pr__pfet_01v8:M3:
- l circuit1: 0.15   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__pfet_01v8:61 vs. LDS_clkdiv:2/LDS_posdff:3/LDS_csrl_latch:2/sky130_fd_pr__pfet_01v8:M19:
- l circuit1: 0.5   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__pfet_01v8:35 vs. LDS_clkdiv:2/LDS_posdff:2/LDS_csrl_latch:2/sky130_fd_pr__pfet_01v8:M19:
- l circuit1: 0.5   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__pfet_01v8:9 vs. LDS_clkdiv:2/LDS_posdff:1/LDS_csrl_latch:2/sky130_fd_pr__pfet_01v8:M19:
- l circuit1: 0.5   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__pfet_01v8:85 vs. hpd:3/LDS_negdff:2/LDS_csrl_latch:2/sky130_fd_pr__pfet_01v8:M19:
- l circuit1: 0.5   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__pfet_01v8:80 vs. hpd:3/LDS_negdff:2/LDS_csrl_latch:2/sky130_fd_pr__pfet_01v8:M22:
- l circuit1: 0.5   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__pfet_01v8:30 vs. LDS_clkdiv:2/LDS_posdff:2/LDS_csrl_latch:2/sky130_fd_pr__pfet_01v8:M22:
- l circuit1: 0.5   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__pfet_01v8:4 vs. LDS_clkdiv:2/LDS_posdff:1/LDS_csrl_latch:2/sky130_fd_pr__pfet_01v8:M22:
- l circuit1: 0.5   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__pfet_01v8:56 vs. LDS_clkdiv:2/LDS_posdff:3/LDS_csrl_latch:2/sky130_fd_pr__pfet_01v8:M22:
- l circuit1: 0.5   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__pfet_01v8:65 vs. LDS_clkdiv:2/LDS_posdff:3/LDS_csrl_latch:2/sky130_fd_pr__pfet_01v8:M20:
- l circuit1: 0.5   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__pfet_01v8:60 vs. LDS_clkdiv:2/LDS_posdff:3/LDS_csrl_latch:2/sky130_fd_pr__pfet_01v8:M23:
- l circuit1: 0.5   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__pfet_01v8:13 vs. LDS_clkdiv:2/LDS_posdff:1/LDS_csrl_latch:2/sky130_fd_pr__pfet_01v8:M20:
- l circuit1: 0.5   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__pfet_01v8:8 vs. LDS_clkdiv:2/LDS_posdff:1/LDS_csrl_latch:2/sky130_fd_pr__pfet_01v8:M23:
- l circuit1: 0.5   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__pfet_01v8:134 vs. hpd:3/LDS_posdff:1/LDS_csrl_latch:2/sky130_fd_pr__pfet_01v8:M21:
- l circuit1: 0.5   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__pfet_01v8:139 vs. hpd:3/LDS_posdff:1/LDS_csrl_latch:2/sky130_fd_pr__pfet_01v8:M24:
- l circuit1: 0.5   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__pfet_01v8:37 vs. LDS_clkdiv:2/LDS_posdff:2/LDS_csrl_latch:2/sky130_fd_pr__pfet_01v8:M21:
- l circuit1: 0.5   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__pfet_01v8:32 vs. LDS_clkdiv:2/LDS_posdff:2/LDS_csrl_latch:2/sky130_fd_pr__pfet_01v8:M24:
- l circuit1: 0.5   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__pfet_01v8:11 vs. LDS_clkdiv:2/LDS_posdff:1/LDS_csrl_latch:2/sky130_fd_pr__pfet_01v8:M21:
- l circuit1: 0.5   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__pfet_01v8:6 vs. LDS_clkdiv:2/LDS_posdff:1/LDS_csrl_latch:2/sky130_fd_pr__pfet_01v8:M24:
- l circuit1: 0.5   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__pfet_01v8:63 vs. LDS_clkdiv:2/LDS_posdff:3/LDS_csrl_latch:2/sky130_fd_pr__pfet_01v8:M21:
- l circuit1: 0.5   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__pfet_01v8:58 vs. LDS_clkdiv:2/LDS_posdff:3/LDS_csrl_latch:2/sky130_fd_pr__pfet_01v8:M24:
- l circuit1: 0.5   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__pfet_01v8:168 vs. LDS_ipump:4/sky130_fd_pr__pfet_01v8:M4:
- l circuit1: 0.15   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__pfet_01v8:164 vs. LDS_ipump:4/sky130_fd_pr__pfet_01v8:M6:
- l circuit1: 0.15   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__pfet_01v8:160 vs. LDS_ipump:4/sky130_fd_pr__pfet_01v8:M18:
- l circuit1: 0.15   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__pfet_01v8:159 vs. LDS_ipump:4/sky130_fd_pr__pfet_01v8:M8:
- l circuit1: 0.15   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__pfet_01v8:170 vs. LDS_ipump:4/sky130_fd_pr__pfet_01v8:M12:
- l circuit1: 0.15   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__pfet_01v8:157 vs. LDS_ipump:4/sky130_fd_pr__pfet_01v8:M10:
- l circuit1: 0.15   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__pfet_01v8:154 vs. LDS_ipump:4/sky130_fd_pr__pfet_01v8:M14:
- l circuit1: 0.15   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__pfet_01v8:167 vs. LDS_ipump:4/sky130_fd_pr__pfet_01v8:M16:
- l circuit1: 0.15   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__nfet_01v8:119 vs. hpd:3/LDS_xor:3/sky130_fd_pr__nfet_01v8:M1:
- l circuit1: 0.15   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__nfet_01v8:107 vs. hpd:3/LDS_xor:5/sky130_fd_pr__nfet_01v8:M1:
- l circuit1: 0.15   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__nfet_01v8:109 vs. hpd:3/LDS_xor:5/sky130_fd_pr__nfet_01v8:M7:
- l circuit1: 0.15   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__nfet_01v8:118 vs. hpd:3/LDS_xor:3/sky130_fd_pr__nfet_01v8:M8:
- l circuit1: 0.15   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__nfet_01v8:106 vs. hpd:3/LDS_xor:5/sky130_fd_pr__nfet_01v8:M8:
- l circuit1: 0.15   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__nfet_01v8:135 vs. hpd:3/LDS_posdff:1/LDS_csrl_latch:2/sky130_fd_pr__nfet_01v8:M7:
- l circuit1: 0.5   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__nfet_01v8:140 vs. hpd:3/LDS_posdff:1/LDS_csrl_latch:2/sky130_fd_pr__nfet_01v8:M10:
- l circuit1: 0.5   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__nfet_01v8:120 vs. hpd:3/LDS_xor:3/sky130_fd_pr__nfet_01v8:M6:
- l circuit1: 0.15   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__nfet_01v8:108 vs. hpd:3/LDS_xor:5/sky130_fd_pr__nfet_01v8:M6:
- l circuit1: 0.15   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__nfet_01v8:78 vs. hpd:3/LDS_negdff:2/LDS_csrl_latch:2/sky130_fd_pr__nfet_01v8:M9:
- l circuit1: 0.5   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__nfet_01v8:86 vs. hpd:3/LDS_negdff:2/LDS_csrl_latch:2/sky130_fd_pr__nfet_01v8:M12:
- l circuit1: 0.5   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__nfet_01v8:230 vs. LDS_vco:1/sky130_fd_pr__nfet_01v8:M3:
- l circuit1: 0.5   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__nfet_01v8:228 vs. LDS_vco:1/sky130_fd_pr__nfet_01v8:M1:
- l circuit1: 0.5   (unresolved expression)  (property type mismatch)
- w circuit1: 5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__nfet_01v8:121 vs. hpd:3/LDS_xor:3/sky130_fd_pr__nfet_01v8:M7:
- l circuit1: 0.15   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__nfet_01v8:133 vs. hpd:3/LDS_posdff:1/LDS_csrl_latch:2/sky130_fd_pr__nfet_01v8:M11:
- l circuit1: 0.5   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__nfet_01v8:131 vs. hpd:3/LDS_posdff:1/LDS_csrl_latch:2/sky130_fd_pr__nfet_01v8:M8:
- l circuit1: 0.5   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__nfet_01v8:81 vs. hpd:3/LDS_negdff:2/LDS_csrl_latch:2/sky130_fd_pr__nfet_01v8:M8:
- l circuit1: 0.5   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__nfet_01v8:79 vs. hpd:3/LDS_negdff:2/LDS_csrl_latch:2/sky130_fd_pr__nfet_01v8:M11:
- l circuit1: 0.5   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__nfet_01v8:31 vs. LDS_clkdiv:2/LDS_posdff:2/LDS_csrl_latch:2/sky130_fd_pr__nfet_01v8:M8:
- l circuit1: 0.5   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__nfet_01v8:29 vs. LDS_clkdiv:2/LDS_posdff:2/LDS_csrl_latch:2/sky130_fd_pr__nfet_01v8:M11:
- l circuit1: 0.5   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__nfet_01v8:88 vs. hpd:3/LDS_negdff:2/LDS_csrl_latch:2/sky130_fd_pr__nfet_01v8:M7:
- l circuit1: 0.5   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__nfet_01v8:83 vs. hpd:3/LDS_negdff:2/LDS_csrl_latch:2/sky130_fd_pr__nfet_01v8:M10:
- l circuit1: 0.5   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__nfet_01v8:38 vs. LDS_clkdiv:2/LDS_posdff:2/LDS_csrl_latch:2/sky130_fd_pr__nfet_01v8:M7:
- l circuit1: 0.5   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__nfet_01v8:12 vs. LDS_clkdiv:2/LDS_posdff:1/LDS_csrl_latch:2/sky130_fd_pr__nfet_01v8:M7:
- l circuit1: 0.5   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__nfet_01v8:64 vs. LDS_clkdiv:2/LDS_posdff:3/LDS_csrl_latch:2/sky130_fd_pr__nfet_01v8:M7:
- l circuit1: 0.5   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__nfet_01v8:59 vs. LDS_clkdiv:2/LDS_posdff:3/LDS_csrl_latch:2/sky130_fd_pr__nfet_01v8:M10:
- l circuit1: 0.5   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__nfet_01v8:33 vs. LDS_clkdiv:2/LDS_posdff:2/LDS_csrl_latch:2/sky130_fd_pr__nfet_01v8:M10:
- l circuit1: 0.5   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__nfet_01v8:7 vs. LDS_clkdiv:2/LDS_posdff:1/LDS_csrl_latch:2/sky130_fd_pr__nfet_01v8:M10:
- l circuit1: 0.5   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__nfet_01v8:57 vs. LDS_clkdiv:2/LDS_posdff:3/LDS_csrl_latch:2/sky130_fd_pr__nfet_01v8:M8:
- l circuit1: 0.5   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__nfet_01v8:55 vs. LDS_clkdiv:2/LDS_posdff:3/LDS_csrl_latch:2/sky130_fd_pr__nfet_01v8:M11:
- l circuit1: 0.5   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__nfet_01v8:5 vs. LDS_clkdiv:2/LDS_posdff:1/LDS_csrl_latch:2/sky130_fd_pr__nfet_01v8:M8:
- l circuit1: 0.5   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__nfet_01v8:3 vs. LDS_clkdiv:2/LDS_posdff:1/LDS_csrl_latch:2/sky130_fd_pr__nfet_01v8:M11:
- l circuit1: 0.5   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__nfet_01v8:138 vs. hpd:3/LDS_posdff:1/LDS_csrl_latch:2/sky130_fd_pr__nfet_01v8:M9:
- l circuit1: 0.5   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__nfet_01v8:130 vs. hpd:3/LDS_posdff:1/LDS_csrl_latch:2/sky130_fd_pr__nfet_01v8:M12:
- l circuit1: 0.5   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__nfet_01v8:36 vs. LDS_clkdiv:2/LDS_posdff:2/LDS_csrl_latch:2/sky130_fd_pr__nfet_01v8:M12:
- l circuit1: 0.5   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__nfet_01v8:28 vs. LDS_clkdiv:2/LDS_posdff:2/LDS_csrl_latch:2/sky130_fd_pr__nfet_01v8:M9:
- l circuit1: 0.5   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__nfet_01v8:10 vs. LDS_clkdiv:2/LDS_posdff:1/LDS_csrl_latch:2/sky130_fd_pr__nfet_01v8:M12:
- l circuit1: 0.5   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__nfet_01v8:62 vs. LDS_clkdiv:2/LDS_posdff:3/LDS_csrl_latch:2/sky130_fd_pr__nfet_01v8:M12:
- l circuit1: 0.5   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__nfet_01v8:2 vs. LDS_clkdiv:2/LDS_posdff:1/LDS_csrl_latch:2/sky130_fd_pr__nfet_01v8:M9:
- l circuit1: 0.5   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__nfet_01v8:54 vs. LDS_clkdiv:2/LDS_posdff:3/LDS_csrl_latch:2/sky130_fd_pr__nfet_01v8:M9:
- l circuit1: 0.5   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__nfet_01v8:171 vs. LDS_ipump:4/sky130_fd_pr__nfet_01v8:M3:
- l circuit1: 0.15   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__nfet_01v8:165 vs. LDS_ipump:4/sky130_fd_pr__nfet_01v8:M5:
- l circuit1: 0.15   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__nfet_01v8:162 vs. LDS_ipump:4/sky130_fd_pr__nfet_01v8:M17:
- l circuit1: 0.15   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__nfet_01v8:158 vs. LDS_ipump:4/sky130_fd_pr__nfet_01v8:M7:
- l circuit1: 0.15   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__nfet_01v8:169 vs. LDS_ipump:4/sky130_fd_pr__nfet_01v8:M9:
- l circuit1: 0.15   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__nfet_01v8:161 vs. LDS_ipump:4/sky130_fd_pr__nfet_01v8:M11:
- l circuit1: 0.15   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__nfet_01v8:155 vs. LDS_ipump:4/sky130_fd_pr__nfet_01v8:M13:
- l circuit1: 0.15   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
-sky130_fd_pr__nfet_01v8:166 vs. LDS_ipump:4/sky130_fd_pr__nfet_01v8:M15:
- l circuit1: 0.15   (unresolved expression)  (property type mismatch)
- w circuit1: 0.5   (unresolved expression)  (property type mismatch)
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: dpll.spice                      |Circuit 2: xschem_dpll.spice               
+
+---------------------------------------------------------------------------------------
+Net: m1_n8820_610#                         |Net: clk                                   
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  sky130_fd_pr__nfet_01v8/2 = 12           |  sky130_fd_pr__nfet_01v8/2 = 4            
+  sky130_fd_pr__pfet_01v8/2 = 12           |  sky130_fd_pr__pfet_01v8/2 = 4            
+  c/bottom = 1                             |                                           
+  **FLOATING/top = 1                       |                                           
+                                           |                                           
+Net: li_n50_440#                           |Net: net4                                  
+  sky130_fd_pr__pfet_01v8/2 = 23           |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/2 = 4            
+  c/bottom = 2                             |  sky130_fd_pr__pfet_01v8/2 = 4            
+  **FLOATING/top = 1                       |                                           
+                                           |                                           
+Net: div8_0/div_0/li_100_660#              |Net: hpd:3/LDS_negdff:2/nQI                
+  sky130_fd_pr__nfet_01v8/2 = 3            |  sky130_fd_pr__nfet_01v8/2 = 2            
+  sky130_fd_pr__pfet_01v8/2 = 3            |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8/2 = 2            
+  **FLOATING/top = 1                       |                                           
+                                           |                                           
+Net: div8_0/div_1/li_100_660#              |Net: LDS_clkdiv:2/net1                     
+  sky130_fd_pr__nfet_01v8/2 = 3            |  sky130_fd_pr__nfet_01v8/2 = 2            
+  sky130_fd_pr__pfet_01v8/2 = 3            |  sky130_fd_pr__pfet_01v8/2 = 2            
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+  **FLOATING/top = 1                       |                                           
+                                           |                                           
+Net: hpd_0/li_3500_2650#                   |Net: LDS_clkdiv:2/net3                     
+  sky130_fd_pr__nfet_01v8/2 = 3            |  sky130_fd_pr__nfet_01v8/2 = 2            
+  sky130_fd_pr__pfet_01v8/2 = 3            |  sky130_fd_pr__pfet_01v8/2 = 2            
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+  c/bottom = 1                             |                                           
+                                           |                                           
+Net: hpd_0/a_460_2990#                     |Net: LDS_clkdiv:2/net5                     
+  sky130_fd_pr__nfet_01v8/2 = 4            |  sky130_fd_pr__nfet_01v8/2 = 2            
+  sky130_fd_pr__pfet_01v8/2 = 4            |  sky130_fd_pr__pfet_01v8/2 = 2            
+  c/top = 1                                |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+  **FLOATING/top = 1                       |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: VSUBS                                 |Net: Vvco                                  
+  sky130_fd_pr__nfet_01v8/(1|3) = 70       |  sky130_fd_pr__nfet_01v8/2 = 1            
+  sky130_fd_pr__nfet_01v8/4 = 116          |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  c/top = 1                                |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+  **FLOATING/top = 1                       |                                           
+                                           |                                           
+Net: m1_n860_660#                          |Net: nrz                                   
+  sky130_fd_pr__pfet_01v8/(1|3) = 71       |  sky130_fd_pr__pfet_01v8/2 = 4            
+  sky130_fd_pr__pfet_01v8/4 = 116          |  sky130_fd_pr__nfet_01v8/2 = 4            
+  c/bottom = 2                             |                                           
+  c/top = 5                                |                                           
+  **FLOATING/top = 1                       |                                           
+                                           |                                           
+Net: m1_n9990_330#                         |Net: LDS_vco:1/Va                          
+  sky130_fd_pr__nfet_01v8/2 = 4            |  sky130_fd_pr__nfet_01v8/2 = 2            
+  sky130_fd_pr__pfet_01v8/2 = 4            |  sky130_fd_pr__pfet_01v8/2 = 2            
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+  c/bottom = 2                             |                                           
+  **FLOATING/top = 1                       |                                           
+                                           |                                           
+Net: div8_0/div_0/li_220_670#              |Net: VDD                                   
+  sky130_fd_pr__pfet_01v8/2 = 2            |  sky130_fd_pr__pfet_01v8/(1|3) = 71       
+  sky130_fd_pr__nfet_01v8/2 = 2            |  sky130_fd_pr__pfet_01v8/4 = 116          
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |                                           
+  **FLOATING/top = 1                       |                                           
+                                           |                                           
+Net: div8_0/div_1/li_220_670#              |Net: GND                                   
+  sky130_fd_pr__pfet_01v8/2 = 2            |  sky130_fd_pr__nfet_01v8/(1|3) = 70       
+  sky130_fd_pr__nfet_01v8/2 = 2            |  sky130_fd_pr__nfet_01v8/4 = 116          
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |                                           
+  **FLOATING/top = 1                       |                                           
+                                           |                                           
+Net: div8_0/div_2/li_220_670#              |Net: net3                                  
+  sky130_fd_pr__pfet_01v8/2 = 2            |  sky130_fd_pr__nfet_01v8/2 = 12           
+  sky130_fd_pr__nfet_01v8/2 = 2            |  sky130_fd_pr__pfet_01v8/2 = 12           
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  **FLOATING/top = 1                       |                                           
+                                           |                                           
+Net: hpd_0/negdff_0/m1_170_60#             |Net: net1                                  
+  sky130_fd_pr__nfet_01v8/2 = 2            |  sky130_fd_pr__nfet_01v8/2 = 22           
+  sky130_fd_pr__pfet_01v8/2 = 2            |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |                                           
+  **FLOATING/top = 1                       |                                           
+                                           |                                           
+Net: vco_0/li_130_240#                     |Net: hpd:3/A                               
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8/2 = 6            
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/2 = 6            
+  sky130_fd_pr__nfet_01v8/2 = 2            |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+  sky130_fd_pr__pfet_01v8/2 = 2            |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+  c/top = 1                                |                                           
+  **FLOATING/top = 1                       |                                           
+                                           |                                           
+Net: div8_0/m1_4560_860#                   |Net: hpd:3/B                               
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/2 = 3            
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8/2 = 3            
+  sky130_fd_pr__nfet_01v8/2 = 4            |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  sky130_fd_pr__pfet_01v8/2 = 4            |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
+  **FLOATING/top = 1                       |                                           
+                                           |                                           
+Net: div8_0/div_2/li_100_660#              |Net: LDS_clkdiv:2/net2                     
+  sky130_fd_pr__nfet_01v8/2 = 3            |  sky130_fd_pr__pfet_01v8/2 = 3            
+  sky130_fd_pr__pfet_01v8/2 = 3            |  sky130_fd_pr__nfet_01v8/2 = 3            
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+  c/top = 1                                |                                           
+  **FLOATING/top = 1                       |                                           
+                                           |                                           
+Net: m1_n150_240#                          |Net: LDS_clkdiv:2/net4                     
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8/2 = 3            
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/2 = 3            
+  sky130_fd_pr__nfet_01v8/2 = 1            |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+  c/top = 1                                |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+  **FLOATING/top = 1                       |                                           
+                                           |                                           
+Net: hpd_0/a_4100_2650#                    |Net: LDS_clkdiv:2/net6                     
+  sky130_fd_pr__nfet_01v8/2 = 6            |  sky130_fd_pr__pfet_01v8/2 = 3            
+  sky130_fd_pr__pfet_01v8/2 = 6            |  sky130_fd_pr__nfet_01v8/2 = 3            
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+  c/bottom = 2                             |                                           
+  **FLOATING/top = 1                       |                                           
+                                           |                                           
+Net: 0                                     |(no matching net)                          
+  **FLOATING/bottom = 18                   |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: vco_0/a_n1790_10#                     |Net: Vs                                    
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: m1_n60_340#                           |Net: net2                                  
+  sky130_fd_pr__nfet_01v8/2 = 22           |  sky130_fd_pr__pfet_01v8/2 = 23           
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+  **FLOATING/top = 1                       |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: vco_0/csi_12/a_n40_450#               |Net: LDS_ipump:4/net16                     
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: vco_0/csi_9/a_n40_450#                |Net: LDS_ipump:4/net14                     
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: vco_0/csi_8/a_n40_450#                |Net: LDS_ipump:4/net12                     
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: vco_0/csi_7/a_n40_450#                |Net: LDS_ipump:4/net10                     
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: vco_0/csi_6/a_n40_450#                |Net: LDS_ipump:4/net8                      
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: vco_0/csi_5/a_n40_450#                |Net: LDS_ipump:4/net6                      
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: vco_0/csi_4/a_n40_450#                |Net: LDS_ipump:4/net15                     
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: vco_0/csi_3/a_n40_450#                |Net: LDS_ipump:4/net13                     
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: vco_0/csi_2/a_n40_450#                |Net: LDS_ipump:4/net11                     
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: vco_0/csi_10/a_n40_450#               |Net: LDS_ipump:4/net9                      
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: vco_0/csi_1/a_n40_450#                |Net: LDS_ipump:4/net7                      
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: vco_0/csi_11/a_n40_450#               |Net: LDS_ipump:4/net5                      
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: vco_0/csi_9/a_n40_10#                 |Net: LDS_ipump:4/net4                      
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: vco_0/csi_8/a_n40_10#                 |Net: LDS_ipump:4/net3                      
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: vco_0/csi_7/a_n40_10#                 |Net: LDS_ipump:4/net1                      
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: vco_0/csi_6/a_n40_10#                 |Net: LDS_ipump:4/net2                      
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: vco_0/csi_5/a_n40_10#                 |Net: LDS_vco:1/LDS_csi:13/net2             
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: vco_0/csi_4/a_n40_10#                 |Net: LDS_vco:1/LDS_csi:13/net1             
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: vco_0/csi_3/a_n40_10#                 |Net: LDS_vco:1/LDS_csi:12/net2             
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: vco_0/csi_2/a_n40_10#                 |Net: LDS_vco:1/LDS_csi:11/net2             
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: vco_0/csi_10/a_n40_10#                |Net: LDS_vco:1/LDS_csi:10/net2             
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: vco_0/csi_1/a_n40_10#                 |Net: LDS_vco:1/LDS_csi:9/net2              
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: vco_0/csi_11/a_n40_10#                |Net: LDS_vco:1/LDS_csi:8/net2              
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: vco_0/csi_0/a_n40_450#                |Net: LDS_vco:1/LDS_csi:7/net2              
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: vco_0/csi_0/a_n40_10#                 |Net: LDS_vco:1/LDS_csi:6/net2              
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: vco_0/csi_12/a_n40_10#                |Net: LDS_vco:1/LDS_csi:5/net2              
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: ipump_0/a_n580_10#                    |Net: LDS_vco:1/LDS_csi:4/net2              
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: ipump_0/a_n580_450#                   |Net: LDS_vco:1/LDS_csi:3/net2              
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: ipump_0/a_n20_450#                    |Net: LDS_vco:1/LDS_csi:2/net2              
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: ipump_0/a_n100_10#                    |Net: LDS_vco:1/LDS_csi:12/net1             
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: ipump_0/a_n340_10#                    |Net: LDS_vco:1/LDS_csi:11/net1             
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: ipump_0/a_n500_10#                    |Net: LDS_vco:1/LDS_csi:10/net1             
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: ipump_0/a_n420_10#                    |Net: LDS_vco:1/LDS_csi:9/net1              
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: ipump_0/a_n260_10#                    |Net: LDS_vco:1/LDS_csi:8/net1              
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: ipump_0/a_n180_10#                    |Net: LDS_vco:1/LDS_csi:7/net1              
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: ipump_0/a_n100_450#                   |Net: LDS_vco:1/LDS_csi:6/net1              
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: ipump_0/a_n500_450#                   |Net: LDS_vco:1/LDS_csi:5/net1              
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: ipump_0/a_n420_450#                   |Net: LDS_vco:1/LDS_csi:4/net1              
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: ipump_0/a_n340_450#                   |Net: LDS_vco:1/LDS_csi:3/net1              
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: ipump_0/a_n260_450#                   |Net: LDS_vco:1/LDS_csi:2/net1              
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: ipump_0/a_n180_450#                   |Net: LDS_vco:1/LDS_csi:1/net2              
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: ipump_0/a_n20_10#                     |Net: LDS_vco:1/LDS_csi:1/net1              
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+---------------------------------------------------------------------------------------
+DEVICE mismatches: Class fragments follow (with node fanout counts):
+Circuit 1: dpll.spice                      |Circuit 2: xschem_dpll.spice               
+
+---------------------------------------------------------------------------------------
+Instance: c:0                              |(no matching instance)                     
+  top = 11                                 |                                           
+  bottom = 195                             |                                           
+                                           |                                           
+Instance: c:1                              |(no matching instance)                     
+  top = 195                                |                                           
+  bottom = 28                              |                                           
+                                           |                                           
+Instance: c:2                              |(no matching instance)                     
+  top = 195                                |                                           
+  bottom = 10                              |                                           
+                                           |                                           
+Instance: c:3                              |(no matching instance)                     
+  top = 195                                |                                           
+  bottom = 28                              |                                           
+                                           |                                           
+Instance: c:4                              |(no matching instance)                     
+  top = 8                                  |                                           
+  bottom = 13                              |                                           
+                                           |                                           
+Instance: c:5                              |(no matching instance)                     
+  top = 5                                  |                                           
+  bottom = 28                              |                                           
+                                           |                                           
+Instance: c:6                              |(no matching instance)                     
+  top = 195                                |                                           
+  bottom = 18                              |                                           
+                                           |                                           
+Instance: c:7                              |(no matching instance)                     
+  top = 10                                 |                                           
+  bottom = 195                             |                                           
+                                           |                                           
+Instance: c:8                              |(no matching instance)                     
+  top = 188                                |                                           
+  bottom = 18                              |                                           
+                                           |                                           
+Instance: c:9                              |(no matching instance)                     
+  top = 195                                |                                           
+  bottom = 13                              |                                           
+                                           |                                           
+Instance: **FLOATING:10                    |(no matching instance)                     
+  top = 25                                 |                                           
+  bottom = 18                              |                                           
+                                           |                                           
+Instance: **FLOATING:11                    |(no matching instance)                     
+  top = 28                                 |                                           
+  bottom = 18                              |                                           
+                                           |                                           
+Instance: **FLOATING:12                    |(no matching instance)                     
+  top = 8                                  |                                           
+  bottom = 18                              |                                           
+                                           |                                           
+Instance: **FLOATING:13                    |(no matching instance)                     
+  top = 5                                  |                                           
+  bottom = 18                              |                                           
+                                           |                                           
+Instance: **FLOATING:14                    |(no matching instance)                     
+  top = 18                                 |                                           
+  bottom = 18                              |                                           
+                                           |                                           
+Instance: **FLOATING:15                    |(no matching instance)                     
+  top = 28                                 |                                           
+  bottom = 18                              |                                           
+                                           |                                           
+Instance: **FLOATING:16                    |(no matching instance)                     
+  top = 10                                 |                                           
+  bottom = 18                              |                                           
+                                           |                                           
+Instance: **FLOATING:17                    |(no matching instance)                     
+  top = 8                                  |                                           
+  bottom = 18                              |                                           
+                                           |                                           
+Instance: **FLOATING:18                    |(no matching instance)                     
+  top = 11                                 |                                           
+  bottom = 18                              |                                           
+                                           |                                           
+Instance: **FLOATING:19                    |(no matching instance)                     
+  top = 8                                  |                                           
+  bottom = 18                              |                                           
+                                           |                                           
+Instance: **FLOATING:20                    |(no matching instance)                     
+  top = 11                                 |                                           
+  bottom = 18                              |                                           
+                                           |                                           
+Instance: **FLOATING:21                    |(no matching instance)                     
+  top = 10                                 |                                           
+  bottom = 18                              |                                           
+                                           |                                           
+Instance: **FLOATING:22                    |(no matching instance)                     
+  top = 8                                  |                                           
+  bottom = 18                              |                                           
+                                           |                                           
+Instance: **FLOATING:23                    |(no matching instance)                     
+  top = 195                                |                                           
+  bottom = 18                              |                                           
+                                           |                                           
+Instance: **FLOATING:24                    |(no matching instance)                     
+  top = 10                                 |                                           
+  bottom = 18                              |                                           
+                                           |                                           
+Instance: **FLOATING:25                    |(no matching instance)                     
+  top = 188                                |                                           
+  bottom = 18                              |                                           
+                                           |                                           
+Instance: **FLOATING:26                    |(no matching instance)                     
+  top = 8                                  |                                           
+  bottom = 18                              |                                           
+                                           |                                           
+Instance: **FLOATING:27                    |(no matching instance)                     
+  top = 13                                 |                                           
+  bottom = 18                              |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: sky130_fd_pr__pfet_01v8:221      |Instance: LDS_ipump:4/sky130_fd_pr__pfet_0 
+  (1,3) = (195,2)                          |  (1,3) = (2,2)                            
+  2 = 28                                   |  2 = 25                                   
+  4 = 195                                  |  4 = 187                                  
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v8:217      |Instance: LDS_ipump:4/sky130_fd_pr__pfet_0 
+  (1,3) = (195,2)                          |  (1,3) = (2,2)                            
+  2 = 28                                   |  2 = 25                                   
+  4 = 195                                  |  4 = 187                                  
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v8:213      |Instance: LDS_ipump:4/sky130_fd_pr__pfet_0 
+  (1,3) = (195,2)                          |  (1,3) = (2,2)                            
+  2 = 28                                   |  2 = 25                                   
+  4 = 195                                  |  4 = 187                                  
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v8:209      |Instance: LDS_ipump:4/sky130_fd_pr__pfet_0 
+  (1,3) = (195,2)                          |  (1,3) = (2,2)                            
+  2 = 28                                   |  2 = 25                                   
+  4 = 195                                  |  4 = 187                                  
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v8:205      |Instance: LDS_ipump:4/sky130_fd_pr__pfet_0 
+  (1,3) = (195,2)                          |  (1,3) = (2,2)                            
+  2 = 28                                   |  2 = 25                                   
+  4 = 195                                  |  4 = 187                                  
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v8:201      |Instance: LDS_ipump:4/sky130_fd_pr__pfet_0 
+  (1,3) = (195,2)                          |  (1,3) = (2,2)                            
+  2 = 28                                   |  2 = 25                                   
+  4 = 195                                  |  4 = 187                                  
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v8:197      |Instance: LDS_ipump:4/sky130_fd_pr__pfet_0 
+  (1,3) = (195,2)                          |  (1,3) = (2,2)                            
+  2 = 28                                   |  2 = 25                                   
+  4 = 195                                  |  4 = 187                                  
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v8:193      |Instance: LDS_ipump:4/sky130_fd_pr__pfet_0 
+  (1,3) = (195,2)                          |  (1,3) = (187,2)                          
+  2 = 28                                   |  2 = 25                                   
+  4 = 195                                  |  4 = 187                                  
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v8:189      |Instance: LDS_vco:1/LDS_csi:13/sky130_fd_p 
+  (1,3) = (195,2)                          |  (1,3) = (187,2)                          
+  2 = 28                                   |  2 = 25                                   
+  4 = 195                                  |  4 = 187                                  
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v8:185      |Instance: LDS_vco:1/LDS_csi:12/sky130_fd_p 
+  (1,3) = (195,2)                          |  (1,3) = (187,2)                          
+  2 = 28                                   |  2 = 25                                   
+  4 = 195                                  |  4 = 187                                  
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v8:181      |Instance: LDS_vco:1/LDS_csi:11/sky130_fd_p 
+  (1,3) = (195,2)                          |  (1,3) = (187,2)                          
+  2 = 28                                   |  2 = 25                                   
+  4 = 195                                  |  4 = 187                                  
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v8:177      |Instance: LDS_vco:1/LDS_csi:10/sky130_fd_p 
+  (1,3) = (195,2)                          |  (1,3) = (187,2)                          
+  2 = 28                                   |  2 = 25                                   
+  4 = 195                                  |  4 = 187                                  
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v8:173      |Instance: LDS_vco:1/LDS_csi:9/sky130_fd_pr 
+  (1,3) = (195,2)                          |  (1,3) = (187,2)                          
+  2 = 28                                   |  2 = 25                                   
+  4 = 195                                  |  4 = 187                                  
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v8:168      |Instance: LDS_vco:1/LDS_csi:8/sky130_fd_pr 
+  (1,3) = (195,2)                          |  (1,3) = (187,2)                          
+  2 = 28                                   |  2 = 25                                   
+  4 = 195                                  |  4 = 187                                  
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v8:229      |Instance: LDS_vco:1/LDS_csi:7/sky130_fd_pr 
+  (1,3) = (195,28)                         |  (1,3) = (187,2)                          
+  2 = 28                                   |  2 = 25                                   
+  4 = 195                                  |  4 = 187                                  
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v8:27       |Instance: LDS_vco:1/LDS_csi:6/sky130_fd_pr 
+  (1,3) = (195,11)                         |  (1,3) = (187,2)                          
+  2 = 10                                   |  2 = 25                                   
+  4 = 195                                  |  4 = 187                                  
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v8:1        |Instance: LDS_vco:1/LDS_csi:5/sky130_fd_pr 
+  (1,3) = (195,28)                         |  (1,3) = (187,2)                          
+  2 = 10                                   |  2 = 25                                   
+  4 = 195                                  |  4 = 187                                  
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v8:243      |Instance: LDS_vco:1/LDS_csi:4/sky130_fd_pr 
+  (1,3) = (195,25)                         |  (1,3) = (187,2)                          
+  2 = 28                                   |  2 = 25                                   
+  4 = 195                                  |  4 = 187                                  
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v8:170      |Instance: LDS_vco:1/LDS_csi:3/sky130_fd_pr 
+  (1,3) = (2,2)                            |  (1,3) = (187,2)                          
+  2 = 28                                   |  2 = 25                                   
+  4 = 195                                  |  4 = 187                                  
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v8:167      |Instance: LDS_vco:1/LDS_csi:2/sky130_fd_pr 
+  (1,3) = (2,2)                            |  (1,3) = (187,2)                          
+  2 = 28                                   |  2 = 25                                   
+  4 = 195                                  |  4 = 187                                  
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v8:164      |Instance: LDS_vco:1/LDS_csi:1/sky130_fd_pr 
+  (1,3) = (2,2)                            |  (1,3) = (187,2)                          
+  2 = 28                                   |  2 = 25                                   
+  4 = 195                                  |  4 = 187                                  
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v8:160      |Instance: LDS_clkdiv:2/LDS_inverter:5/sky1 
+  (1,3) = (2,2)                            |  (1,3) = (187,10)                         
+  2 = 28                                   |  2 = 9                                    
+  4 = 195                                  |  4 = 187                                  
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v8:159      |Instance: LDS_clkdiv:2/LDS_inverter:4/sky1 
+  (1,3) = (2,2)                            |  (1,3) = (187,26)                         
+  2 = 28                                   |  2 = 9                                    
+  4 = 195                                  |  4 = 187                                  
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v8:157      |Instance: LDS_vco:1/sky130_fd_pr__pfet_01v 
+  (1,3) = (2,2)                            |  (1,3) = (187,25)                         
+  2 = 28                                   |  2 = 25                                   
+  4 = 195                                  |  4 = 187                                  
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v8:154      |Instance: LDS_vco:1/sky130_fd_pr__pfet_01v 
+  (1,3) = (2,2)                            |  (1,3) = (187,24)                         
+  2 = 28                                   |  2 = 25                                   
+  4 = 195                                  |  4 = 187                                  
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: sky130_fd_pr__nfet_01v8:73       |Instance: LDS_ipump:4/sky130_fd_pr__nfet_0 
+  (1,3) = (188,8)                          |  (1,3) = (2,2)                            
+  2 = 11                                   |  2 = 24                                   
+  4 = 188                                  |  4 = 186                                  
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8:70       |Instance: LDS_ipump:4/sky130_fd_pr__nfet_0 
+  (1,3) = (188,11)                         |  (1,3) = (2,2)                            
+  2 = 8                                    |  2 = 24                                   
+  4 = 188                                  |  4 = 186                                  
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8:47       |Instance: LDS_ipump:4/sky130_fd_pr__nfet_0 
+  (1,3) = (188,8)                          |  (1,3) = (2,2)                            
+  2 = 10                                   |  2 = 24                                   
+  4 = 188                                  |  4 = 186                                  
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8:44       |Instance: LDS_ipump:4/sky130_fd_pr__nfet_0 
+  (1,3) = (188,10)                         |  (1,3) = (2,2)                            
+  2 = 8                                    |  2 = 24                                   
+  4 = 188                                  |  4 = 186                                  
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8:26       |Instance: LDS_ipump:4/sky130_fd_pr__nfet_0 
+  (1,3) = (188,11)                         |  (1,3) = (2,2)                            
+  2 = 10                                   |  2 = 24                                   
+  4 = 188                                  |  4 = 186                                  
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8:21       |Instance: LDS_ipump:4/sky130_fd_pr__nfet_0 
+  (1,3) = (188,8)                          |  (1,3) = (2,2)                            
+  2 = 10                                   |  2 = 24                                   
+  4 = 188                                  |  4 = 186                                  
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8:18       |Instance: LDS_ipump:4/sky130_fd_pr__nfet_0 
+  (1,3) = (188,10)                         |  (1,3) = (2,2)                            
+  2 = 8                                    |  2 = 24                                   
+  4 = 188                                  |  4 = 186                                  
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8:0        |Instance: LDS_ipump:4/sky130_fd_pr__nfet_0 
+  (1,3) = (188,28)                         |  (1,3) = (186,2)                          
+  2 = 10                                   |  2 = 24                                   
+  4 = 188                                  |  4 = 186                                  
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8:230      |Instance: LDS_vco:1/LDS_csi:13/sky130_fd_p 
+  (1,3) = (188,25)                         |  (1,3) = (186,2)                          
+  2 = 25                                   |  2 = 24                                   
+  4 = 188                                  |  4 = 186                                  
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8:228      |Instance: LDS_vco:1/LDS_csi:12/sky130_fd_p 
+  (1,3) = (28,1)                           |  (1,3) = (186,2)                          
+  2 = 5                                    |  2 = 24                                   
+  4 = 188                                  |  4 = 186                                  
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8:222      |Instance: LDS_vco:1/LDS_csi:11/sky130_fd_p 
+  (1,3) = (188,2)                          |  (1,3) = (186,2)                          
+  2 = 25                                   |  2 = 24                                   
+  4 = 188                                  |  4 = 186                                  
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8:218      |Instance: LDS_vco:1/LDS_csi:10/sky130_fd_p 
+  (1,3) = (188,2)                          |  (1,3) = (186,2)                          
+  2 = 25                                   |  2 = 24                                   
+  4 = 188                                  |  4 = 186                                  
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8:214      |Instance: LDS_vco:1/LDS_csi:9/sky130_fd_pr 
+  (1,3) = (188,2)                          |  (1,3) = (186,2)                          
+  2 = 25                                   |  2 = 24                                   
+  4 = 188                                  |  4 = 186                                  
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8:210      |Instance: LDS_vco:1/LDS_csi:8/sky130_fd_pr 
+  (1,3) = (188,2)                          |  (1,3) = (186,2)                          
+  2 = 25                                   |  2 = 24                                   
+  4 = 188                                  |  4 = 186                                  
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8:206      |Instance: LDS_vco:1/LDS_csi:7/sky130_fd_pr 
+  (1,3) = (188,2)                          |  (1,3) = (186,2)                          
+  2 = 25                                   |  2 = 24                                   
+  4 = 188                                  |  4 = 186                                  
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8:202      |Instance: LDS_vco:1/LDS_csi:6/sky130_fd_pr 
+  (1,3) = (188,2)                          |  (1,3) = (186,2)                          
+  2 = 25                                   |  2 = 24                                   
+  4 = 188                                  |  4 = 186                                  
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8:198      |Instance: LDS_vco:1/LDS_csi:5/sky130_fd_pr 
+  (1,3) = (188,2)                          |  (1,3) = (186,2)                          
+  2 = 25                                   |  2 = 24                                   
+  4 = 188                                  |  4 = 186                                  
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8:194      |Instance: LDS_vco:1/LDS_csi:4/sky130_fd_pr 
+  (1,3) = (188,2)                          |  (1,3) = (186,2)                          
+  2 = 25                                   |  2 = 24                                   
+  4 = 188                                  |  4 = 186                                  
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8:190      |Instance: LDS_vco:1/LDS_csi:3/sky130_fd_pr 
+  (1,3) = (188,2)                          |  (1,3) = (186,2)                          
+  2 = 25                                   |  2 = 24                                   
+  4 = 188                                  |  4 = 186                                  
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8:186      |Instance: LDS_vco:1/LDS_csi:2/sky130_fd_pr 
+  (1,3) = (188,2)                          |  (1,3) = (186,2)                          
+  2 = 25                                   |  2 = 24                                   
+  4 = 188                                  |  4 = 186                                  
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8:182      |Instance: LDS_vco:1/LDS_csi:1/sky130_fd_pr 
+  (1,3) = (188,2)                          |  (1,3) = (186,2)                          
+  2 = 25                                   |  2 = 24                                   
+  4 = 188                                  |  4 = 186                                  
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8:178      |Instance: LDS_clkdiv:2/LDS_posdff:3/LDS_n_ 
+  (1,3) = (188,2)                          |  (1,3) = (186,7)                          
+  2 = 25                                   |  2 = 9                                    
+  4 = 188                                  |  4 = 186                                  
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8:174      |Instance: LDS_clkdiv:2/LDS_posdff:3/LDS_n_ 
+  (1,3) = (188,2)                          |  (1,3) = (186,9)                          
+  2 = 25                                   |  2 = 7                                    
+  4 = 188                                  |  4 = 186                                  
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8:171      |Instance: LDS_clkdiv:2/LDS_posdff:2/LDS_n_ 
+  (1,3) = (188,2)                          |  (1,3) = (186,7)                          
+  2 = 25                                   |  2 = 9                                    
+  4 = 188                                  |  4 = 186                                  
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8:169      |Instance: LDS_clkdiv:2/LDS_posdff:2/LDS_n_ 
+  (1,3) = (2,2)                            |  (1,3) = (186,9)                          
+  2 = 25                                   |  2 = 7                                    
+  4 = 188                                  |  4 = 186                                  
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8:166      |Instance: LDS_clkdiv:2/LDS_posdff:1/LDS_n_ 
+  (1,3) = (2,2)                            |  (1,3) = (186,7)                          
+  2 = 25                                   |  2 = 9                                    
+  4 = 188                                  |  4 = 186                                  
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8:165      |Instance: LDS_clkdiv:2/LDS_posdff:1/LDS_n_ 
+  (1,3) = (2,2)                            |  (1,3) = (186,9)                          
+  2 = 25                                   |  2 = 7                                    
+  4 = 188                                  |  4 = 186                                  
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8:162      |Instance: LDS_clkdiv:2/LDS_inverter:5/sky1 
+  (1,3) = (2,2)                            |  (1,3) = (186,10)                         
+  2 = 25                                   |  2 = 9                                    
+  4 = 188                                  |  4 = 186                                  
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8:161      |Instance: LDS_clkdiv:2/LDS_inverter:4/sky1 
+  (1,3) = (2,2)                            |  (1,3) = (186,26)                         
+  2 = 25                                   |  2 = 9                                    
+  4 = 188                                  |  4 = 186                                  
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8:158      |Instance: LDS_vco:1/sky130_fd_pr__nfet_01v 
+  (1,3) = (2,2)                            |  (1,3) = (186,24)                         
+  2 = 25                                   |  2 = 24                                   
+  4 = 188                                  |  4 = 186                                  
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8:155      |Instance: LDS_vco:1/sky130_fd_pr__nfet_01v 
+  (1,3) = (2,2)                            |  (1,3) = (25,1)                           
+  2 = 25                                   |  2 = 3                                    
+  4 = 188                                  |  4 = 186                                  
+---------------------------------------------------------------------------------------
+Netlists do not match.
+Port matching may fail to disambiguate symmetries.
 Cells have no pins;  pin matching not needed.
 Device classes dpll.spice and xschem_dpll.spice are equivalent.
 
-Final result: Circuits match uniquely.
-Property errors were found.
-
-The following cells had property errors:
- dpll.spice
+Final result: Netlists do not match.
+Port matching may fail to disambiguate symmetries.
