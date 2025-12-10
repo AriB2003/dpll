@@ -46,7 +46,6 @@ N 100 -130 100 -20 {lab=B}
 N 100 -20 160 -20 {lab=B}
 N 100 20 100 130 {lab=A}
 N 100 20 160 20 {lab=A}
-C {inverter.sym} 70 130 0 0 {name=X2}
 C {lab_pin.sym} 130 240 0 0 {name=p4 sig_type=std_logic lab=VN}
 C {iopin.sym} -160 -60 2 0 {name=p8 lab=VN}
 C {iopin.sym} -160 -80 2 0 {name=p9 lab=VP}
@@ -59,7 +58,6 @@ C {lab_pin.sym} -160 0 0 0 {name=p17 sig_type=std_logic lab=Y}
 C {lab_pin.sym} 160 20 1 0 {name=p1 sig_type=std_logic lab=A}
 C {ipin.sym} -160 -20 0 0 {name=p2 lab=B}
 C {lab_pin.sym} -140 -20 2 0 {name=p5 sig_type=std_logic lab=B}
-C {inverter.sym} 70 -130 0 0 {name=X1}
 C {lab_pin.sym} 160 -20 1 0 {name=p11 sig_type=std_logic lab=B}
 C {madvlsi/nmos3.sym} 270 70 1 0 {name=M1
 L=\{xor_len\}
@@ -188,3 +186,5 @@ C {lab_pin.sym} 160 180 3 0 {name=p29 sig_type=std_logic lab=nA}
 C {code_shown.sym} 350 -190 0 0 {name=SPICE1 only_toplevel=false value="
 .param xor_wid=0.5 xor_len=0.15
 "}
+C {/home/madvlsi/Documents/dpll/LDS/LDS_inverter.sym} 70 -130 0 0 {name=X1}
+C {/home/madvlsi/Documents/dpll/LDS/LDS_inverter.sym} 70 130 0 0 {name=X2}

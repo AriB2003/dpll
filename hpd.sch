@@ -32,17 +32,17 @@ N 170 100 170 120 {lab=clk}
 N 40 120 170 120 {lab=clk}
 N 30 120 40 120 {lab=clk}
 N 230 40 250 40 {lab=B}
-N 200 -60 280 -60 {lab=data}
 N 200 -90 200 -60 {lab=data}
-N 140 -40 280 -40 {lab=A}
 N 140 -40 140 -20 {lab=A}
 N 100 -20 140 -20 {lab=A}
 N 270 60 280 60 {lab=A}
-N 270 -40 270 60 {lab=A}
 N 260 80 280 80 {lab=B}
 N 260 40 260 80 {lab=B}
 N 250 40 260 40 {lab=B}
-C {xor.sym} 290 -50 0 0 {name=X3}
+N 240 -40 270 60 {lab=A}
+N 140 -40 240 -40 {lab=A}
+N 240 -40 280 -60 {lab=A}
+N 200 -60 280 -40 {lab=data}
 C {iopin.sym} -210 -30 2 0 {name=p8 lab=VN}
 C {iopin.sym} -210 -50 2 0 {name=p9 lab=VP}
 C {opin.sym} -190 30 0 0 {name=p10 lab=inc}
@@ -63,19 +63,20 @@ C {lab_pin.sym} 310 -80 1 0 {name=p13 sig_type=std_logic lab=VP}
 C {lab_pin.sym} 310 -20 3 0 {name=p18 sig_type=std_logic lab=VN}
 C {lab_pin.sym} 210 10 1 0 {name=p19 sig_type=std_logic lab=VP}
 C {lab_pin.sym} 210 100 3 0 {name=p20 sig_type=std_logic lab=VN}
-C {xor.sym} 290 70 0 0 {name=X5}
 C {lab_pin.sym} 340 70 2 0 {name=p21 sig_type=std_logic lab=dec}
 C {lab_pin.sym} 310 40 1 0 {name=p22 sig_type=std_logic lab=VP}
 C {lab_pin.sym} 310 100 3 0 {name=p23 sig_type=std_logic lab=VN}
-C {inverter.sym} -80 10 0 0 {name=X6}
 C {lab_pin.sym} -20 -10 1 0 {name=p26 sig_type=std_logic lab=VP}
 C {lab_pin.sym} -20 30 3 0 {name=p27 sig_type=std_logic lab=VN}
 C {lab_pin.sym} 30 120 0 0 {name=p30 sig_type=std_logic lab=clk}
 C {lab_pin.sym} 120 -20 1 0 {name=p24 sig_type=std_logic lab=A}
 C {lab_pin.sym} 240 40 3 0 {name=p25 sig_type=std_logic lab=B}
 C {lab_pin.sym} 110 10 3 0 {name=p35 sig_type=std_logic lab=nA}
-C {posdff.sym} 60 0 0 0 {name=X1}
-C {negdff.sym} 190 60 0 0 {name=X2}
-C {inverter.sym} 310 -50 0 0 {name=X4}
 C {lab_pin.sym} 370 -30 2 0 {name=p28 sig_type=std_logic lab=VN}
 C {lab_pin.sym} 370 -70 2 0 {name=p29 sig_type=std_logic lab=VP}
+C {/home/madvlsi/Documents/dpll/LDS/LDS_inverter.sym} -80 10 0 0 {name=X4}
+C {/home/madvlsi/Documents/dpll/LDS/LDS_inverter.sym} 310 -50 0 0 {name=X6}
+C {/home/madvlsi/Documents/dpll/LDS/LDS_xor.sym} 290 -50 0 0 {name=X3}
+C {/home/madvlsi/Documents/dpll/LDS/LDS_xor.sym} 290 70 0 0 {name=X5}
+C {/home/madvlsi/Documents/dpll/LDS/LDS_posdff.sym} 60 0 0 0 {name=X1}
+C {/home/madvlsi/Documents/dpll/LDS/LDS_negdff.sym} 190 60 0 0 {name=X2}

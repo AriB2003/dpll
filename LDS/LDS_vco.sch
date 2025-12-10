@@ -120,26 +120,11 @@ spiceprefix=X
 }
 C {lab_pin.sym} -90 -60 2 0 {name=p31 sig_type=std_logic lab=VP}
 C {lab_pin.sym} -810 80 0 0 {name=p32 sig_type=std_logic lab=Res}
-C {inverter.sym} 890 0 0 0 {name=X2}
-C {inverter.sym} 950 0 0 0 {name=X3}
 C {lab_pin.sym} 1040 0 2 0 {name=p1 sig_type=std_logic lab=Osc}
 C {lab_pin.sym} 1010 -20 1 0 {name=p2 sig_type=std_logic lab=VP}
 C {lab_pin.sym} 1010 20 3 0 {name=p13 sig_type=std_logic lab=VN}
 C {lab_pin.sym} 950 -20 1 0 {name=p3 sig_type=std_logic lab=VP}
 C {lab_pin.sym} 950 20 3 0 {name=p4 sig_type=std_logic lab=VN}
-C {csi.sym} 150 0 0 0 {name=X1}
-C {csi.sym} 210 0 0 0 {name=X4}
-C {csi.sym} 270 0 0 0 {name=X5}
-C {csi.sym} 330 0 0 0 {name=X6}
-C {csi.sym} 390 0 0 0 {name=X7}
-C {csi.sym} 450 0 0 0 {name=X8}
-C {csi.sym} 510 0 0 0 {name=X9}
-C {csi.sym} 570 0 0 0 {name=X10}
-C {csi.sym} 630 0 0 0 {name=X11}
-C {csi.sym} 690 0 0 0 {name=X12}
-C {csi.sym} 750 0 0 0 {name=X13}
-C {csi.sym} 810 0 0 0 {name=X14}
-C {csi.sym} 870 0 0 0 {name=X15}
 C {lab_pin.sym} 150 -50 1 0 {name=p8 sig_type=std_logic lab=VP}
 C {lab_pin.sym} 150 50 3 0 {name=p9 sig_type=std_logic lab=VN}
 C {lab_pin.sym} 210 -50 1 0 {name=p10 sig_type=std_logic lab=VP}
@@ -460,3 +445,18 @@ C {code_shown.sym} -700 -300 0 0 {name=SPICE1 only_toplevel=false value="
 .param csi_wid=1 csi_len=0.15
 .param inv_wid=0.5 inv_len=0.15
 "}
+C {/home/madvlsi/Documents/dpll/LDS/LDS_csi.sym} 150 0 0 0 {name=X1}
+C {/home/madvlsi/Documents/dpll/LDS/LDS_csi.sym} 210 0 0 0 {name=X2}
+C {/home/madvlsi/Documents/dpll/LDS/LDS_csi.sym} 270 0 0 0 {name=X3}
+C {/home/madvlsi/Documents/dpll/LDS/LDS_csi.sym} 330 0 0 0 {name=X4}
+C {/home/madvlsi/Documents/dpll/LDS/LDS_csi.sym} 390 0 0 0 {name=X5}
+C {/home/madvlsi/Documents/dpll/LDS/LDS_csi.sym} 450 0 0 0 {name=X6}
+C {/home/madvlsi/Documents/dpll/LDS/LDS_csi.sym} 510 0 0 0 {name=X7}
+C {/home/madvlsi/Documents/dpll/LDS/LDS_csi.sym} 570 0 0 0 {name=X8}
+C {/home/madvlsi/Documents/dpll/LDS/LDS_csi.sym} 630 0 0 0 {name=X9}
+C {/home/madvlsi/Documents/dpll/LDS/LDS_csi.sym} 690 0 0 0 {name=X10}
+C {/home/madvlsi/Documents/dpll/LDS/LDS_csi.sym} 750 0 0 0 {name=X11}
+C {/home/madvlsi/Documents/dpll/LDS/LDS_csi.sym} 810 0 0 0 {name=X12}
+C {/home/madvlsi/Documents/dpll/LDS/LDS_csi.sym} 870 0 0 0 {name=X13}
+C {/home/madvlsi/Documents/dpll/LDS/LDS_inverter.sym} 890 0 0 0 {name=X14}
+C {/home/madvlsi/Documents/dpll/LDS/LDS_inverter.sym} 950 0 0 0 {name=X15}

@@ -1,0 +1,26 @@
+* SPICE3 file created from posdff.ext - technology: sky130A
+
+X0 li_n550_450# m1_n490_60# csrl_0/a_n470_140# VSUBS sky130_fd_pr__nfet_01v8 ad=0.175 pd=1.7 as=0.1 ps=0.9 w=0.5 l=0.5
+X1 csrl_0/a_n470_n150# m1_n550_450# VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=0.1 pd=0.9 as=0.1475 ps=1.275 w=0.5 l=0.5
+X2 csrl_0/a_n300_580# csrl_0/a_n400_110# w_n530_960# w_n530_960# sky130_fd_pr__pfet_01v8 ad=0.1 pd=0.9 as=0.24625 ps=2.5 w=0.5 l=0.5
+X3 csrl_0/a_n470_140# m1_n550_450# VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=0.1 pd=0.9 as=0.1475 ps=1.275 w=0.5 l=0.5
+X4 w_n530_960# m1_n490_60# li_n550_450# w_n530_960# sky130_fd_pr__pfet_01v8 ad=0.24625 pd=2.5 as=0.1 ps=0.9 w=0.5 l=0.5
+X5 VSUBS csrl_0/a_n400_n180# csrl_0/a_n470_n150# VSUBS sky130_fd_pr__nfet_01v8 ad=0.19665 pd=1.7 as=0.175 ps=1.7 w=0.5 l=0.5
+X6 li_n550_450# m1_n550_450# csrl_0/a_n300_580# w_n530_960# sky130_fd_pr__pfet_01v8 ad=0.1 pd=0.9 as=0.1 ps=0.9 w=0.5 l=0.5
+X7 csrl_0/a_n300_870# csrl_0/a_n400_760# w_n530_960# w_n530_960# sky130_fd_pr__pfet_01v8 ad=0.1 pd=0.9 as=0.24625 ps=2.5 w=0.5 l=0.5
+X8 m1_n490_60# li_n550_450# csrl_0/a_n470_n150# VSUBS sky130_fd_pr__nfet_01v8 ad=0.175 pd=1.7 as=0.1 ps=0.9 w=0.5 l=0.5
+X9 w_n530_960# li_n550_450# m1_n490_60# w_n530_960# sky130_fd_pr__pfet_01v8 ad=0.24625 pd=2.5 as=0.1 ps=0.9 w=0.5 l=0.5
+X10 VSUBS csrl_0/a_n400_110# csrl_0/a_n470_140# VSUBS sky130_fd_pr__nfet_01v8 ad=0.19665 pd=1.7 as=0.175 ps=1.7 w=0.5 l=0.5
+X11 m1_n490_60# m1_n550_450# csrl_0/a_n300_870# w_n530_960# sky130_fd_pr__pfet_01v8 ad=0.1 pd=0.9 as=0.1 ps=0.9 w=0.5 l=0.5
+X12 ncsrl_0/a_n120_n280# ncsrl_0/a_n120_10# ncsrl_0/a_n470_740# w_n530_960# sky130_fd_pr__pfet_01v8 ad=0.175 pd=1.7 as=0.1 ps=0.9 w=0.5 l=0.5
+X13 ncsrl_0/a_n470_740# m1_n550_450# w_n530_960# w_n530_960# sky130_fd_pr__pfet_01v8 ad=0.1 pd=0.9 as=0.1475 ps=1.275 w=0.5 l=0.5
+X14 ncsrl_0/a_n120_10# m1_n550_450# ncsrl_0/a_n300_10# VSUBS sky130_fd_pr__nfet_01v8 ad=0.1 pd=0.9 as=0.1 ps=0.9 w=0.5 l=0.5
+X15 ncsrl_0/a_n300_n280# m1_n490_60# VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=0.1 pd=0.9 as=0.24625 ps=2.5 w=0.5 l=0.5
+X16 VSUBS ncsrl_0/a_n120_n280# ncsrl_0/a_n120_10# VSUBS sky130_fd_pr__nfet_01v8 ad=0.24625 pd=2.5 as=0.1 ps=0.9 w=0.5 l=0.5
+X17 ncsrl_0/a_n300_10# li_n550_450# VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=0.1 pd=0.9 as=0.24625 ps=2.5 w=0.5 l=0.5
+X18 w_n530_960# li_n550_450# ncsrl_0/a_n470_450# w_n530_960# sky130_fd_pr__pfet_01v8 ad=0.19665 pd=1.7 as=0.175 ps=1.7 w=0.5 l=0.5
+X19 VSUBS ncsrl_0/a_n120_10# ncsrl_0/a_n120_n280# VSUBS sky130_fd_pr__nfet_01v8 ad=0.24625 pd=2.5 as=0.1 ps=0.9 w=0.5 l=0.5
+X20 ncsrl_0/a_n120_10# ncsrl_0/a_n120_n280# ncsrl_0/a_n470_450# w_n530_960# sky130_fd_pr__pfet_01v8 ad=0.175 pd=1.7 as=0.1 ps=0.9 w=0.5 l=0.5
+X21 ncsrl_0/a_n470_450# m1_n550_450# w_n530_960# w_n530_960# sky130_fd_pr__pfet_01v8 ad=0.1 pd=0.9 as=0.1475 ps=1.275 w=0.5 l=0.5
+X22 w_n530_960# m1_n490_60# ncsrl_0/a_n470_740# w_n530_960# sky130_fd_pr__pfet_01v8 ad=0.19665 pd=1.7 as=0.175 ps=1.7 w=0.5 l=0.5
+X23 ncsrl_0/a_n120_n280# m1_n550_450# ncsrl_0/a_n300_n280# VSUBS sky130_fd_pr__nfet_01v8 ad=0.1 pd=0.9 as=0.1 ps=0.9 w=0.5 l=0.5
