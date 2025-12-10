@@ -1,0 +1,19 @@
+magic
+tech sky130A
+timestamp 1765325266
+<< locali >>
+rect 1505 430 1535 450
+rect 2280 430 2310 450
+use div  div_0
+timestamp 1765325204
+transform 1 0 700 0 1 40
+box 0 0 825 865
+use div  div_1
+timestamp 1765325204
+transform 1 0 1475 0 1 40
+box 0 0 825 865
+use div  div_2
+timestamp 1765325204
+transform 1 0 2250 0 1 40
+box 0 0 825 865
+<< end >>
