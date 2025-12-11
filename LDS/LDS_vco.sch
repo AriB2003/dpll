@@ -16,13 +16,13 @@ N 100 0 120 0 {lab=Va}
 N 100 0 100 100 {lab=Va}
 N 100 100 910 100 {lab=Va}
 N 910 0 910 100 {lab=Va}
-N 20 -240 40 -240 {lab=VP}
-N 20 -220 40 -220 {lab=VN}
-N 20 -200 40 -200 {lab=Vvco}
-N 20 -180 40 -180 {lab=Osc}
-N 20 -160 40 -160 {lab=Res}
-N 20 -140 40 -140 {lab=Vbp}
-N 20 -120 40 -120 {lab=Vbn}
+N -370 330 -350 330 {lab=VP}
+N -370 350 -350 350 {lab=VN}
+N -370 370 -350 370 {lab=Vvco}
+N -370 390 -350 390 {lab=Osc}
+N -370 410 -350 410 {lab=Res}
+N -370 430 -350 430 {lab=Vbp}
+N -370 450 -350 450 {lab=Vbn}
 N -220 -30 -120 -30 {lab=Vbp}
 N -190 -30 -190 60 {lab=Vbp}
 N -150 -60 -150 30 {lab=Vbn}
@@ -151,25 +151,25 @@ C {lab_pin.sym} 810 -50 1 0 {name=p34 sig_type=std_logic lab=VP}
 C {lab_pin.sym} 810 50 3 0 {name=p35 sig_type=std_logic lab=VN}
 C {lab_pin.sym} 870 -50 1 0 {name=p36 sig_type=std_logic lab=VP}
 C {lab_pin.sym} 870 50 3 0 {name=p37 sig_type=std_logic lab=VN}
-C {iopin.sym} 20 -220 2 0 {name=p38 lab=VN}
-C {iopin.sym} 20 -240 2 0 {name=p39 lab=VP}
-C {opin.sym} 40 -180 0 0 {name=p40 lab=Osc}
-C {ipin.sym} 20 -200 0 0 {name=p41 lab=Vvco}
-C {lab_pin.sym} 40 -240 2 0 {name=p42 sig_type=std_logic lab=VP}
-C {lab_pin.sym} 40 -220 2 0 {name=p43 sig_type=std_logic lab=VN}
-C {lab_pin.sym} 40 -200 2 0 {name=p44 sig_type=std_logic lab=Vvco}
-C {lab_pin.sym} 20 -180 0 0 {name=p45 sig_type=std_logic lab=Osc}
+C {iopin.sym} -370 350 2 0 {name=p38 lab=VN}
+C {iopin.sym} -370 330 2 0 {name=p39 lab=VP}
+C {opin.sym} -350 390 0 0 {name=p40 lab=Osc}
+C {ipin.sym} -370 370 0 0 {name=p41 lab=Vvco}
+C {lab_pin.sym} -350 330 2 0 {name=p42 sig_type=std_logic lab=VP}
+C {lab_pin.sym} -350 350 2 0 {name=p43 sig_type=std_logic lab=VN}
+C {lab_pin.sym} -350 370 2 0 {name=p44 sig_type=std_logic lab=Vvco}
+C {lab_pin.sym} -370 390 0 0 {name=p45 sig_type=std_logic lab=Osc}
 C {lab_pin.sym} 120 0 1 0 {name=p46 sig_type=std_logic lab=Va}
 C {lab_pin.sym} 180 0 1 0 {name=p47 sig_type=std_logic lab=Vb}
 C {lab_pin.sym} 240 0 1 0 {name=p48 sig_type=std_logic lab=Vc}
-C {opin.sym} 40 -160 0 0 {name=p49 lab=Res}
-C {lab_pin.sym} 20 -160 0 0 {name=p50 sig_type=std_logic lab=Res}
+C {opin.sym} -350 410 0 0 {name=p49 lab=Res}
+C {lab_pin.sym} -370 410 0 0 {name=p50 sig_type=std_logic lab=Res}
 C {lab_pin.sym} 70 -30 1 0 {name=p30 sig_type=std_logic lab=Vbp}
 C {lab_pin.sym} 70 30 3 0 {name=p51 sig_type=std_logic lab=Vbn}
-C {opin.sym} 40 -140 0 0 {name=p52 lab=Vbp}
-C {lab_pin.sym} 20 -140 0 0 {name=p53 sig_type=std_logic lab=Vbp}
-C {opin.sym} 40 -120 0 0 {name=p54 lab=Vbn}
-C {lab_pin.sym} 20 -120 0 0 {name=p55 sig_type=std_logic lab=Vbn}
+C {opin.sym} -350 430 0 0 {name=p52 lab=Vbp}
+C {lab_pin.sym} -370 430 0 0 {name=p53 sig_type=std_logic lab=Vbp}
+C {opin.sym} -350 450 0 0 {name=p54 lab=Vbn}
+C {lab_pin.sym} -370 450 0 0 {name=p55 sig_type=std_logic lab=Vbn}
 C {madvlsi/pmos3.sym} -280 -60 3 0 {name=M5
 L=\{bias_len\}
 W=\{bias_wid\}
@@ -440,7 +440,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {code_shown.sym} -700 -300 0 0 {name=SPICE1 only_toplevel=false value="
+C {code_shown.sym} -820 320 0 0 {name=SPICE1 only_toplevel=false value="
 .param bias_wid=0.5 bias_len=0.5
 .param csi_wid=1 csi_len=0.15
 .param inv_wid=0.5 inv_len=0.15
