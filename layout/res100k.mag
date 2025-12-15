@@ -1,0 +1,13 @@
+magic
+tech sky130A
+timestamp 1765829089
+<< xpolycontact >>
+rect 0 1735 35 1955
+rect 0 -220 35 0
+<< xpolyres >>
+rect 0 0 35 1735
+<< locali >>
+rect 0 65 35 285
+<< properties >>
+string MASKHINTS_RPM -50 -240 80 1990
+<< end >>

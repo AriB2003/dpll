@@ -13,8 +13,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1.1505729e-05
-x2=1.2219583e-05
+x1=6.4026945e-06
+x2=8.8053223e-06
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -35,8 +35,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1.1505729e-05
-x2=1.2219583e-05
+x1=6.4026945e-06
+x2=8.8053223e-06
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -57,8 +57,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1.1505729e-05
-x2=1.2219583e-05
+x1=6.4026945e-06
+x2=8.8053223e-06
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -79,8 +79,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1.1505729e-05
-x2=1.2219583e-05
+x1=6.4026945e-06
+x2=8.8053223e-06
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -99,8 +99,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1.1505729e-05
-x2=1.2219583e-05
+x1=6.4026945e-06
+x2=8.8053223e-06
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -115,13 +115,17 @@ logx=0
 logy=0
 hilight_wave=1}
 N -100 -110 -40 -110 {lab=Vvco}
-N -40 -110 -40 -100 {lab=Vvco}
-N -40 -110 -40 -100 {lab=Vvco}
 N -40 -130 -40 -110 {lab=Vvco}
+N -120 -110 -100 -110 {lab=Vvco}
+N -40 40 -10 -20 {lab=GND}
+N -70 -20 -40 40 {lab=GND}
+N -120 40 -90 -20 {lab=GND}
+N -150 -20 -120 40 {lab=GND}
+N -40 -110 -40 -50 {lab=Vvco}
 C {lab_pin.sym} 60 -170 2 0 {name=p1 sig_type=std_logic lab=clk}
 C {lab_pin.sym} -60 -170 0 0 {name=p7 sig_type=std_logic lab=nrz}
 C {madvlsi/vdd.sym} 0 -180 0 0 {name=l11 lab=VDD}
-C {madvlsi/gnd.sym} -100 10 0 0 {name=l12 lab=GND}
+C {madvlsi/gnd.sym} -120 40 0 0 {name=l12 lab=GND}
 C {sky130_fd_pr/corner.sym} -270 -360 0 0 {name=CORNER only_toplevel=false corner=tt}
 C {madvlsi/vsource.sym} 430 -320 0 0 {name=Vdd
 value="pwl (0 0 0.5u 1.8)"}
@@ -144,20 +148,52 @@ C {code_shown.sym} 70 -360 0 0 {name=SPICE1 only_toplevel=false value="
 .param dff_wid=0.5 dff_len=0.5
 .param pump_wid=0.5 pump_len=0.5
 "}
-C {madvlsi/resistor.sym} 40 -100 0 0 {name=R1
-value=3.6k
-m=1}
 C {madvlsi/gnd.sym} 0 -130 0 0 {name=l4 lab=GND}
-C {madvlsi/resistor.sym} -100 -80 0 0 {name=R2
-value=100k
-m=1}
-C {madvlsi/capacitor.sym} -100 -20 0 0 {name=C1
-value=10p
-m=1}
-C {madvlsi/capacitor.sym} -40 -70 0 0 {name=C2
-value=1p
-m=1}
 C {madvlsi/gnd.sym} 40 -70 0 0 {name=l13 lab=GND}
-C {madvlsi/gnd.sym} -40 -40 0 0 {name=l14 lab=GND}
+C {madvlsi/gnd.sym} -40 40 0 0 {name=l14 lab=GND}
 C {/home/madvlsi/Documents/dpll/LDS/LDS_full.sym} -10 -150 0 0 {name=X5}
-C {lab_pin.sym} -100 -110 0 0 {name=p2 sig_type=std_logic lab=Vvco}
+C {lab_pin.sym} -120 -110 0 0 {name=p2 sig_type=std_logic lab=Vvco}
+C {madvlsi/nmos3.sym} -120 -20 1 0 {name=M3
+L=12
+W=12
+body=GND
+nf=1
+mult=10
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_01v8
+spiceprefix=X
+}
+C {madvlsi/nmos3.sym} -40 -20 1 0 {name=M1
+L=12
+W=12
+body=GND
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_01v8
+spiceprefix=X
+}
+C {sky130_fd_pr/res_xhigh_po.sym} 40 -100 0 0 {name=R3
+W=0.35
+L=0.65
+model=res_xhigh_po
+spiceprefix=X
+mult=1}
+C {madvlsi/gnd.sym} 20 -100 0 0 {name=l1 lab=GND}
+C {sky130_fd_pr/res_xhigh_po.sym} -120 -80 0 0 {name=R1
+W=0.35
+L=17.5
+model=res_xhigh_po
+spiceprefix=X
+mult=1}
+C {madvlsi/gnd.sym} -140 -80 1 0 {name=l2 lab=GND}

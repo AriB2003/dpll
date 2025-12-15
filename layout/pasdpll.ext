@@ -1,0 +1,491 @@
+timestamp 1765829089
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use cap cap_3 0 -1 910 1 0 -2720
+use cap cap_4 0 -1 -1550 1 0 -2720
+use cap cap_10 0 -1 -4150 1 0 -2720
+use res100k res100k_0 0 1 1230 -1 0 -20
+use res3k6 res3k6_0 0 1 1230 -1 0 100
+use cap cap_0 0 -1 8290 1 0 -2720
+use cap cap_1 0 -1 5830 1 0 -2720
+use cap cap_2 0 -1 3370 1 0 -2720
+use dpll dpll_0 1 0 600 0 1 180
+use cap cap_9 0 -1 8290 1 0 -5400
+use cap cap_8 0 -1 5830 1 0 -5400
+use cap cap_7 0 -1 3370 1 0 -5400
+use cap cap_6 0 -1 910 1 0 -5400
+use cap cap_5 0 -1 -1550 1 0 -5400
+node "li_8190_n2930#" 21 69.821 8190 -2930 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6000 320 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_5730_n2930#" 21 70.6685 5730 -2930 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6000 320 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_3270_n2930#" 21 70.6685 3270 -2930 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6000 320 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_810_n2930#" 21 70.6685 810 -2930 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6000 320 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_n1650_n2930#" 21 70.6685 -1650 -2930 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6000 320 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_n4150_n2790#" 457 1202.37 -4150 -2790 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 175000 5140 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_n1550_n320#" 2064 4287.66 -1550 -320 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 779400 22560 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_790_100#" 38 82.8544 790 100 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10800 480 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_8280_n210#" 9045 4545.85 8280 -210 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 160500 10660 0 0 231200 6780 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_n4160_n210#" 5009 3826.81 -4160 -210 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 80100 5300 0 0 418200 10880 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "a_n4160_n210#" "li_790_100#" 17.1269
+cap "li_n4150_n2790#" "a_n4160_n210#" 8.84808
+cap "li_n1550_n320#" "a_8280_n210#" 418.636
+cap "li_8190_n2930#" "a_8280_n210#" 5.68364
+cap "li_n1550_n320#" "a_n4160_n210#" 821.483
+cap "li_n1550_n320#" "li_790_100#" 4.04762
+cap "cap_5/a_n150_0#" "cap_6/a_n150_0#" 9.62045
+cap "cap_5/a_n150_0#" "cap_5/a_0_n30#" 253.584
+cap "cap_6/a_0_n30#" "cap_6/a_n150_0#" 253.584
+cap "cap_7/a_n150_0#" "cap_6/a_n150_0#" 9.62045
+cap "cap_7/a_0_n30#" "cap_7/a_n150_0#" 253.584
+cap "cap_8/a_n150_0#" "cap_8/a_0_n30#" 253.584
+cap "cap_8/a_0_n30#" "cap_8/a_n150_0#" 33.9792
+cap "cap_4/a_0_n30#" "cap_5/a_0_n30#" 0.857143
+cap "cap_5/a_n150_0#" "cap_5/a_0_n30#" 84.4995
+cap "cap_5/a_n150_0#" "cap_3/a_n150_0#" 4.81023
+cap "cap_4/a_0_n30#" "cap_5/a_0_n30#" 1.71429
+cap "cap_5/a_0_n30#" "cap_5/a_n150_0#" 303.612
+cap "cap_5/a_n150_0#" "cap_6/a_n150_0#" 8.01704
+cap "cap_6/a_0_n30#" "cap_2/a_0_n30#" 1.71429
+cap "cap_6/a_n150_0#" "cap_7/a_n150_0#" 8.01704
+cap "cap_6/a_n150_0#" "cap_2/a_n150_0#" 4.81023
+cap "cap_6/a_0_n30#" "cap_6/a_n150_0#" 233.297
+cap "cap_2/a_0_n30#" "cap_7/a_0_n30#" 1.71429
+cap "cap_7/a_n150_0#" "cap_7/a_0_n30#" 233.297
+cap "cap_8/a_n150_0#" "cap_8/a_0_n30#" 233.297
+cap "cap_8/a_n150_0#" "cap_8/a_0_n30#" 49.259
+cap "cap_4/a_0_n30#" "cap_10/a_n150_0#" 111.269
+cap "cap_10/a_n150_0#" "cap_10/a_0_n30#" 43.1399
+cap "cap_5/a_0_n30#" "cap_4/a_0_n30#" 0.857143
+cap "cap_4/a_0_n30#" "cap_10/a_0_n30#" 182.667
+cap "cap_4/a_0_n30#" "cap_5/a_n150_0#" 316.744
+cap "cap_5/a_n150_0#" "cap_3/a_n150_0#" 4.81023
+cap "cap_5/a_n150_0#" "cap_4/a_0_n30#" 541.129
+cap "cap_5/a_0_n30#" "cap_4/a_0_n30#" 1.71429
+cap "cap_6/a_n150_0#" "cap_2/a_n150_0#" 4.81023
+cap "cap_2/a_0_n30#" "cap_6/a_0_n30#" 1.71429
+cap "cap_6/a_n150_0#" "cap_2/a_0_n30#" 277.928
+cap "cap_2/a_0_n30#" "cap_7/a_n150_0#" 277.928
+cap "cap_2/a_0_n30#" "cap_7/a_0_n30#" 1.71429
+cap "cap_8/a_n150_0#" "cap_1/a_0_n30#" 277.928
+cap "cap_1/a_0_n30#" "cap_8/a_n150_0#" 40.083
+cap "cap_10/a_0_n30#" "dpll_0/div8_0/div_2/posdff_0/csrl_0/a_n470_140#" 0.032426
+cap "cap_10/a_n150_0#" "dpll_0/div8_0/div_2/posdff_0/csrl_0/a_n470_n150#" 6.38034
+cap "cap_10/a_0_n30#" "dpll_0/div8_0/div_2/posdff_0/csrl_0/a_n400_n180#" 0.274429
+cap "cap_10/a_0_n30#" "dpll_0/div8_0/div_2/posdff_0/csrl_0/a_n400_110#" 1.80857
+cap "cap_10/a_0_n30#" "dpll_0/div8_0/div_2/posdff_0/csrl_0/a_n120_870#" 5.62661
+cap "cap_10/a_n150_0#" "dpll_0/div8_0/div_2/posdff_0/csrl_0/a_n400_110#" 0.472082
+cap "cap_10/a_n150_0#" "dpll_0/div8_0/div_2/posdff_0/csrl_0/a_n120_870#" 1.41241
+cap "cap_10/a_0_n30#" "dpll_0/hpd_0/posdff_0/csrl_0/a_n220_n180#" 0.0065229
+cap "cap_10/a_0_n30#" "cap_10/a_n150_0#" 61.0411
+cap "cap_10/a_0_n30#" "dpll_0/div8_0/div_2/posdff_0/csrl_0/a_n470_n150#" 23.8148
+cap "cap_10/a_0_n30#" "dpll_0/div8_0/div_1/w_100_780#" 0.312167
+cap "cap_10/a_0_n30#" "dpll_0/hpd_0/posdff_0/ncsrl_0/a_n470_450#" 0.0169584
+cap "cap_10/a_0_n30#" "cap_10/a_n150_0#" 144.589
+cap "cap_10/a_n150_0#" "dpll_0/div8_0/div_2/posdff_0/csrl_0/a_n400_110#" 0.236041
+cap "dpll_0/hpd_0/w_580_3080#" "cap_10/a_0_n30#" 0.521225
+cap "cap_10/a_n150_0#" "dpll_0/hpd_0/posdff_0/csrl_0/a_n470_n150#" 6.60477
+cap "dpll_0/hpd_0/w_580_3080#" "cap_10/a_n150_0#" 0.12012
+cap "cap_10/a_0_n30#" "dpll_0/hpd_0/posdff_0/ncsrl_0/a_n470_740#" 0.0096979
+cap "dpll_0/hpd_0/posdff_0/csrl_0/a_n120_870#" "cap_10/a_0_n30#" 3.35545
+cap "dpll_0/clk" "cap_10/a_0_n30#" 0.0367199
+cap "cap_10/a_0_n30#" "dpll_0/hpd_0/posdff_0/csrl_0/a_n120_580#" 0.601125
+cap "cap_10/a_n150_0#" "cap_4/a_n150_0#" 4.38633
+cap "dpll_0/hpd_0/posdff_0/csrl_0/a_n120_870#" "cap_10/a_n150_0#" 6.69137
+cap "cap_4/a_0_n30#" "cap_10/a_n150_0#" 83.655
+cap "cap_10/a_0_n30#" "dpll_0/nrz" 0.0142638
+cap "cap_10/a_n150_0#" "dpll_0/hpd_0/posdff_0/csrl_0/a_n120_580#" 0.479323
+cap "cap_10/a_0_n30#" "dpll_0/div8_0/div_2/posdff_0/csrl_0/a_n400_110#" 0.904283
+cap "cap_10/a_0_n30#" "dpll_0/hpd_0/posdff_0/csrl_0/a_n470_n150#" 23.712
+cap "dpll_0/hpd_0/posdff_0/ncsrl_0/a_n470_450#" "cap_4/a_0_n30#" 0.00299638
+cap "cap_10/a_0_n30#" "cap_10/a_n150_0#" 151.318
+cap "cap_10/a_0_n30#" "dpll_0/hpd_0/posdff_0/csrl_0/a_n120_580#" 0.00739323
+cap "cap_4/a_0_n30#" "dpll_0/hpd_0/posdff_0/ncsrl_0/a_n120_n280#" 59.9178
+cap "cap_10/a_0_n30#" "dpll_0/hpd_0/posdff_0/ncsrl_0/a_n470_740#" 0.00860196
+cap "cap_4/a_0_n30#" "dpll_0/hpd_0/w_580_3270#" 0.0560173
+cap "cap_10/a_0_n30#" "dpll_0/hpd_0/posdff_0/csrl_0/a_n220_n180#" 24.5434
+cap "cap_10/a_0_n30#" "dpll_0/hpd_0/negdff_0/csrl_0/a_n470_n150#" 29.7108
+cap "cap_10/a_0_n30#" "dpll_0/clk" 0.0922154
+cap "cap_10/a_0_n30#" "dpll_0/hpd_0/negdff_0/ncsrl_0/a_n120_10#" 16.8504
+cap "dpll_0/hpd_0/posdff_0/ncsrl_0/a_n470_450#" "cap_10/a_0_n30#" 0.589345
+cap "cap_10/a_0_n30#" "dpll_0/hpd_0/negdff_0/ncsrl_0/a_n300_n280#" 2.1161
+cap "cap_10/a_0_n30#" "dpll_0/hpd_0/posdff_0/ncsrl_0/a_n120_n280#" 99.0002
+cap "cap_10/a_0_n30#" "dpll_0/hpd_0/posdff_0/ncsrl_0/a_n300_10#" 0.109283
+cap "cap_10/a_0_n30#" "cap_4/a_0_n30#" 284.998
+cap "dpll_0/hpd_0/posdff_0/csrl_0/a_n120_870#" "cap_4/a_0_n30#" 1.18519
+cap "cap_10/a_0_n30#" "dpll_0/hpd_0/negdff_0/ncsrl_0/a_n300_10#" 0.109283
+cap "cap_10/a_0_n30#" "dpll_0/hpd_0/w_580_3270#" 0.367286
+cap "dpll_0/hpd_0/posdff_0/ncsrl_0/a_n120_n280#" "cap_10/a_n150_0#" 10.0009
+cap "cap_4/a_0_n30#" "cap_10/a_n150_0#" 24.2845
+cap "cap_10/a_0_n30#" "dpll_0/hpd_0/posdff_0/ncsrl_0/a_n120_10#" 16.8504
+cap "cap_4/a_0_n30#" "dpll_0/hpd_0/posdff_0/ncsrl_0/a_n470_740#" 0.00158664
+cap "cap_10/a_0_n30#" "dpll_0/hpd_0/negdff_0/ncsrl_0/a_n470_450#" 0.580866
+cap "cap_4/a_0_n30#" "dpll_0/hpd_0/posdff_0/csrl_0/a_n220_n180#" 0.00601009
+cap "cap_10/a_0_n30#" "dpll_0/hpd_0/posdff_0/ncsrl_0/a_n300_n280#" 2.1161
+cap "cap_4/a_0_n30#" "dpll_0/clk" 0.0051521
+cap "cap_10/a_0_n30#" "dpll_0/hpd_0/posdff_0/csrl_0/a_n120_870#" 7.31424
+cap "cap_10/a_0_n30#" "dpll_0/hpd_0/negdff_0/ncsrl_0/a_n120_n280#" 16.248
+cap "cap_10/a_n150_0#" "cap_4/a_0_n30#" 271.53
+cap "dpll_0/hpd_0/negdff_0/csrl_0/a_n470_n150#" "cap_10/a_0_n30#" 102.075
+cap "cap_10/a_n150_0#" "cap_3/a_n150_0#" 12.4425
+cap "cap_10/a_0_n30#" "dpll_0/hpd_0/posdff_0/ncsrl_0/a_n220_n310#" 2.73133
+cap "dpll_0/clk" "cap_10/a_0_n30#" 0.0636536
+cap "cap_10/a_0_n30#" "dpll_0/hpd_0/a_460_2990#" 0.0143268
+cap "cap_10/a_0_n30#" "dpll_0/hpd_0/negdff_0/csrl_0/a_n120_870#" 23.1548
+cap "cap_10/a_0_n30#" "dpll_0/hpd_0/xor_0/inv_0/a_60_10#" 0.814312
+cap "dpll_0/hpd_0/xor_0/inv_0/a_60_10#" "cap_4/a_0_n30#" 0.0508006
+cap "dpll_0/hpd_0/negdff_0/csrl_0/a_n120_870#" "cap_4/a_0_n30#" 0.289157
+cap "cap_10/a_0_n30#" "dpll_0/hpd_0/xor_0/inv_1/a_60_10#" 0.814312
+cap "cap_4/a_0_n30#" "dpll_0/hpd_0/xor_0/inv_1/a_60_10#" 1.81617
+cap "cap_10/a_0_n30#" "dpll_0/hpd_0/posdff_0/csrl_0/w_n510_320#" 1.89545
+cap "cap_10/a_0_n30#" "cap_4/a_0_n30#" 123.97
+cap "cap_10/a_n150_0#" "dpll_0/hpd_0/posdff_0/ncsrl_0/a_n120_n280#" 29.7528
+cap "dpll_0/hpd_0/negdff_0/ncsrl_0/a_n120_n280#" "cap_10/a_0_n30#" 1.90006
+cap "dpll_0/hpd_0/negdff_0/csrl_0/a_n120_580#" "cap_10/a_0_n30#" 9.15127
+cap "dpll_0/hpd_0/negdff_0/csrl_0/a_n470_140#" "cap_10/a_0_n30#" 0.109283
+cap "cap_10/a_0_n30#" "dpll_0/hpd_0/posdff_0/ncsrl_0/a_n120_n280#" 150.225
+cap "cap_4/a_0_n30#" "dpll_0/hpd_0/posdff_0/ncsrl_0/a_n120_n280#" 118.085
+cap "cap_10/a_n150_0#" "dpll_0/hpd_0/xor_0/inv_0/a_60_10#" 1.01275
+cap "cap_10/a_n150_0#" "dpll_0/hpd_0/xor_0/inv_1/a_60_10#" 0.272217
+cap "cap_10/a_n150_0#" "cap_10/a_0_n30#" 207.61
+cap "dpll_0/filt" "dpll_0/ipump_0/a_n340_450#" 0.0309828
+cap "dpll_0/filt" "dpll_0/hpd_0/xor_0/a_20_n280#" 30.6307
+cap "dpll_0/filt" "dpll_0/ipump_0/a_n420_450#" 0.154914
+cap "dpll_0/filt" "dpll_0/hpd_0/xor_0/inv_1/a_n30_240#" 3.84051
+cap "dpll_0/filt" "dpll_0/ipump_0/a_n610_420#" 0.370469
+cap "dpll_0/ipump_0/a_n420_10#" "dpll_0/filt" 0.546415
+cap "dpll_0/filt" "dpll_0/hpd_0/xor_1/inv_0/a_60_10#" 0.814312
+cap "dpll_0/filt" "dpll_0/ipump_0/a_n340_10#" 0.109283
+cap "dpll_0/hpd_0/xor_1/inv_1/a_60_10#" "cap_4/a_n150_0#" 0.272217
+cap "cap_2/a_0_n30#" "cap_4/a_n150_0#" 347.625
+cap "dpll_0/filt" "dpll_0/ipump_0/a_n500_10#" 0.546415
+cap "dpll_0/hpd_0/xor_0/a_20_n280#" "cap_4/a_n150_0#" 9.79782
+cap "dpll_0/hpd_0/xor_0/inv_1/a_n30_240#" "cap_4/a_n150_0#" 0.953001
+cap "dpll_0/hpd_0/xor_0/a_20_n280#" "res3k6_0/a_0_100#" 0.00666645
+cap "dpll_0/filt" "dpll_0/hpd_0/inv_1/a_60_10#" 0.204298
+cap "cap_2/a_0_n30#" "dpll_0/hpd_0/xor_0/a_20_n280#" 53.5745
+cap "dpll_0/vco_0/w_n2000_280#" "dpll_0/filt" 1.81039
+cap "dpll_0/filt" "dpll_0/ipump_0/a_n500_450#" 0.154914
+cap "cap_4/a_n150_0#" "dpll_0/hpd_0/xor_1/inv_0/a_60_10#" 0.272217
+cap "cap_2/a_0_n30#" "dpll_0/hpd_0/xor_0/inv_1/a_n30_240#" 3.63138
+cap "dpll_0/hpd_0/xor_0/a_20_n280#" "dpll_0/res" 0.0991092
+cap "dpll_0/filt" "cap_4/a_n150_0#" 268.528
+cap "dpll_0/filt" "dpll_0/ipump_0/a_n610_n40#" 2.1952
+cap "dpll_0/clk" "dpll_0/filt" 0.20157
+cap "dpll_0/filt" "dpll_0/hpd_0/xor_1/inv_1/a_60_10#" 0.87627
+cap "cap_2/a_0_n30#" "dpll_0/clk" 0.00253125
+cap "dpll_0/filt" "dpll_0/clk" 0.0742625
+cap "dpll_0/filt" "dpll_0/ipump_0/a_n340_450#" 0.123931
+cap "dpll_0/vco_0/csi_0/a_n210_10#" "dpll_0/ipump_0/a_n610_n40#" 0.0183821
+cap "dpll_0/vco_0/csi_0/a_n210_10#" "dpll_0/ipump_0/a_n610_420#" 0.497643
+cap "dpll_0/filt" "dpll_0/ipump_0/a_n340_10#" 0.437132
+cap "cap_2/a_0_n30#" "dpll_0/vco_0/csi_0/a_n210_10#" 534.629
+cap "dpll_0/filt" "dpll_0/vco_0/csi_0/a_n210_10#" 65.8123
+cap "cap_2/a_n150_0#" "dpll_0/vco_0/csi_0/a_n210_10#" 35.945
+cap "cap_2/a_0_n30#" "dpll_0/res" 0.235672
+cap "dpll_0/filt" "dpll_0/res" 289.769
+cap "dpll_0/hpd_0/inv_1/a_60_10#" "dpll_0/filt" 0.0752678
+cap "dpll_0/filt" "dpll_0/ipump_0/a_n100_10#" 0.546415
+cap "res100k_0/li_0_130#" "dpll_0/vco_0/csi_0/a_n210_10#" 60.133
+cap "dpll_0/vco_0/csi_0/a_n210_10#" "dpll_0/res" -1.90735
+cap "cap_2/a_0_n30#" "dpll_0/vco_0/w_n2000_280#" 0.0545097
+cap "dpll_0/filt" "dpll_0/vco_0/w_n2000_280#" 1.14317
+cap "dpll_0/filt" "dpll_0/ipump_0/a_n20_10#" 0.546415
+cap "dpll_0/filt" "dpll_0/ipump_0/a_n260_10#" 0.546415
+cap "cap_2/a_0_n30#" "dpll_0/ipump_0/a_n610_n40#" 0.00601009
+cap "cap_2/a_0_n30#" "dpll_0/ipump_0/a_n610_420#" 0.00364547
+cap "dpll_0/filt" "dpll_0/ipump_0/a_n610_n40#" 10.5445
+cap "dpll_0/filt" "dpll_0/ipump_0/a_n610_420#" 4.55024
+cap "dpll_0/vco_0/csi_0/a_n210_10#" "dpll_0/vco_0/w_n2000_280#" 0.110511
+cap "dpll_0/filt" "dpll_0/ipump_0/a_n180_10#" 0.546415
+cap "dpll_0/filt" "dpll_0/hpd_0/xor_0/a_20_n280#" 0.669629
+cap "cap_2/a_0_n30#" "dpll_0/filt" 1.1652
+cap "dpll_0/vco_0/csi_0/a_n210_10#" "res100k_0/li_0_130#" 145.297
+cap "dpll_0/vco_0/csi_0/a_n210_10#" "dpll_0/filt" -0.204327
+cap "dpll_0/vco_0/csi_0/a_n210_10#" "dpll_0/vco_0/csi_0/a_n40_10#" 0.071696
+cap "dpll_0/vco_0/csi_0/a_n210_10#" "dpll_0/ipump_0/a_n610_n40#" 3.07394
+cap "dpll_0/vco_0/csi_0/a_n210_10#" "cap_2/a_0_n30#" 347.625
+cap "dpll_0/clk" "cap_2/a_0_n30#" 0.00253125
+cap "cap_2/a_0_n30#" "dpll_0/vco_0/a_n40_10#" 0.028882
+cap "dpll_0/vco_0/csi_0/a_n210_10#" "dpll_0/vco_0/csi_0/a_n40_10#" 0.57232
+cap "dpll_0/vco_0/csi_0/a_n210_10#" "dpll_0/vco_0/csi_1/a_n40_10#" 0.644016
+cap "cap_2/a_0_n30#" "dpll_0/vco_0/csi_0/a_n30_240#" 0.00640775
+cap "dpll_0/vco_0/csi_0/a_n210_10#" "cap_2/a_0_n30#" 534.629
+cap "dpll_0/vco_0/csi_0/a_n210_10#" "dpll_0/vco_0/csi_2/a_n40_10#" 0.644016
+cap "cap_2/a_0_n30#" "dpll_0/vco_0/w_n2000_280#" 0.269492
+cap "dpll_0/vco_0/csi_0/a_n210_10#" "dpll_0/vco_0/csi_2/a_60_10#" 1.79911
+cap "dpll_0/vco_0/csi_0/a_n210_10#" "dpll_0/vco_0/a_n40_10#" 19.4511
+cap "dpll_0/vco_0/csi_0/a_n210_10#" "dpll_0/vco_0/csi_0/a_n30_240#" 0.278429
+cap "dpll_0/vco_0/csi_3/a_n40_10#" "dpll_0/vco_0/csi_0/a_n210_10#" 0.644016
+cap "cap_2/a_0_n30#" "dpll_0/vco_0/csi_0/a_60_10#" 0.142857
+cap "dpll_0/vco_0/csi_1/a_60_10#" "cap_2/a_0_n30#" 0.24786
+cap "cap_2/a_0_n30#" "dpll_0/vco_0/a_n1960_10#" 0.0182273
+cap "dpll_0/vco_0/csi_0/a_n210_10#" "dpll_0/vco_0/csi_0/a_60_10#" 1.56235
+cap "dpll_0/vco_0/csi_0/a_n210_10#" "dpll_0/vco_0/csi_3/a_60_10#" 1.52068
+cap "dpll_0/vco_0/csi_1/a_60_10#" "dpll_0/vco_0/csi_0/a_n210_10#" 1.79911
+cap "dpll_0/vco_0/csi_0/a_n210_10#" "dpll_0/vco_0/csi_4/a_n40_10#" 0.644016
+cap "res100k_0/a_0_3470#" "dpll_0/vco_0/csi_6/a_60_10#" 2.69624
+cap "res100k_0/a_0_3470#" "dpll_0/vco_0/csi_5/a_60_10#" 2.69096
+cap "res100k_0/a_0_3470#" "dpll_0/vco_0/csi_0/a_n210_10#" 75.5874
+cap "dpll_0/vco_0/csi_0/a_n140_n20#" "dpll_0/vco_0/csi_0/a_n210_10#" 6.17924
+cap "dpll_0/vco_0/csi_0/a_n140_n20#" "res100k_0/a_0_3470#" 22.0073
+cap "dpll_0/vco_0/csi_0/a_n210_10#" "cap_2/a_0_n30#" 347.625
+cap "dpll_0/vco_0/csi_0/a_n210_10#" "dpll_0/vco_0/csi_4/a_60_10#" 1.52068
+cap "dpll_0/vco_0/csi_0/a_n210_10#" "dpll_0/vco_0/csi_3/a_60_10#" 0.278429
+cap "dpll_0/vco_0/csi_7/a_n40_10#" "res100k_0/a_0_3470#" 0.173881
+cap "res100k_0/a_0_3470#" "dpll_0/vco_0/csi_6/a_n40_10#" 1.52877
+cap "cap_1/a_0_n30#" "dpll_0/clk" 0.010125
+cap "cap_1/a_0_n30#" "dpll_0/vco_0/csi_6/a_60_10#" 0.747367
+cap "cap_1/a_0_n30#" "dpll_0/vco_0/csi_7/a_60_10#" 3.58565
+cap "cap_1/a_0_n30#" "dpll_0/vco_0/csi_8/a_n40_10#" 1.52877
+cap "cap_1/a_0_n30#" "dpll_0/vco_0/csi_4/a_n140_420#" 0.0218728
+cap "cap_1/a_0_n30#" "dpll_0/vco_0/csi_8/a_60_10#" 3.4436
+cap "cap_1/a_0_n30#" "dpll_0/vco_0/csi_7/a_n40_10#" 1.35489
+cap "cap_1/a_0_n30#" "dpll_0/vco_0/csi_9/a_60_10#" 3.4436
+cap "dpll_0/vco_0/csi_12/a_60_10#" "cap_1/a_0_n30#" -5.81306e-18
+cap "cap_1/a_0_n30#" "dpll_0/vco_0/csi_10/a_n40_10#" 1.52877
+cap "cap_1/a_0_n30#" "dpll_0/vco_0/csi_9/a_n40_10#" 1.52877
+cap "cap_1/a_0_n30#" "dpll_0/vco_0/csi_4/a_n140_n20#" 33.8897
+cap "cap_1/a_0_n30#" "dpll_0/vco_0/w_n2000_280#" 0.32339
+cap "cap_1/a_0_n30#" "dpll_0/vco_0/csi_10/a_60_10#" 2.69624
+cap "cap_1/a_0_n30#" "cap_1/a_n150_0#" 551.337
+cap "cap_1/a_0_n30#" "dpll_0/vco_0/csi_12/a_60_10#" 5.59786
+cap "cap_1/a_0_n30#" "dpll_0/vco_0/csi_7/a_n140_n20#" 17.3029
+cap "cap_1/a_0_n30#" "dpll_0/vco_0/csi_11/a_n40_10#" 1.52877
+cap "cap_1/a_0_n30#" "cap_1/a_n150_0#" 346.071
+cap "cap_1/a_0_n30#" "dpll_0/vco_0/w_n2000_280#" 1.17468
+cap "cap_1/a_0_n30#" "dpll_0/vco_0/csi_12/a_n40_10#" 1.52877
+cap "cap_1/a_0_n30#" "dpll_0/clk" 3.46417
+cap "cap_1/a_0_n30#" "dpll_0/vco_0/inv_0/a_60_10#" 5.78942
+cap "cap_1/a_0_n30#" "dpll_0/vco_0/csi_11/a_60_10#" 3.0336
+cap "cap_1/a_0_n30#" "dpll_0/vco_0/csi_10/a_60_10#" 0.747367
+cap "cap_10/a_n150_0#" "dpll_0/div8_0/div_1/posdff_0/csrl_0/a_n300_n150#" 1.60253
+cap "dpll_0/clk" "cap_10/a_0_n30#" 6.59154
+cap "dpll_0/div8_0/div_2/posdff_0/csrl_0/a_n400_110#" "cap_10/a_0_n30#" 27.1583
+cap "cap_10/a_n150_0#" "dpll_0/div8_0/div_2/posdff_0/csrl_0/a_n120_580#" 0.10978
+cap "cap_10/a_n150_0#" "dpll_0/div8_0/div_2/posdff_0/ncsrl_0/a_n470_450#" 0.0479726
+cap "dpll_0/div8_0/div_2/posdff_0/csrl_0/a_n120_870#" "cap_10/a_0_n30#" 3.92297
+cap "dpll_0/div8_0/div_1/inv_0/a_60_10#" "cap_10/a_0_n30#" 0.900362
+cap "cap_10/a_0_n30#" "dpll_0/div8_0/div_1/posdff_0/csrl_0/a_n300_n150#" 9.83641
+cap "dpll_0/div8_0/div_2/posdff_0/csrl_0/a_n400_n180#" "cap_10/a_0_n30#" 0.132308
+cap "dpll_0/div8_0/div_2/posdff_0/csrl_0/a_n120_580#" "cap_10/a_0_n30#" 0.589037
+cap "dpll_0/clk" "cap_10/a_n150_0#" 0.821435
+cap "dpll_0/div8_0/div_2/posdff_0/csrl_0/a_n400_110#" "cap_10/a_n150_0#" 3.45698
+cap "cap_10/a_0_n30#" "dpll_0/div8_0/div_2/posdff_0/ncsrl_0/a_n470_450#" 0.23426
+cap "cap_10/a_n150_0#" "dpll_0/div8_0/div_2/posdff_0/csrl_0/a_n120_870#" 0.639058
+cap "cap_10/a_n150_0#" "dpll_0/div8_0/div_1/inv_0/a_60_10#" 0.135687
+cap "dpll_0/clk" "cap_10/a_0_n30#" 24.1055
+cap "cap_10/a_n150_0#" "dpll_0/hpd_0/posdff_0/csrl_0/a_n120_580#" 1.53843
+cap "cap_10/a_n150_0#" "dpll_0/clk" 5.00175
+cap "dpll_0/hpd_0/posdff_0/csrl_0/a_n120_870#" "cap_10/a_0_n30#" 0.40952
+cap "dpll_0/hpd_0/posdff_0/csrl_0/a_n120_870#" "cap_10/a_n150_0#" 0.0775783
+cap "dpll_0/hpd_0/inv_0/a_60_10#" "cap_10/a_0_n30#" 1.30801
+cap "cap_10/a_n150_0#" "dpll_0/hpd_0/inv_0/a_60_10#" 0.250259
+cap "dpll_0/nrz" "cap_10/a_0_n30#" 1.64745
+cap "cap_10/a_n150_0#" "dpll_0/nrz" 0.351233
+cap "dpll_0/div8_0/div_2/posdff_0/csrl_0/a_n400_110#" "cap_10/a_0_n30#" 3.81502
+cap "dpll_0/div8_0/div_1/posdff_0/ncsrl_0/a_n470_n280#" "cap_10/a_0_n30#" 0.369084
+cap "dpll_0/div8_0/div_2/posdff_0/csrl_0/a_n400_n180#" "cap_10/a_0_n30#" 2.92303
+cap "cap_10/a_0_n30#" "dpll_0/div8_0/div_2/inv_0/a_60_10#" 1.07846
+cap "dpll_0/div8_0/div_2/posdff_0/csrl_0/a_n400_110#" "cap_10/a_n150_0#" 0.463775
+cap "cap_10/a_n150_0#" "dpll_0/div8_0/div_1/posdff_0/ncsrl_0/a_n470_n280#" 0.0725182
+cap "cap_10/a_n150_0#" "dpll_0/div8_0/div_2/posdff_0/csrl_0/a_n400_n180#" 0.619447
+cap "cap_10/a_n150_0#" "dpll_0/div8_0/div_2/inv_0/a_60_10#" 0.210719
+cap "dpll_0/hpd_0/posdff_0/csrl_0/a_n120_580#" "cap_10/a_0_n30#" 0.564159
+cap "cap_10/a_0_n30#" "dpll_0/hpd_0/posdff_0/ncsrl_0/a_n120_n280#" 3.45715
+cap "cap_10/a_0_n30#" "dpll_0/hpd_0/posdff_0/ncsrl_0/a_n470_450#" 0.580866
+cap "cap_10/a_0_n30#" "dpll_0/hpd_0/posdff_0/ncsrl_0/a_n120_10#" 5.77084
+cap "cap_10/a_0_n30#" "dpll_0/clk" 6.31347
+cap "cap_4/a_n150_0#" "dpll_0/div8_0/div_2/posdff_0/ncsrl_0/a_n470_n280#" 1.47268
+cap "cap_10/a_0_n30#" "dpll_0/hpd_0/negdff_0/ncsrl_0/a_n120_10#" 5.77084
+cap "cap_4/a_0_n30#" "dpll_0/div8_0/div_2/posdff_0/ncsrl_0/a_n470_n280#" 9.25594
+cap "cap_10/a_0_n30#" "dpll_0/hpd_0/negdff_0/ncsrl_0/a_n470_450#" 0.580866
+cap "cap_4/a_0_n30#" "dpll_0/hpd_0/posdff_0/csrl_0/a_n220_n180#" 0.540217
+cap "cap_4/a_n150_0#" "dpll_0/hpd_0/posdff_0/ncsrl_0/a_n120_n280#" 0.318706
+cap "cap_10/a_0_n30#" "dpll_0/hpd_0/posdff_0/csrl_0/a_n120_870#" 1.07811
+cap "cap_4/a_0_n30#" "dpll_0/hpd_0/posdff_0/ncsrl_0/a_n120_n280#" 1.996
+cap "cap_10/a_0_n30#" "dpll_0/hpd_0/negdff_0/ncsrl_0/a_n120_n280#" 2.84916
+cap "cap_4/a_n150_0#" "dpll_0/clk" 3.39526
+cap "cap_10/a_0_n30#" "dpll_0/div8_0/div_2/posdff_0/ncsrl_0/a_n470_n280#" 4.63539
+cap "cap_10/a_0_n30#" "dpll_0/hpd_0/posdff_0/csrl_0/a_n220_n180#" 0.137568
+cap "cap_4/a_0_n30#" "dpll_0/clk" 25.3675
+cap "cap_10/a_0_n30#" "dpll_0/hpd_0/posdff_0/ncsrl_0/a_n120_n280#" 0.392814
+cap "cap_4/a_n150_0#" "dpll_0/clk" 5.46732
+cap "dpll_0/hpd_0/xor_0/inv_1/a_60_10#" "cap_10/a_0_n30#" 0.307802
+cap "dpll_0/hpd_0/xor_0/inv_0/a_60_10#" "cap_10/a_0_n30#" 0.230852
+cap "cap_4/a_n150_0#" "dpll_0/hpd_0/negdff_0/csrl_0/a_n120_870#" 0.143922
+cap "dpll_0/hpd_0/posdff_0/ncsrl_0/a_n470_n280#" "cap_10/a_0_n30#" 13.417
+cap "cap_4/a_0_n30#" "dpll_0/clk" 25.9667
+cap "dpll_0/clk" "cap_10/a_0_n30#" 6.05382
+cap "cap_4/a_0_n30#" "dpll_0/hpd_0/negdff_0/csrl_0/a_n120_870#" 0.289157
+cap "dpll_0/hpd_0/negdff_0/csrl_0/a_n120_870#" "cap_10/a_0_n30#" 1.18815
+cap "cap_4/a_n150_0#" "dpll_0/hpd_0/posdff_0/ncsrl_0/a_n120_n280#" 0.392755
+cap "dpll_0/hpd_0/xor_0/inv_1/a_60_10#" "cap_4/a_n150_0#" 0.143182
+cap "dpll_0/hpd_0/negdff_0/csrl_0/a_n120_580#" "cap_10/a_0_n30#" 0.538654
+cap "dpll_0/hpd_0/xor_0/inv_0/a_60_10#" "cap_4/a_n150_0#" 0.529552
+cap "cap_3/a_n150_0#" "dpll_0/hpd_0/xor_1/inv_0/a_60_10#" 0.107387
+cap "dpll_0/filt" "dpll_0/hpd_0/negdff_0/ncsrl_0/a_n470_n280#" 16.6041
+cap "dpll_0/hpd_0/xor_1/a_20_n280#" "cap_3/a_n150_0#" 0.119446
+cap "cap_4/a_0_n30#" "dpll_0/hpd_0/a_460_2990#" 0.090228
+cap "dpll_0/hpd_0/xor_0/a_20_n280#" "dpll_0/filt" 0.439097
+cap "cap_4/a_0_n30#" "dpll_0/hpd_0/xor_1/inv_1/a_60_10#" 7.78873
+cap "dpll_0/filt" "dpll_0/hpd_0/xor_1/inv_0/a_60_10#" 0.230852
+cap "dpll_0/hpd_0/xor_1/a_20_n280#" "dpll_0/filt" 0.203583
+cap "cap_4/a_0_n30#" "dpll_0/hpd_0/negdff_0/ncsrl_0/a_n470_n280#" 10.316
+cap "cap_4/a_0_n30#" "dpll_0/hpd_0/xor_0/a_20_n280#" 1.06708
+cap "dpll_0/ipump_0/a_n610_420#" "dpll_0/hpd_0/negdff_0/ncsrl_0/a_n470_n280#" -0.0550861
+cap "cap_3/a_n150_0#" "dpll_0/hpd_0/xor_0/inv_1/a_n30_240#" 0.271694
+cap "cap_3/a_n150_0#" "dpll_0/clk" 4.15333
+cap "dpll_0/ipump_0/a_n610_n40#" "dpll_0/hpd_0/negdff_0/ncsrl_0/a_n470_n280#" 1.42109e-14
+cap "dpll_0/filt" "dpll_0/hpd_0/xor_0/inv_1/a_n30_240#" 0.45113
+cap "dpll_0/clk" "dpll_0/filt" 6.05382
+cap "cap_3/a_n150_0#" "dpll_0/ipump_0/a_n610_n40#" 0.628207
+cap "dpll_0/hpd_0/a_460_2990#" "cap_3/a_n150_0#" 0.280488
+cap "dpll_0/hpd_0/xor_1/inv_1/a_60_10#" "dpll_0/res" 0.0328269
+cap "dpll_0/ipump_0/a_n100_10#" "dpll_0/hpd_0/negdff_0/ncsrl_0/a_n470_n280#" -2.22045e-16
+cap "dpll_0/hpd_0/negdff_0/ncsrl_0/a_n470_n280#" "dpll_0/res" -0.0148276
+cap "cap_3/a_n150_0#" "dpll_0/hpd_0/xor_1/inv_1/a_60_10#" 1.07893
+cap "dpll_0/hpd_0/xor_0/a_20_n280#" "dpll_0/res" 0.339197
+cap "cap_4/a_0_n30#" "dpll_0/hpd_0/xor_0/inv_1/a_n30_240#" 0.378117
+cap "cap_4/a_0_n30#" "dpll_0/clk" 27.9641
+cap "cap_3/a_n150_0#" "dpll_0/hpd_0/negdff_0/ncsrl_0/a_n470_n280#" 1.24867
+cap "dpll_0/hpd_0/a_460_2990#" "dpll_0/filt" 0.443391
+cap "dpll_0/filt" "dpll_0/ipump_0/a_n610_n40#" 1.17561
+cap "dpll_0/hpd_0/xor_0/a_20_n280#" "res3k6_0/a_0_100#" 0.0166661
+cap "dpll_0/hpd_0/xor_0/a_20_n280#" "cap_3/a_n150_0#" 0.106173
+cap "dpll_0/filt" "dpll_0/hpd_0/xor_1/inv_1/a_60_10#" 2.14605
+cap "dpll_0/res" "dpll_0/ipump_0/a_n610_420#" 10.9667
+cap "dpll_0/vco_0/csi_0/a_n210_10#" "dpll_0/res" 49.4232
+cap "dpll_0/ipump_0/a_n260_10#" "dpll_0/filt" 0.101667
+cap "dpll_0/hpd_0/xor_0/a_20_n280#" "dpll_0/filt" 3.23742
+cap "dpll_0/ipump_0/a_n610_n40#" "dpll_0/vco_0/csi_0/a_n210_10#" 0.41097
+cap "dpll_0/filt" "dpll_0/ipump_0/a_n180_10#" 0.153449
+cap "dpll_0/vco_0/csi_0/a_n210_10#" "dpll_0/clk" 6.80616
+cap "dpll_0/filt" "dpll_0/ipump_0/a_n100_10#" 0.237657
+cap "dpll_0/clk" "res100k_0/li_0_130#" 0.645512
+cap "dpll_0/ipump_0/a_n610_n40#" "dpll_0/res" 0.0545784
+cap "dpll_0/clk" "dpll_0/res" 4.11457
+cap "dpll_0/ipump_0/a_n500_10#" "dpll_0/filt" 0.0387038
+cap "dpll_0/ipump_0/a_n610_420#" "dpll_0/filt" 4.47699
+cap "dpll_0/vco_0/csi_0/a_n210_10#" "dpll_0/filt" 63.7963
+cap "res100k_0/li_0_130#" "dpll_0/filt" 0.550433
+cap "dpll_0/vco_0/csi_0/a_n210_10#" "cap_3/a_0_n30#" 51.5799
+cap "dpll_0/ipump_0/a_n20_10#" "dpll_0/filt" 0.343981
+cap "dpll_0/res" "dpll_0/filt" 36.6537
+cap "dpll_0/ipump_0/a_n610_n40#" "dpll_0/filt" 14.7011
+cap "dpll_0/clk" "dpll_0/filt" 7.57088
+cap "dpll_0/vco_0/csi_0/a_n210_10#" "dpll_0/hpd_0/xor_0/a_20_n280#" 0.115091
+cap "cap_3/a_0_n30#" "dpll_0/clk" 25.9667
+cap "cap_3/a_0_n30#" "dpll_0/filt" 0.714286
+cap "dpll_0/vco_0/csi_0/a_n210_10#" "dpll_0/ipump_0/a_n610_420#" 9.1777
+cap "dpll_0/ipump_0/a_n340_10#" "dpll_0/filt" 0.0706043
+cap "dpll_0/filt" "dpll_0/ipump_0/a_n420_10#" 0.0512888
+cap "dpll_0/vco_0/csi_0/a_n210_10#" "res100k_0/li_0_130#" 2.10648
+cap "dpll_0/clk" "res100k_0/li_0_130#" 1.5393
+cap "dpll_0/vco_0/csi_0/a_n210_10#" "dpll_0/vco_0/csi_0/a_n30_240#" 4.71229
+cap "dpll_0/vco_0/csi_0/a_60_10#" "dpll_0/vco_0/csi_0/a_n210_10#" 0.043208
+cap "cap_3/a_0_n30#" "dpll_0/clk" 23.9692
+cap "cap_3/a_0_n30#" "dpll_0/vco_0/csi_0/a_n30_240#" 5.41485
+cap "dpll_0/vco_0/csi_2/a_60_10#" "dpll_0/vco_0/csi_0/a_n210_10#" 0.00806033
+cap "dpll_0/vco_0/csi_0/a_n210_10#" "dpll_0/res" 26.1845
+cap "dpll_0/ipump_0/a_n610_420#" "dpll_0/vco_0/csi_0/a_n210_10#" 34.2087
+cap "dpll_0/vco_0/csi_0/a_n210_10#" "res100k_0/li_0_130#" 5.02314
+cap "cap_3/a_0_n30#" "dpll_0/vco_0/csi_0/a_n210_10#" 55.5476
+cap "dpll_0/vco_0/w_n2000_280#" "dpll_0/vco_0/csi_0/a_n210_10#" 1.66773
+cap "dpll_0/filt" "dpll_0/vco_0/csi_0/a_n210_10#" 64.6272
+cap "dpll_0/filt" "res100k_0/li_0_130#" 0.917388
+cap "dpll_0/ipump_0/a_n610_n40#" "dpll_0/vco_0/csi_0/a_n210_10#" 34.0134
+cap "dpll_0/vco_0/csi_0/a_n210_10#" "dpll_0/vco_0/csi_1/a_60_10#" 0.0157577
+cap "dpll_0/vco_0/csi_0/a_n210_10#" "dpll_0/clk" 11.7844
+cap "dpll_0/vco_0/csi_0/a_n210_10#" "dpll_0/vco_0/csi_0/a_60_10#" 1.75596
+cap "cap_2/a_0_n30#" "dpll_0/vco_0/csi_0/a_60_10#" 0.142857
+cap "dpll_0/vco_0/csi_0/a_n210_10#" "dpll_0/vco_0/csi_1/a_60_10#" 1.49041
+cap "dpll_0/vco_0/csi_2/a_60_10#" "dpll_0/vco_0/csi_0/a_n210_10#" 1.49041
+cap "dpll_0/vco_0/csi_3/a_60_10#" "dpll_0/vco_0/csi_0/a_n210_10#" 1.37097
+cap "dpll_0/vco_0/csi_0/a_n210_10#" "cap_2/a_0_n30#" 52.1436
+cap "dpll_0/vco_0/csi_0/a_n30_240#" "dpll_0/vco_0/csi_0/a_n210_10#" 7.56619
+cap "dpll_0/vco_0/csi_0/a_n30_240#" "cap_2/a_0_n30#" 34.5455
+cap "dpll_0/vco_0/a_n40_10#" "dpll_0/vco_0/csi_0/a_n210_10#" 17.6237
+cap "dpll_0/vco_0/csi_4/a_60_10#" "res100k_0/a_0_3470#" 0.295672
+cap "res100k_0/a_0_3470#" "dpll_0/vco_0/csi_0/a_n140_n20#" 19.2172
+cap "cap_2/a_0_n30#" "dpll_0/vco_0/csi_0/a_n30_240#" 37.2028
+cap "res100k_0/a_0_3470#" "dpll_0/vco_0/csi_0/a_n30_240#" 6.78509
+cap "res100k_0/a_0_3470#" "dpll_0/vco_0/csi_5/a_60_10#" 2.23927
+cap "res100k_0/a_0_3470#" "dpll_0/vco_0/csi_6/a_60_10#" 2.33232
+cap "dpll_0/vco_0/csi_0/a_n210_10#" "dpll_0/vco_0/csi_3/a_60_10#" 0.119446
+cap "dpll_0/vco_0/csi_4/a_60_10#" "dpll_0/vco_0/csi_0/a_n210_10#" 1.49041
+cap "cap_2/a_0_n30#" "dpll_0/vco_0/csi_0/a_n210_10#" 56.1113
+cap "dpll_0/vco_0/csi_0/a_n210_10#" "dpll_0/vco_0/csi_0/a_n140_n20#" 6.16236
+cap "dpll_0/vco_0/csi_0/a_n210_10#" "res100k_0/a_0_3470#" 28.7713
+cap "dpll_0/vco_0/csi_0/a_n210_10#" "dpll_0/vco_0/csi_0/a_n30_240#" 5.35426
+cap "dpll_0/vco_0/csi_0/a_n210_10#" "dpll_0/vco_0/csi_5/a_60_10#" 0.119446
+cap "res100k_0/a_0_3470#" "dpll_0/vco_0/csi_10/a_60_10#" 2.33232
+cap "res100k_0/a_0_3470#" "dpll_0/vco_0/csi_6/a_60_10#" 0.295672
+cap "dpll_0/vco_0/csi_4/a_n210_10#" "cap_1/a_n150_0#" 8.84771
+cap "res100k_0/a_0_3470#" "dpll_0/vco_0/csi_7/a_60_10#" 2.62799
+cap "cap_1/a_n150_0#" "dpll_0/vco_0/csi_4/a_n140_n20#" 0.624566
+cap "cap_1/a_n150_0#" "dpll_0/vco_0/csi_8/a_60_10#" 0.119446
+cap "cap_1/a_n150_0#" "dpll_0/vco_0/csi_12/a_60_10#" 7.44675
+cap "cap_1/a_n150_0#" "dpll_0/vco_0/csi_9/a_60_10#" 0.119446
+cap "res100k_0/a_0_3470#" "dpll_0/vco_0/csi_4/a_n210_10#" 81.482
+cap "res100k_0/a_0_3470#" "dpll_0/vco_0/csi_4/a_n140_n20#" 28.7524
+cap "res100k_0/a_0_3470#" "dpll_0/vco_0/csi_8/a_60_10#" 2.62799
+cap "dpll_0/vco_0/csi_6/a_60_10#" "cap_1/a_n150_0#" 0.510318
+cap "res100k_0/a_0_3470#" "dpll_0/vco_0/csi_12/a_60_10#" 44.1405
+cap "cap_1/a_n150_0#" "dpll_0/vco_0/csi_7/a_60_10#" 0.119446
+cap "res100k_0/a_0_3470#" "dpll_0/vco_0/csi_9/a_60_10#" 2.62799
+cap "cap_1/a_n150_0#" "dpll_0/vco_0/csi_12/a_60_10#" 3.07847
+cap "cap_1/a_0_n30#" "dpll_0/vco_0/csi_12/a_60_10#" 30.0792
+cap "cap_1/a_n150_0#" "dpll_0/vco_0/csi_11/a_60_10#" 0.119446
+cap "cap_1/a_0_n30#" "dpll_0/vco_0/csi_11/a_60_10#" 2.23927
+cap "cap_1/a_0_n30#" "dpll_0/vco_0/csi_7/a_n140_n20#" 13.9012
+cap "cap_1/a_n150_0#" "dpll_0/vco_0/csi_7/a_n140_n20#" 0.416378
+cap "dpll_0/vco_0/csi_10/a_60_10#" "cap_1/a_0_n30#" 0.295672
+cap "cap_1/a_n150_0#" "dpll_0/vco_0/csi_10/a_60_10#" 0.119446
+cap "cap_1/a_0_n30#" "dpll_0/vco_0/csi_7/a_n210_10#" 77.4917
+cap "cap_1/a_n150_0#" "dpll_0/vco_0/csi_7/a_n210_10#" 5.91654
+cap "cap_1/a_0_n30#" "dpll_0/vco_0/inv_0/a_60_10#" 4.43196
+cap "cap_1/a_n150_0#" "dpll_0/vco_0/inv_0/a_60_10#" 0.560346
+cap "cap_1/a_n150_0#" "dpll_0/clk" 3.74878
+cap "cap_1/a_0_n30#" "dpll_0/clk" 15.275
+merge "dpll_0/res" "res3k6_0/a_0_n440#" -286.922 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -240 0 0 0 0 0 0 0 0 0 0 0 0
+merge "res3k6_0/a_0_n440#" "li_790_100#"
+merge "res100k_0/a_0_3470#" "cap_5/a_0_n30#" -12107.6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -48000 -40540 0 0 0 -140 0 0 0 0 0 0 0 0 0 0 0 0
+merge "cap_5/a_0_n30#" "cap_9/a_0_n30#"
+merge "cap_9/a_0_n30#" "cap_8/a_0_n30#"
+merge "cap_8/a_0_n30#" "cap_7/a_0_n30#"
+merge "cap_7/a_0_n30#" "cap_6/a_0_n30#"
+merge "cap_6/a_0_n30#" "cap_2/a_0_n30#"
+merge "cap_2/a_0_n30#" "a_8280_n210#"
+merge "a_8280_n210#" "cap_0/a_0_n30#"
+merge "cap_0/a_0_n30#" "cap_1/a_0_n30#"
+merge "cap_1/a_0_n30#" "cap_4/a_0_n30#"
+merge "cap_4/a_0_n30#" "cap_3/a_0_n30#"
+merge "dpll_0/vco_0/csi_0/a_n210_10#" "res3k6_0/a_0_100#" -9113.35 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -21600 -3860 0 0 0 0 0 0 0 0 0 0 0 0
+merge "res3k6_0/a_0_100#" "res3k6_0/VSUBS"
+merge "res3k6_0/VSUBS" "res100k_0/VSUBS"
+merge "res100k_0/VSUBS" "dpll_0/VSUBS"
+merge "dpll_0/VSUBS" "li_n1550_n320#"
+merge "li_n1550_n320#" "cap_9/a_n150_0#"
+merge "cap_9/a_n150_0#" "li_8190_n2930#"
+merge "li_8190_n2930#" "cap_0/a_n150_0#"
+merge "cap_0/a_n150_0#" "li_5730_n2930#"
+merge "li_5730_n2930#" "cap_8/a_n150_0#"
+merge "cap_8/a_n150_0#" "cap_1/a_n150_0#"
+merge "cap_1/a_n150_0#" "li_3270_n2930#"
+merge "li_3270_n2930#" "cap_7/a_n150_0#"
+merge "cap_7/a_n150_0#" "cap_2/a_n150_0#"
+merge "cap_2/a_n150_0#" "cap_6/a_n150_0#"
+merge "cap_6/a_n150_0#" "li_810_n2930#"
+merge "li_810_n2930#" "cap_3/a_n150_0#"
+merge "cap_3/a_n150_0#" "li_n1650_n2930#"
+merge "li_n1650_n2930#" "cap_5/a_n150_0#"
+merge "cap_5/a_n150_0#" "cap_4/a_n150_0#"
+merge "cap_4/a_n150_0#" "li_n4150_n2790#"
+merge "li_n4150_n2790#" "cap_10/a_n150_0#"
+merge "cap_10/a_n150_0#" "VSUBS"
+merge "dpll_0/filt" "res100k_0/a_0_n440#" -3092.34 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -24000 -4820 0 0 0 -260 0 0 0 0 0 0 0 0 0 0 0 0
+merge "res100k_0/a_0_n440#" "cap_10/a_0_n30#"
+merge "cap_10/a_0_n30#" "a_n4160_n210#"
