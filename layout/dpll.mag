@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1765429464
+timestamp 1765844992
 << locali >>
 rect -4430 485 -4390 490
 rect -4430 465 -4420 485
@@ -99,17 +99,4 @@ use vco  vco_0
 timestamp 1765346501
 transform 1 0 985 0 1 40
 box -1000 -55 2895 355
-<< labels >>
-rlabel via1 3845 180 3845 180 3 clk
-port 4 e
-rlabel locali -5120 435 -5120 435 7 VP
-port 1 w
-rlabel locali -5030 -70 -5030 -70 7 VN
-port 2 w
-rlabel locali -2790 180 -2790 180 7 nrz
-port 3 w
-rlabel locali 110 70 110 70 7 res
-port 5 w
-rlabel locali -40 70 -40 70 7 filt
-port 6 w
 << end >>

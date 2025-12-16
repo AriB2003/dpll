@@ -201,7 +201,6 @@ Xvco_0 li_7670_340# m1_n60_340# li_200_120# m1_n150_240# li_n50_440# m1_n860_660
 X0 a_0_3470# a_0_n440# VSUBS sky130_fd_pr__res_xhigh_po_0p35 l=17.51
 .ends
 
-.subckt pasdpll VP VN filt nrz clk
 Xres3k6_0 li_790_100# VN VN res3k6
 Xcap_0 a_8280_n210# VN cap
 Xcap_1 a_8280_n210# VN cap
@@ -216,5 +215,5 @@ Xcap_8 a_8280_n210# VN cap
 Xcap_9 a_8280_n210# VN cap
 Xres100k_0 a_8280_n210# filt VN res100k
 Xcap_10 filt VN cap
-.ends
+.end
 

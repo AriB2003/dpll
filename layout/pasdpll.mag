@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1765828659
+timestamp 1765845201
 << poly >>
 rect -2080 -75 -2050 -65
 rect -2080 -95 -2075 -75
@@ -18,21 +18,21 @@ rect 4145 -95 4165 -75
 << locali >>
 rect 245 -10 275 140
 rect 395 50 425 140
-rect 1355 50 1385 140
-rect 900 15 1385 50
+rect 1355 45 1385 135
+rect 885 10 1385 45
 rect 245 -45 395 -10
 rect 245 -65 275 -45
 rect -2080 -75 275 -65
 rect -2080 -95 -2075 -75
 rect -2055 -95 275 -75
 rect -2080 -105 275 -95
-rect 1355 -125 1385 15
-rect 2585 -45 4170 -10
+rect 1355 -130 1385 10
+rect 2570 -45 4170 -10
 rect 4140 -75 4170 -45
 rect 4140 -95 4145 -75
 rect 4165 -95 4170 -75
 rect 4140 -105 4170 -95
-rect -775 -160 4095 -125
+rect -775 -165 4095 -130
 rect -2075 -1395 -825 -1360
 rect -825 -1465 -775 -1435
 rect 405 -1465 455 -1435
@@ -84,15 +84,26 @@ timestamp 1765825816
 transform 0 -1 -2075 1 0 -1360
 box -75 -15 1235 1215
 use dpll  dpll_0
-timestamp 1765429464
+timestamp 1765844992
 transform 1 0 300 0 1 90
 box -5155 -130 3880 490
 use res3k6  res3k6_0
-timestamp 1765826395
+timestamp 1765829066
 transform 0 1 615 -1 0 50
-box 0 -220 35 285
+box 0 -220 35 270
 use res100k  res100k_0
-timestamp 1765827104
+timestamp 1765829089
 transform 0 1 615 -1 0 -10
-box 0 -220 35 1970
+box 0 -220 35 1955
+<< labels >>
+rlabel space 260 160 260 160 7 filt
+port 3 w
+rlabel space -2490 270 -2490 270 7 nrz
+port 4 w
+rlabel space 4145 270 4145 270 7 clk
+port 5 w
+rlabel space -4820 525 -4820 525 7 VP
+port 1 w
+rlabel space -4730 20 -4730 20 7 VN
+port 2 w
 << end >>
