@@ -39,10 +39,13 @@ N 270 60 280 60 {lab=A}
 N 260 80 280 80 {lab=B}
 N 260 40 260 80 {lab=B}
 N 250 40 260 40 {lab=B}
-N 240 -40 270 60 {lab=A}
 N 140 -40 240 -40 {lab=A}
-N 240 -40 280 -60 {lab=A}
-N 200 -60 280 -40 {lab=data}
+N 270 -40 270 60 {lab=A}
+N 240 -40 270 -40 {lab=A}
+N 200 -60 240 -60 {lab=data}
+N 270 -40 280 -60 {lab=A}
+N 270 -60 280 -40 {lab=data}
+N 240 -60 270 -60 {lab=data}
 C {iopin.sym} -210 -30 2 0 {name=p8 lab=VN}
 C {iopin.sym} -210 -50 2 0 {name=p9 lab=VP}
 C {opin.sym} -190 30 0 0 {name=p10 lab=inc}

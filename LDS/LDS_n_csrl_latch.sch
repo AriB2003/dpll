@@ -11,14 +11,14 @@ N 190 -300 210 -300 { lab=#net1}
 N 270 -440 290 -440 { lab=#net2}
 N 270 -300 290 -300 { lab=nQ}
 N 190 -160 210 -160 { lab=#net3}
-N 270 -160 290 -160 { lab=Q}
+N 270 -160 290 -160 { lab=#net4}
 N 190 -580 210 -580 { lab=VP}
-N 270 -580 290 -580 { lab=#net4}
+N 270 -580 290 -580 { lab=#net5}
 N 200 -580 200 -440 { lab=VP}
-N 120 -580 130 -580 { lab=#net4}
-N 120 -580 120 -540 { lab=#net4}
-N 120 -540 280 -540 { lab=#net4}
-N 280 -580 280 -540 { lab=#net4}
+N 120 -580 130 -580 { lab=#net5}
+N 120 -580 120 -540 { lab=#net5}
+N 120 -540 280 -540 { lab=#net5}
+N 280 -580 280 -540 { lab=#net5}
 N 120 -440 130 -440 { lab=#net2}
 N 120 -480 120 -440 { lab=#net2}
 N 120 -480 280 -480 { lab=#net2}
@@ -37,23 +37,21 @@ N 240 -550 240 -410 { lab=PHI}
 N 350 -160 360 -160 { lab=VN}
 N 360 -300 360 -160 { lab=VN}
 N 350 -300 360 -300 { lab=VN}
-N 350 -580 360 -580 { lab=Q}
-N 360 -580 360 -520 { lab=Q}
-N 320 -500 360 -520 { lab=Q}
-N 320 -500 320 -410 { lab=Q}
-N 320 -410 320 -330 { lab=Q}
-N 280 -220 280 -160 { lab=Q}
-N 280 -220 320 -240 { lab=Q}
-N 320 -330 320 -240 { lab=Q}
+N 350 -580 360 -580 { lab=#net4}
+N 360 -580 360 -520 { lab=#net4}
+N 320 -500 360 -520 { lab=#net4}
+N 320 -500 320 -410 { lab=#net4}
+N 320 -410 320 -330 { lab=#net4}
+N 280 -220 280 -160 { lab=#net4}
+N 280 -220 320 -240 { lab=#net4}
+N 320 -330 320 -240 { lab=#net4}
 N 320 -220 320 -190 { lab=nQ}
 N 280 -240 320 -220 { lab=nQ}
 N 280 -300 280 -240 { lab=nQ}
-N 280 -160 280 -120 { lab=Q}
-N 280 -120 440 -120 { lab=Q}
+N 280 -160 280 -120 { lab=#net4}
 N 280 -360 280 -300 { lab=nQ}
 N 350 -440 360 -440 { lab=nQ}
 N 280 -370 280 -360 { lab=nQ}
-N 280 -370 440 -370 { lab=nQ}
 N 360 -440 360 -370 { lab=nQ}
 N 360 -500 360 -440 { lab=nQ}
 N 320 -520 360 -500 { lab=nQ}
@@ -67,6 +65,8 @@ N 90 -40 240 -40 {lab=PHI}
 N 90 -80 360 -80 {lab=VN}
 N 110 -620 110 -120 {lab=nD}
 N 110 -120 160 -120 {lab=nD}
+N 280 -120 400 -120 {lab=#net4}
+N 280 -370 400 -370 {lab=nQ}
 C {madvlsi/nmos3.sym} 160 -160 3 0 {name=M1
 L=\{dff_len\}
 W=\{dff_wid\}
@@ -249,8 +249,8 @@ spiceprefix=X
 }
 C {devices/ipin.sym} 90 -370 0 0 {name=p1 lab=D}
 C {devices/ipin.sym} 90 -620 0 0 {name=p2 lab=nD}
-C {devices/opin.sym} 440 -370 0 0 {name=p4 lab=nQ}
-C {devices/opin.sym} 440 -120 0 0 {name=p5 lab=Q}
+C {devices/opin.sym} 400 -370 0 0 {name=p4 lab=nQ}
+C {devices/opin.sym} 400 -120 0 0 {name=p5 lab=Q}
 C {devices/ipin.sym} 90 -40 0 0 {name=p6 lab=PHI}
 C {devices/iopin.sym} 90 -660 2 0 {name=p7 lab=VP}
 C {devices/iopin.sym} 90 -80 2 0 {name=p8 lab=VN}

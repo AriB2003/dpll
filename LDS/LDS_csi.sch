@@ -95,7 +95,7 @@ C {lab_pin.sym} -190 -40 2 0 {name=p16 sig_type=std_logic lab=A}
 C {lab_pin.sym} -210 -20 0 0 {name=p17 sig_type=std_logic lab=Y}
 C {lab_pin.sym} -190 0 2 0 {name=p7 sig_type=std_logic lab=Vbpin}
 C {lab_pin.sym} -190 20 2 0 {name=p18 sig_type=std_logic lab=Vbnin}
-C {code_shown.sym} 100 -90 0 0 {name=SPICE1 only_toplevel=false value="
+C {code_shown.sym} 140 -90 0 0 {name=SPICE1 only_toplevel=false value="
 .param bias_wid=0.5 bias_len=0.5
 .param csi_wid=1 csi_len=0.15
 "}

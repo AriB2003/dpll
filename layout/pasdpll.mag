@@ -1,6 +1,8 @@
 magic
 tech sky130A
-timestamp 1765845201
+timestamp 1765869271
+<< ndiff >>
+rect 250 150 270 170
 << poly >>
 rect -2080 -75 -2050 -65
 rect -2080 -95 -2075 -75
@@ -16,6 +18,11 @@ rect 4155 -2700 4170 -105
 rect -2075 -95 -2055 -75
 rect 4145 -95 4165 -75
 << locali >>
+rect -4830 515 -4810 535
+rect -2500 260 -2480 280
+rect 4135 260 4155 280
+rect 250 150 270 170
+rect -4740 10 -4720 30
 rect 245 -10 275 140
 rect 395 50 425 140
 rect 1355 45 1385 135
@@ -39,6 +46,8 @@ rect 405 -1465 455 -1435
 rect 1635 -1465 1685 -1435
 rect 2865 -1465 2915 -1435
 rect 4095 -1465 4145 -1435
+<< metal1 >>
+rect 250 150 270 170
 use cap  cap_0
 timestamp 1765825816
 transform 0 -1 4145 1 0 -1360
@@ -96,14 +105,14 @@ timestamp 1765829089
 transform 0 1 615 -1 0 -10
 box 0 -220 35 1955
 << labels >>
-rlabel space 260 160 260 160 7 filt
+rlabel metal1 260 160 260 160 7 filt
 port 3 w
-rlabel space -2490 270 -2490 270 7 nrz
-port 4 w
-rlabel space 4145 270 4145 270 7 clk
+rlabel locali 4145 270 4145 270 7 clk
 port 5 w
-rlabel space -4820 525 -4820 525 7 VP
+rlabel locali -4820 525 -4820 525 7 VP
 port 1 w
-rlabel space -4730 20 -4730 20 7 VN
+rlabel locali -4730 20 -4730 20 7 VN
 port 2 w
+rlabel locali -2490 270 -2490 270 7 nrz
+port 4 w
 << end >>

@@ -14,11 +14,10 @@ N -260 -30 -240 -30 {lab=VN}
 N -260 10 -240 10 {lab=nrz}
 N -260 -10 -240 -10 {lab=filt}
 N -260 30 -240 30 {lab=clk}
-N -140 50 -140 110 {lab=VN}
 N -150 110 -0 110 {lab=VN}
-N -0 0 0 110 {lab=VN}
 N 0 30 20 30 {lab=VN}
 N 0 60 40 60 {lab=VN}
+N 0 0 0 60 {lab=VN}
 C {lab_pin.sym} 60 -40 2 0 {name=p1 sig_type=std_logic lab=clk}
 C {lab_pin.sym} -60 -40 0 0 {name=p7 sig_type=std_logic lab=nrz}
 C {/home/madvlsi/Documents/dpll/LDS/LDS_full.sym} -10 -20 0 0 {name=X5}
@@ -75,5 +74,7 @@ C {lab_pin.sym} -240 -10 2 0 {name=p25 sig_type=std_logic lab=filt}
 C {opin.sym} -240 30 0 0 {name=p5 lab=clk}
 C {lab_pin.sym} -260 30 0 0 {name=p6 sig_type=std_logic lab=clk}
 C {lab_pin.sym} 0 -50 1 0 {name=p8 sig_type=std_logic lab=VP}
-C {lab_pin.sym} 0 110 2 0 {name=p9 sig_type=std_logic lab=VN}
+C {lab_pin.sym} -150 110 0 0 {name=p9 sig_type=std_logic lab=VN}
 C {lab_pin.sym} -120 20 0 0 {name=p11 sig_type=std_logic lab=filt}
+C {lab_pin.sym} -140 50 0 0 {name=p2 sig_type=std_logic lab=VN}
+C {lab_pin.sym} 0 60 3 0 {name=p10 sig_type=std_logic lab=VN}

@@ -33,11 +33,9 @@ N 520 -550 520 -410 { lab=PHI}
 N 520 -410 520 -270 { lab=PHI}
 N 520 -270 520 -130 { lab=PHI}
 N 520 -130 520 -120 { lab=PHI}
-N 360 -620 440 -620 { lab=D}
-N 440 -620 440 -610 { lab=D}
-N 280 -120 440 -120 { lab=D}
-N 440 -130 440 -120 { lab=D}
-N 280 -370 440 -370 { lab=nD}
+N 360 -620 440 -620 { lab=#net5}
+N 440 -620 440 -610 { lab=#net5}
+N 440 -130 440 -120 { lab=#net5}
 N 560 -620 560 -580 { lab=nQ}
 N 560 -620 670 -620 { lab=nQ}
 N 560 -580 560 -520 { lab=nQ}
@@ -61,16 +59,18 @@ N 640 -370 670 -370 { lab=Q}
 N 560 -500 560 -440 { lab=Q}
 N 560 -500 600 -520 { lab=Q}
 N 600 -550 600 -520 { lab=Q}
-N 90 -80 670 -80 { lab=VN}
 N 480 -160 480 -80 { lab=VN}
-N 90 -40 670 -40 { lab=PHI}
 N 520 -120 520 -40 { lab=PHI}
-N 90 -660 670 -660 { lab=VP}
 N 400 -660 400 -580 { lab=VP}
 N 640 -660 640 -580 { lab=VP}
 N 640 -160 640 -130 { lab=nQ}
 N 640 -130 640 -120 { lab=nQ}
-N 360 -620 360 -120 {lab=D}
+N 360 -620 360 -120 {lab=#net5}
+N 340 -80 480 -80 {lab=VN}
+N 340 -40 520 -40 {lab=PHI}
+N 340 -660 640 -660 {lab=VP}
+N 340 -370 440 -370 {lab=nD}
+N 340 -120 440 -120 {lab=#net5}
 C {madvlsi/nmos3.sym} 440 -160 3 0 {name=M7
 L=\{dff_len\}
 W=\{dff_wid\}
@@ -251,13 +251,13 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {devices/ipin.sym} 280 -370 0 0 {name=p1 lab=nD}
-C {devices/ipin.sym} 280 -120 0 0 {name=p3 lab=D}
+C {devices/ipin.sym} 340 -370 0 0 {name=p1 lab=nD}
+C {devices/ipin.sym} 340 -120 0 0 {name=p3 lab=D}
 C {devices/opin.sym} 670 -370 0 0 {name=p4 lab=Q}
 C {devices/opin.sym} 670 -620 0 0 {name=p5 lab=nQ}
-C {devices/ipin.sym} 90 -40 0 0 {name=p6 lab=PHI}
-C {devices/iopin.sym} 90 -660 2 0 {name=p7 lab=VP}
-C {devices/iopin.sym} 90 -80 2 0 {name=p8 lab=VN}
+C {devices/ipin.sym} 340 -40 0 0 {name=p6 lab=PHI}
+C {devices/iopin.sym} 340 -660 2 0 {name=p7 lab=VP}
+C {devices/iopin.sym} 340 -80 2 0 {name=p8 lab=VN}
 C {code_shown.sym} 730 -530 0 0 {name=SPICE1 only_toplevel=false value="
 .param dff_wid=0.5 dff_len=0.5
 "}
